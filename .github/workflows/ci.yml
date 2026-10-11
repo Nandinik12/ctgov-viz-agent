@@ -1,0 +1,35 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    strategy:
+      matrix:
+        python: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -r requirements.txt
+      - name: Unit tests (hermetic, no network)
+        run: pytest -q
+      - name: Planner eval (keyword planner, must not regress)
+        run: |
+          python evals/run_planner_eval.py --out dev.md
+          python evals/run_planner_eval.py --cases evals/planner_cases_holdout.jsonl --out holdout.md
+          python evals/run_planner_eval.py --cases evals/planner_cases_adversarial.jsonl --out adversarial.md
+          python - <<'PY'
+          import re, sys
+          floors = {"dev.md": 28, "holdout.md": 14, "adversarial.md": 16}
+          for f, floor in floors.items():
+              n = int(re.search(r"\*\*(\d+)/", open(f).read()).group(1))
+              print(f, n, "floor", floor)
+              if n < floor:
+                  sys.exit(f"{f}: {n} below floor {floor}")
+          PY
+      - name: Planner eval (LLM), only when a key is configured
+        if: ${{ env.ANTHROPIC_API_KEY != '' && matrix.python == '3.12' }}
+        run: python evals/run_planner_eval.py --llm --cases evals/planner_cases_adversarial.jsonl

@@ -1,0 +1,3496 @@
+{
+  "request": {
+    "query": "Which countries have the most recruiting trials for type 2 diabetes?"
+  },
+  "response": {
+    "request_id": "4611cc36-b180-486c-91c7-8ee155bfab89",
+    "status": "ok",
+    "visualization": {
+      "type": "choropleth_map",
+      "title": "Recruiting trials by country for type 2 diabetes",
+      "subtitle": "827 trials analyzed. Source: ClinicalTrials.gov",
+      "encoding": {
+        "geo": {
+          "field": "iso_numeric",
+          "type": "nominal",
+          "title": "Country (ISO 3166 numeric)"
+        },
+        "color": {
+          "field": "trial_count",
+          "type": "quantitative",
+          "title": "Number of trials",
+          "unit": "trials"
+        },
+        "label": {
+          "field": "country",
+          "type": "nominal",
+          "title": "Country"
+        },
+        "x": {
+          "field": "country",
+          "type": "nominal",
+          "title": "Country",
+          "sort": "descending"
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative",
+          "title": "Number of trials",
+          "unit": "trials"
+        },
+        "tooltip": {
+          "field": "share_pct",
+          "type": "quantitative",
+          "title": "% of analyzed trials",
+          "unit": "%"
+        }
+      },
+      "data": [
+        {
+          "country": "United States",
+          "iso3": "USA",
+          "iso_numeric": "840",
+          "trial_count": 297,
+          "share_pct": 35.9,
+          "nct_ids": [
+            "NCT04791371",
+            "NCT05305287",
+            "NCT07011147",
+            "NCT07392190",
+            "NCT07296484",
+            "NCT07784725",
+            "NCT06993454",
+            "NCT06593327",
+            "NCT07361341",
+            "NCT07579702",
+            "NCT06337812",
+            "NCT05593549",
+            "NCT06681428",
+            "NCT05317585",
+            "NCT07062406",
+            "NCT06989164",
+            "NCT06983054",
+            "NCT03761446",
+            "NCT05543083",
+            "NCT06735651",
+            "NCT06735599",
+            "NCT06278207",
+            "NCT07449039",
+            "NCT07416799",
+            "NCT07450118",
+            "NCT07518004",
+            "NCT07229482",
+            "NCT06526650",
+            "NCT07509671",
+            "NCT06335771",
+            "NCT07776509",
+            "NCT07086443",
+            "NCT06526273",
+            "NCT06319703",
+            "NCT06049420",
+            "NCT07864168",
+            "NCT05572502",
+            "NCT06482944",
+            "NCT06662994",
+            "NCT07075588",
+            "NCT07667803",
+            "NCT04783441",
+            "NCT07606066",
+            "NCT06921356",
+            "NCT06690788",
+            "NCT02846571",
+            "NCT06366399",
+            "NCT05577390",
+            "NCT07159282",
+            "NCT05899023",
+            "NCT06897475",
+            "NCT06706284",
+            "NCT07054125",
+            "NCT06657209",
+            "NCT06562907",
+            "NCT07282600",
+            "NCT05943626",
+            "NCT07843485",
+            "NCT06322212",
+            "NCT07533175",
+            "NCT07360938",
+            "NCT07176793",
+            "NCT07187479",
+            "NCT05071898",
+            "NCT06516640",
+            "NCT06999356",
+            "NCT05124457",
+            "NCT06943001",
+            "NCT07817251",
+            "NCT06375460",
+            "NCT06674980",
+            "NCT06852950",
+            "NCT07590193",
+            "NCT07399678",
+            "NCT07065721",
+            "NCT06661538",
+            "NCT07053293",
+            "NCT06619301",
+            "NCT06592261",
+            "NCT06203106",
+            "NCT05370014",
+            "NCT05502016",
+            "NCT06028503",
+            "NCT05416060",
+            "NCT07271186",
+            "NCT05279729",
+            "NCT05499702",
+            "NCT07778524",
+            "NCT06408961",
+            "NCT07024823",
+            "NCT06884059",
+            "NCT07027995",
+            "NCT06580964",
+            "NCT07032844",
+            "NCT07270016",
+            "NCT03568630",
+            "NCT07664553",
+            "NCT07477067",
+            "NCT07662213",
+            "NCT05138432",
+            "NCT07223333",
+            "NCT07494084",
+            "NCT07220213",
+            "NCT06593314",
+            "NCT07184775",
+            "NCT06031428",
+            "NCT07318207",
+            "NCT05692388",
+            "NCT05846802",
+            "NCT06003153",
+            "NCT07654374",
+            "NCT07225218",
+            "NCT06923046",
+            "NCT06480786",
+            "NCT07633171",
+            "NCT06694155",
+            "NCT07140848",
+            "NCT07723833",
+            "NCT06525259",
+            "NCT07106879",
+            "NCT07321886",
+            "NCT04442451",
+            "NCT06120881",
+            "NCT06725953",
+            "NCT07351045",
+            "NCT06046833",
+            "NCT06924320",
+            "NCT05000996",
+            "NCT06717698",
+            "NCT07546929",
+            "NCT06869057",
+            "NCT07780188",
+            "NCT06336122",
+            "NCT06609356",
+            "NCT05129345",
+            "NCT04326192",
+            "NCT07120334",
+            "NCT07053319",
+            "NCT06007404",
+            "NCT05589155",
+            "NCT06830096",
+            "NCT07568678",
+            "NCT06699810",
+            "NCT07463209",
+            "NCT07385547",
+            "NCT06003634",
+            "NCT06571500",
+            "NCT06959901",
+            "NCT07415954",
+            "NCT05909046",
+            "NCT07386340",
+            "NCT06567795",
+            "NCT05766735",
+            "NCT07731399",
+            "NCT05041491",
+            "NCT06296485",
+            "NCT06138821",
+            "NCT06902077",
+            "NCT07502508",
+            "NCT07282613",
+            "NCT05933161",
+            "NCT05472441",
+            "NCT07524205",
+            "NCT06861790",
+            "NCT07444203",
+            "NCT07599982",
+            "NCT06291155",
+            "NCT05570734",
+            "NCT07053306",
+            "NCT07564414",
+            "NCT07167693",
+            "NCT07091487",
+            "NCT07351058",
+            "NCT07542834",
+            "NCT06424015",
+            "NCT06005987",
+            "NCT06319716",
+            "NCT06513026",
+            "NCT04024631",
+            "NCT03883412",
+            "NCT07684144",
+            "NCT05795439",
+            "NCT06055036",
+            "NCT06628453",
+            "NCT07518407",
+            "NCT06906640",
+            "NCT05662462",
+            "NCT04687215",
+            "NCT06108076",
+            "NCT07271043",
+            "NCT06571474",
+            "NCT05208164",
+            "NCT06180837",
+            "NCT07521475",
+            "NCT06936670",
+            "NCT06739122",
+            "NCT05893927",
+            "NCT05780905",
+            "NCT07135531",
+            "NCT07428746",
+            "NCT07754461",
+            "NCT05463289",
+            "NCT07064473",
+            "NCT07254689",
+            "NCT07282743",
+            "NCT07661368",
+            "NCT06730113",
+            "NCT07298057",
+            "NCT05838287",
+            "NCT05354947",
+            "NCT07783802",
+            "NCT06424106",
+            "NCT05799222",
+            "NCT05960656",
+            "NCT05286892",
+            "NCT07465224",
+            "NCT06959277",
+            "NCT06784375",
+            "NCT07662109",
+            "NCT07668388",
+            "NCT04101669",
+            "NCT07695454",
+            "NCT06246799",
+            "NCT07215533",
+            "NCT07409714",
+            "NCT07662044",
+            "NCT06989008",
+            "NCT05008276",
+            "NCT06663813",
+            "NCT07773779",
+            "NCT06867198",
+            "NCT04501406",
+            "NCT07527650",
+            "NCT06906627",
+            "NCT05580536",
+            "NCT06112418",
+            "NCT07376655",
+            "NCT07641361",
+            "NCT07589608",
+            "NCT06546085",
+            "NCT07029009",
+            "NCT06251323",
+            "NCT07784270",
+            "NCT06412536",
+            "NCT04213547",
+            "NCT07095543",
+            "NCT05165706",
+            "NCT05776563",
+            "NCT05912647",
+            "NCT06329544",
+            "NCT05390892",
+            "NCT06115265",
+            "NCT02969798",
+            "NCT06810726",
+            "NCT05950282",
+            "NCT05168605",
+            "NCT06279637",
+            "NCT06836479",
+            "NCT04943861",
+            "NCT05322213",
+            "NCT06296550",
+            "NCT05420051",
+            "NCT06143566",
+            "NCT06451757",
+            "NCT07441655",
+            "NCT07650682",
+            "NCT06887049",
+            "NCT05277558",
+            "NCT05933174",
+            "NCT06478186",
+            "NCT07474376",
+            "NCT07554443",
+            "NCT07448974",
+            "NCT07216118",
+            "NCT05759468",
+            "NCT06078683",
+            "NCT07468188",
+            "NCT06814184",
+            "NCT07355270",
+            "NCT06976619",
+            "NCT07868250",
+            "NCT07560813",
+            "NCT07340320",
+            "NCT07675499",
+            "NCT04802395",
+            "NCT07674628",
+            "NCT07478263",
+            "NCT07743450",
+            "NCT07797335",
+            "NCT05708859",
+            "NCT07662135",
+            "NCT07167004",
+            "NCT07595549",
+            "NCT07173543",
+            "NCT07043426",
+            "NCT06658067",
+            "NCT06329375"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT04791371",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "United States",
+              "url": "https://clinicaltrials.gov/study/NCT04791371"
+            },
+            {
+              "nct_id": "NCT05305287",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "United States",
+              "url": "https://clinicaltrials.gov/study/NCT05305287"
+            },
+            {
+              "nct_id": "NCT07011147",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "United States",
+              "url": "https://clinicaltrials.gov/study/NCT07011147"
+            }
+          ]
+        },
+        {
+          "country": "China",
+          "iso3": "CHN",
+          "iso_numeric": "156",
+          "trial_count": 120,
+          "share_pct": 14.5,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT07784725",
+            "NCT07656805",
+            "NCT07836088",
+            "NCT07019012",
+            "NCT07775404",
+            "NCT07129148",
+            "NCT07614230",
+            "NCT06716203",
+            "NCT07374328",
+            "NCT06979440",
+            "NCT06984510",
+            "NCT07776509",
+            "NCT06277466",
+            "NCT03569735",
+            "NCT07082114",
+            "NCT07492004",
+            "NCT07632677",
+            "NCT07667803",
+            "NCT07414277",
+            "NCT06825182",
+            "NCT07659574",
+            "NCT07121504",
+            "NCT06449833",
+            "NCT07282600",
+            "NCT06838416",
+            "NCT06959030",
+            "NCT07023172",
+            "NCT06926166",
+            "NCT07109700",
+            "NCT07165223",
+            "NCT06932874",
+            "NCT07676773",
+            "NCT07527078",
+            "NCT05553093",
+            "NCT06256419",
+            "NCT03811470",
+            "NCT07807059",
+            "NCT07747857",
+            "NCT06302127",
+            "NCT07558863",
+            "NCT06912321",
+            "NCT07664553",
+            "NCT07662213",
+            "NCT07129915",
+            "NCT07711171",
+            "NCT07496177",
+            "NCT06461377",
+            "NCT07244003",
+            "NCT02420470",
+            "NCT06863532",
+            "NCT06888050",
+            "NCT07481747",
+            "NCT06361238",
+            "NCT07321886",
+            "NCT06650969",
+            "NCT07351045",
+            "NCT07066891",
+            "NCT07833930",
+            "NCT03264352",
+            "NCT07303803",
+            "NCT07307235",
+            "NCT06957093",
+            "NCT07670416",
+            "NCT07060456",
+            "NCT06964620",
+            "NCT05349955",
+            "NCT07650318",
+            "NCT06713720",
+            "NCT06591286",
+            "NCT06818851",
+            "NCT07531459",
+            "NCT07743983",
+            "NCT07272343",
+            "NCT06727721",
+            "NCT03087032",
+            "NCT06639425",
+            "NCT05888909",
+            "NCT07351058",
+            "NCT07693036",
+            "NCT07803809",
+            "NCT07083336",
+            "NCT05597709",
+            "NCT07630233",
+            "NCT06169033",
+            "NCT07007676",
+            "NCT07265037",
+            "NCT03987308",
+            "NCT07275788",
+            "NCT07064473",
+            "NCT05307731",
+            "NCT07156370",
+            "NCT06821399",
+            "NCT07662109",
+            "NCT07347080",
+            "NCT07662044",
+            "NCT07722910",
+            "NCT07801820",
+            "NCT05439226",
+            "NCT07128186",
+            "NCT07329231",
+            "NCT07355738",
+            "NCT07032688",
+            "NCT06716216",
+            "NCT04889053",
+            "NCT07599410",
+            "NCT07784270",
+            "NCT07083154",
+            "NCT07394114",
+            "NCT06671587",
+            "NCT07653477",
+            "NCT07678866",
+            "NCT07193459",
+            "NCT05015283",
+            "NCT05947916",
+            "NCT06861062",
+            "NCT04187443",
+            "NCT07279194",
+            "NCT07797335",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[85].country",
+              "excerpt": "China",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[86].country",
+              "excerpt": "China",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT07656805",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "China",
+              "url": "https://clinicaltrials.gov/study/NCT07656805"
+            }
+          ]
+        },
+        {
+          "country": "Canada",
+          "iso3": "CAN",
+          "iso_numeric": "124",
+          "trial_count": 66,
+          "share_pct": 8.0,
+          "nct_ids": [
+            "NCT07784725",
+            "NCT07317115",
+            "NCT07195994",
+            "NCT07272460",
+            "NCT05934409",
+            "NCT05702463",
+            "NCT07776509",
+            "NCT05681468",
+            "NCT07667803",
+            "NCT03988764",
+            "NCT02818192",
+            "NCT06897475",
+            "NCT07676305",
+            "NCT07169422",
+            "NCT07181863",
+            "NCT05427084",
+            "NCT03455868",
+            "NCT07664553",
+            "NCT06837103",
+            "NCT07662213",
+            "NCT07196371",
+            "NCT04455867",
+            "NCT06285396",
+            "NCT06599047",
+            "NCT07321886",
+            "NCT07351045",
+            "NCT04579900",
+            "NCT06695221",
+            "NCT06805786",
+            "NCT06907862",
+            "NCT05269589",
+            "NCT07588503",
+            "NCT05794789",
+            "NCT07564414",
+            "NCT07272837",
+            "NCT07351058",
+            "NCT06700538",
+            "NCT04485871",
+            "NCT07684144",
+            "NCT07790081",
+            "NCT07187830",
+            "NCT05776420",
+            "NCT06586203",
+            "NCT07675551",
+            "NCT07754461",
+            "NCT07112339",
+            "NCT07064473",
+            "NCT07059377",
+            "NCT07575438",
+            "NCT07094529",
+            "NCT07434791",
+            "NCT07142512",
+            "NCT07017270",
+            "NCT06118931",
+            "NCT07784270",
+            "NCT07573917",
+            "NCT06462170",
+            "NCT05633810",
+            "NCT04621396",
+            "NCT05938712",
+            "NCT02390973",
+            "NCT06814171",
+            "NCT02583061",
+            "NCT07797335",
+            "NCT06694935",
+            "NCT07595549"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[66].country",
+              "excerpt": "Canada",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT07317115",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Canada",
+              "url": "https://clinicaltrials.gov/study/NCT07317115"
+            },
+            {
+              "nct_id": "NCT07195994",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Canada",
+              "url": "https://clinicaltrials.gov/study/NCT07195994"
+            }
+          ]
+        },
+        {
+          "country": "South Korea",
+          "iso3": "KOR",
+          "iso_numeric": "410",
+          "trial_count": 51,
+          "share_pct": 6.2,
+          "nct_ids": [
+            "NCT07784725",
+            "NCT06989697",
+            "NCT07719894",
+            "NCT06647745",
+            "NCT04284943",
+            "NCT07539415",
+            "NCT05365425",
+            "NCT07667803",
+            "NCT06875193",
+            "NCT06846411",
+            "NCT06772168",
+            "NCT07552389",
+            "NCT07282600",
+            "NCT07093476",
+            "NCT07533175",
+            "NCT07359105",
+            "NCT06838286",
+            "NCT06649162",
+            "NCT07664553",
+            "NCT07662213",
+            "NCT07379333",
+            "NCT03059069",
+            "NCT06647888",
+            "NCT07321886",
+            "NCT07351045",
+            "NCT05365438",
+            "NCT06717698",
+            "NCT07415954",
+            "NCT06293417",
+            "NCT07442006",
+            "NCT07351058",
+            "NCT06402747",
+            "NCT06647550",
+            "NCT04932928",
+            "NCT06642623",
+            "NCT05211375",
+            "NCT06782139",
+            "NCT07064473",
+            "NCT06627322",
+            "NCT07662109",
+            "NCT07668388",
+            "NCT07662044",
+            "NCT06989723",
+            "NCT07784270",
+            "NCT05770687",
+            "NCT06399835",
+            "NCT05970237",
+            "NCT07336329",
+            "NCT06972732",
+            "NCT07595718",
+            "NCT07595549"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[196].country",
+              "excerpt": "South Korea",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT06989697",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "South Korea",
+              "url": "https://clinicaltrials.gov/study/NCT06989697"
+            },
+            {
+              "nct_id": "NCT07719894",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "South Korea",
+              "url": "https://clinicaltrials.gov/study/NCT07719894"
+            }
+          ]
+        },
+        {
+          "country": "United Kingdom",
+          "iso3": "GBR",
+          "iso_numeric": "826",
+          "trial_count": 43,
+          "share_pct": 5.2,
+          "nct_ids": [
+            "NCT06652763",
+            "NCT03132129",
+            "NCT06774014",
+            "NCT02169518",
+            "NCT07776509",
+            "NCT06914778",
+            "NCT07667803",
+            "NCT06471634",
+            "NCT06897475",
+            "NCT06305208",
+            "NCT07662213",
+            "NCT02973412",
+            "NCT06782568",
+            "NCT05404061",
+            "NCT07321886",
+            "NCT07285811",
+            "NCT07351045",
+            "NCT07051005",
+            "NCT01945840",
+            "NCT06815081",
+            "NCT04442334",
+            "NCT02817360",
+            "NCT06844539",
+            "NCT06739135",
+            "NCT02037867",
+            "NCT04190849",
+            "NCT07351058",
+            "NCT05663515",
+            "NCT07684144",
+            "NCT07364045",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT03842475",
+            "NCT06803771",
+            "NCT07784270",
+            "NCT07247084",
+            "NCT06451757",
+            "NCT06579404",
+            "NCT07065383",
+            "NCT06572345",
+            "NCT07743450",
+            "NCT07797335",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06652763",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "United Kingdom",
+              "url": "https://clinicaltrials.gov/study/NCT06652763"
+            },
+            {
+              "nct_id": "NCT03132129",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "United Kingdom",
+              "url": "https://clinicaltrials.gov/study/NCT03132129"
+            },
+            {
+              "nct_id": "NCT06774014",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "United Kingdom",
+              "url": "https://clinicaltrials.gov/study/NCT06774014"
+            }
+          ]
+        },
+        {
+          "country": "Germany",
+          "iso3": "DEU",
+          "iso_numeric": "276",
+          "trial_count": 40,
+          "share_pct": 4.8,
+          "nct_ids": [
+            "NCT07784725",
+            "NCT06047262",
+            "NCT06278207",
+            "NCT05651724",
+            "NCT07372820",
+            "NCT07868601",
+            "NCT07171281",
+            "NCT07667803",
+            "NCT06124586",
+            "NCT06897475",
+            "NCT07282600",
+            "NCT07702890",
+            "NCT07664553",
+            "NCT07662213",
+            "NCT07270731",
+            "NCT07321886",
+            "NCT07351045",
+            "NCT01477957",
+            "NCT04442334",
+            "NCT06945406",
+            "NCT07814508",
+            "NCT06323538",
+            "NCT07351058",
+            "NCT07535307",
+            "NCT07374705",
+            "NCT07112339",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT07668388",
+            "NCT07146347",
+            "NCT01055093",
+            "NCT07784270",
+            "NCT07212075",
+            "NCT07359664",
+            "NCT06451757",
+            "NCT03323216",
+            "NCT05958706",
+            "NCT07743450",
+            "NCT07797335",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[127].country",
+              "excerpt": "Germany",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT06047262",
+              "field": "protocolSection.contactsLocationsModule.locations[3].country",
+              "excerpt": "Germany",
+              "url": "https://clinicaltrials.gov/study/NCT06047262"
+            },
+            {
+              "nct_id": "NCT06278207",
+              "field": "protocolSection.contactsLocationsModule.locations[1].country",
+              "excerpt": "Germany",
+              "url": "https://clinicaltrials.gov/study/NCT06278207"
+            }
+          ]
+        },
+        {
+          "country": "Italy",
+          "iso3": "ITA",
+          "iso_numeric": "380",
+          "trial_count": 35,
+          "share_pct": 4.2,
+          "nct_ids": [
+            "NCT07784725",
+            "NCT05759637",
+            "NCT06864546",
+            "NCT06816303",
+            "NCT05651724",
+            "NCT07667803",
+            "NCT07608055",
+            "NCT07533175",
+            "NCT05975541",
+            "NCT07662213",
+            "NCT07431359",
+            "NCT07375069",
+            "NCT07351045",
+            "NCT07602023",
+            "NCT06717698",
+            "NCT05987410",
+            "NCT04442334",
+            "NCT07564414",
+            "NCT07583355",
+            "NCT07351058",
+            "NCT07467460",
+            "NCT07344701",
+            "NCT02038517",
+            "NCT07817290",
+            "NCT07112339",
+            "NCT07064473",
+            "NCT06904690",
+            "NCT07372677",
+            "NCT07149610",
+            "NCT07042399",
+            "NCT07689214",
+            "NCT07314684",
+            "NCT05633810",
+            "NCT06451757",
+            "NCT07797335"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[165].country",
+              "excerpt": "Italy",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT05759637",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Italy",
+              "url": "https://clinicaltrials.gov/study/NCT05759637"
+            },
+            {
+              "nct_id": "NCT06864546",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Italy",
+              "url": "https://clinicaltrials.gov/study/NCT06864546"
+            }
+          ]
+        },
+        {
+          "country": "Denmark",
+          "iso3": "DNK",
+          "iso_numeric": "208",
+          "trial_count": 34,
+          "share_pct": 4.1,
+          "nct_ids": [
+            "NCT04880005",
+            "NCT07776509",
+            "NCT07246421",
+            "NCT06752018",
+            "NCT06203860",
+            "NCT07262788",
+            "NCT06211556",
+            "NCT07026539",
+            "NCT07482072",
+            "NCT07250789",
+            "NCT06745544",
+            "NCT05700877",
+            "NCT06642272",
+            "NCT06906081",
+            "NCT07398300",
+            "NCT07581145",
+            "NCT06185296",
+            "NCT04916132",
+            "NCT05663515",
+            "NCT07485075",
+            "NCT07617519",
+            "NCT07767331",
+            "NCT07374705",
+            "NCT07064473",
+            "NCT07416656",
+            "NCT06152588",
+            "NCT07662109",
+            "NCT07662044",
+            "NCT07641309",
+            "NCT05633810",
+            "NCT06451757",
+            "NCT04941794",
+            "NCT05678543",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT04880005",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Denmark",
+              "url": "https://clinicaltrials.gov/study/NCT04880005"
+            },
+            {
+              "nct_id": "NCT07776509",
+              "field": "protocolSection.contactsLocationsModule.locations[54].country",
+              "excerpt": "Denmark",
+              "url": "https://clinicaltrials.gov/study/NCT07776509"
+            },
+            {
+              "nct_id": "NCT07246421",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Denmark",
+              "url": "https://clinicaltrials.gov/study/NCT07246421"
+            }
+          ]
+        },
+        {
+          "country": "Spain",
+          "iso3": "ESP",
+          "iso_numeric": "724",
+          "trial_count": 34,
+          "share_pct": 4.1,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT07309094",
+            "NCT05651724",
+            "NCT07828847",
+            "NCT07658755",
+            "NCT07667803",
+            "NCT07282600",
+            "NCT06081387",
+            "NCT07285330",
+            "NCT07351045",
+            "NCT06717698",
+            "NCT04442334",
+            "NCT02817360",
+            "NCT07415954",
+            "NCT07564414",
+            "NCT07351058",
+            "NCT05663515",
+            "NCT07124923",
+            "NCT03457168",
+            "NCT07415720",
+            "NCT07064473",
+            "NCT07638345",
+            "NCT07668388",
+            "NCT07662044",
+            "NCT06338215",
+            "NCT07554469",
+            "NCT07784270",
+            "NCT07373938",
+            "NCT07252765",
+            "NCT06723886",
+            "NCT07061301",
+            "NCT07797335",
+            "NCT07662135",
+            "NCT07595549"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[166].country",
+              "excerpt": "Spain",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT07309094",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Spain",
+              "url": "https://clinicaltrials.gov/study/NCT07309094"
+            },
+            {
+              "nct_id": "NCT05651724",
+              "field": "protocolSection.contactsLocationsModule.locations[12].country",
+              "excerpt": "Spain",
+              "url": "https://clinicaltrials.gov/study/NCT05651724"
+            }
+          ]
+        },
+        {
+          "country": "Turkey (T\u00fcrkiye)",
+          "iso3": null,
+          "iso_numeric": null,
+          "trial_count": 31,
+          "share_pct": 3.7,
+          "nct_ids": [
+            "NCT07659925",
+            "NCT06704672",
+            "NCT07703345",
+            "NCT07776509",
+            "NCT07667803",
+            "NCT07606066",
+            "NCT06826703",
+            "NCT07414914",
+            "NCT06588894",
+            "NCT07057518",
+            "NCT06717698",
+            "NCT07757308",
+            "NCT06826235",
+            "NCT07351058",
+            "NCT06778005",
+            "NCT07770204",
+            "NCT07693296",
+            "NCT07064473",
+            "NCT07847294",
+            "NCT07662109",
+            "NCT07662044",
+            "NCT06977230",
+            "NCT07433257",
+            "NCT07622628",
+            "NCT06769477",
+            "NCT06271382",
+            "NCT07002125",
+            "NCT07649967",
+            "NCT07797335",
+            "NCT07662135",
+            "NCT07119983"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07659925",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Turkey (T\u00fcrkiye)",
+              "url": "https://clinicaltrials.gov/study/NCT07659925"
+            },
+            {
+              "nct_id": "NCT06704672",
+              "field": "protocolSection.contactsLocationsModule.locations[10].country",
+              "excerpt": "Turkey (T\u00fcrkiye)",
+              "url": "https://clinicaltrials.gov/study/NCT06704672"
+            },
+            {
+              "nct_id": "NCT07703345",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Turkey (T\u00fcrkiye)",
+              "url": "https://clinicaltrials.gov/study/NCT07703345"
+            }
+          ]
+        },
+        {
+          "country": "Brazil",
+          "iso3": "BRA",
+          "iso_numeric": "076",
+          "trial_count": 30,
+          "share_pct": 3.6,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT07784725",
+            "NCT07487467",
+            "NCT06764069",
+            "NCT07776509",
+            "NCT07667803",
+            "NCT07606066",
+            "NCT05028140",
+            "NCT07533175",
+            "NCT07662213",
+            "NCT06959043",
+            "NCT07321886",
+            "NCT07351045",
+            "NCT04602754",
+            "NCT06717698",
+            "NCT04874012",
+            "NCT06426277",
+            "NCT07282613",
+            "NCT07463859",
+            "NCT03549754",
+            "NCT06710340",
+            "NCT05706155",
+            "NCT07351058",
+            "NCT04670666",
+            "NCT07064473",
+            "NCT06469437",
+            "NCT07662109",
+            "NCT05598203",
+            "NCT07797335",
+            "NCT07595549"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[78].country",
+              "excerpt": "Brazil",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[46].country",
+              "excerpt": "Brazil",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT07487467",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Brazil",
+              "url": "https://clinicaltrials.gov/study/NCT07487467"
+            }
+          ]
+        },
+        {
+          "country": "France",
+          "iso3": "FRA",
+          "iso_numeric": "250",
+          "trial_count": 29,
+          "share_pct": 3.5,
+          "nct_ids": [
+            "NCT07784725",
+            "NCT06047262",
+            "NCT05651724",
+            "NCT06738849",
+            "NCT06614101",
+            "NCT05325710",
+            "NCT03821636",
+            "NCT07005986",
+            "NCT07351045",
+            "NCT02861781",
+            "NCT04442334",
+            "NCT06567990",
+            "NCT06969391",
+            "NCT05516576",
+            "NCT07564414",
+            "NCT07300293",
+            "NCT07351058",
+            "NCT05663515",
+            "NCT07392437",
+            "NCT06630182",
+            "NCT07064473",
+            "NCT06600555",
+            "NCT05651919",
+            "NCT06192693",
+            "NCT06959797",
+            "NCT05633810",
+            "NCT06451757",
+            "NCT06579404",
+            "NCT04583800"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[118].country",
+              "excerpt": "France",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT06047262",
+              "field": "protocolSection.contactsLocationsModule.locations[1].country",
+              "excerpt": "France",
+              "url": "https://clinicaltrials.gov/study/NCT06047262"
+            },
+            {
+              "nct_id": "NCT05651724",
+              "field": "protocolSection.contactsLocationsModule.locations[3].country",
+              "excerpt": "France",
+              "url": "https://clinicaltrials.gov/study/NCT05651724"
+            }
+          ]
+        },
+        {
+          "country": "Australia",
+          "iso3": "AUS",
+          "iso_numeric": "036",
+          "trial_count": 25,
+          "share_pct": 3.0,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT07784725",
+            "NCT07667803",
+            "NCT06829563",
+            "NCT07664553",
+            "NCT07662213",
+            "NCT07321886",
+            "NCT07351045",
+            "NCT06717698",
+            "NCT06937203",
+            "NCT07564414",
+            "NCT07351058",
+            "NCT06700538",
+            "NCT07754461",
+            "NCT07064473",
+            "NCT05345327",
+            "NCT07668388",
+            "NCT06942195",
+            "NCT06908486",
+            "NCT07784270",
+            "NCT05633810",
+            "NCT07098663",
+            "NCT04869098",
+            "NCT06579404",
+            "NCT06487130"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[59].country",
+              "excerpt": "Australia",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[40].country",
+              "excerpt": "Australia",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT07667803",
+              "field": "protocolSection.contactsLocationsModule.locations[68].country",
+              "excerpt": "Australia",
+              "url": "https://clinicaltrials.gov/study/NCT07667803"
+            }
+          ]
+        },
+        {
+          "country": "India",
+          "iso3": "IND",
+          "iso_numeric": "356",
+          "trial_count": 25,
+          "share_pct": 3.0,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT07784725",
+            "NCT07549373",
+            "NCT07495787",
+            "NCT07667803",
+            "NCT07606066",
+            "NCT07282600",
+            "NCT07664553",
+            "NCT07321886",
+            "NCT07163975",
+            "NCT06717698",
+            "NCT07350967",
+            "NCT07282613",
+            "NCT03549754",
+            "NCT06209411",
+            "NCT07754461",
+            "NCT07064473",
+            "NCT07282743",
+            "NCT07662109",
+            "NCT07420634",
+            "NCT07613307",
+            "NCT07784270",
+            "NCT06035874",
+            "NCT07797335",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[110].country",
+              "excerpt": "India",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[151].country",
+              "excerpt": "India",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT07549373",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "India",
+              "url": "https://clinicaltrials.gov/study/NCT07549373"
+            }
+          ]
+        },
+        {
+          "country": "Japan",
+          "iso3": "JPN",
+          "iso_numeric": "392",
+          "trial_count": 24,
+          "share_pct": 2.9,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT07784725",
+            "NCT06694012",
+            "NCT06278207",
+            "NCT07619157",
+            "NCT07776509",
+            "NCT07667803",
+            "NCT07282600",
+            "NCT07664553",
+            "NCT07662213",
+            "NCT07321886",
+            "NCT07351045",
+            "NCT06717698",
+            "NCT07415954",
+            "NCT07351058",
+            "NCT07684144",
+            "NCT07064473",
+            "NCT07783802",
+            "NCT07662109",
+            "NCT07662044",
+            "NCT07784270",
+            "NCT05469659",
+            "NCT07662135",
+            "NCT07595549"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[137].country",
+              "excerpt": "Japan",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[174].country",
+              "excerpt": "Japan",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT06694012",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Japan",
+              "url": "https://clinicaltrials.gov/study/NCT06694012"
+            }
+          ]
+        },
+        {
+          "country": "Taiwan",
+          "iso3": "TWN",
+          "iso_numeric": "158",
+          "trial_count": 24,
+          "share_pct": 2.9,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT07784725",
+            "NCT06278207",
+            "NCT07667803",
+            "NCT07282600",
+            "NCT07662213",
+            "NCT07321886",
+            "NCT07351045",
+            "NCT07245082",
+            "NCT05687968",
+            "NCT07241325",
+            "NCT07282613",
+            "NCT03549754",
+            "NCT06703151",
+            "NCT07351058",
+            "NCT07398495",
+            "NCT07164495",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT07662044",
+            "NCT06111833",
+            "NCT07784270",
+            "NCT06331338",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[176].country",
+              "excerpt": "Taiwan",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[204].country",
+              "excerpt": "Taiwan",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT06278207",
+              "field": "protocolSection.contactsLocationsModule.locations[3].country",
+              "excerpt": "Taiwan",
+              "url": "https://clinicaltrials.gov/study/NCT06278207"
+            }
+          ]
+        },
+        {
+          "country": "Poland",
+          "iso3": "POL",
+          "iso_numeric": "616",
+          "trial_count": 23,
+          "share_pct": 2.8,
+          "nct_ids": [
+            "NCT07784725",
+            "NCT07852988",
+            "NCT06704672",
+            "NCT07667803",
+            "NCT07606066",
+            "NCT06897475",
+            "NCT07282600",
+            "NCT07664553",
+            "NCT07662213",
+            "NCT07321886",
+            "NCT07351045",
+            "NCT06717698",
+            "NCT07286500",
+            "NCT07415954",
+            "NCT07564414",
+            "NCT07351058",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT07668388",
+            "NCT07784270",
+            "NCT07340320",
+            "NCT07743450",
+            "NCT07797335"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[181].country",
+              "excerpt": "Poland",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT07852988",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Poland",
+              "url": "https://clinicaltrials.gov/study/NCT07852988"
+            },
+            {
+              "nct_id": "NCT06704672",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Poland",
+              "url": "https://clinicaltrials.gov/study/NCT06704672"
+            }
+          ]
+        },
+        {
+          "country": "Sweden",
+          "iso3": "SWE",
+          "iso_numeric": "752",
+          "trial_count": 21,
+          "share_pct": 2.5,
+          "nct_ids": [
+            "NCT05491005",
+            "NCT07776509",
+            "NCT07659535",
+            "NCT05801614",
+            "NCT04442334",
+            "NCT05977218",
+            "NCT04917471",
+            "NCT05692778",
+            "NCT05663515",
+            "NCT06701968",
+            "NCT07064473",
+            "NCT06549023",
+            "NCT07688278",
+            "NCT01984762",
+            "NCT05501483",
+            "NCT05633628",
+            "NCT06976073",
+            "NCT05309850",
+            "NCT07079189",
+            "NCT06065930",
+            "NCT06563401"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05491005",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Sweden",
+              "url": "https://clinicaltrials.gov/study/NCT05491005"
+            },
+            {
+              "nct_id": "NCT07776509",
+              "field": "protocolSection.contactsLocationsModule.locations[81].country",
+              "excerpt": "Sweden",
+              "url": "https://clinicaltrials.gov/study/NCT07776509"
+            },
+            {
+              "nct_id": "NCT07659535",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Sweden",
+              "url": "https://clinicaltrials.gov/study/NCT07659535"
+            }
+          ]
+        },
+        {
+          "country": "Argentina",
+          "iso3": "ARG",
+          "iso_numeric": "032",
+          "trial_count": 19,
+          "share_pct": 2.3,
+          "nct_ids": [
+            "NCT07784725",
+            "NCT07776509",
+            "NCT07667803",
+            "NCT07533175",
+            "NCT07662213",
+            "NCT07321886",
+            "NCT07351045",
+            "NCT06717698",
+            "NCT07282613",
+            "NCT07564414",
+            "NCT07351058",
+            "NCT06739122",
+            "NCT07064473",
+            "NCT07783802",
+            "NCT07662109",
+            "NCT07662044",
+            "NCT07621419",
+            "NCT07784270",
+            "NCT07797335"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[33].country",
+              "excerpt": "Argentina",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT07776509",
+              "field": "protocolSection.contactsLocationsModule.locations[23].country",
+              "excerpt": "Argentina",
+              "url": "https://clinicaltrials.gov/study/NCT07776509"
+            },
+            {
+              "nct_id": "NCT07667803",
+              "field": "protocolSection.contactsLocationsModule.locations[56].country",
+              "excerpt": "Argentina",
+              "url": "https://clinicaltrials.gov/study/NCT07667803"
+            }
+          ]
+        },
+        {
+          "country": "Czechia",
+          "iso3": "CZE",
+          "iso_numeric": "203",
+          "trial_count": 17,
+          "share_pct": 2.1,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT07784725",
+            "NCT05651724",
+            "NCT07282600",
+            "NCT07664553",
+            "NCT07351045",
+            "NCT06717698",
+            "NCT06068114",
+            "NCT07564414",
+            "NCT07351058",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT06374368",
+            "NCT06579404",
+            "NCT07743450",
+            "NCT07797335",
+            "NCT07731438"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[107].country",
+              "excerpt": "Czechia",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[105].country",
+              "excerpt": "Czechia",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT05651724",
+              "field": "protocolSection.contactsLocationsModule.locations[2].country",
+              "excerpt": "Czechia",
+              "url": "https://clinicaltrials.gov/study/NCT05651724"
+            }
+          ]
+        },
+        {
+          "country": "Mexico",
+          "iso3": "MEX",
+          "iso_numeric": "484",
+          "trial_count": 17,
+          "share_pct": 2.1,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT07401992",
+            "NCT07282600",
+            "NCT07533175",
+            "NCT07351045",
+            "NCT02836808",
+            "NCT07282613",
+            "NCT03549754",
+            "NCT07351058",
+            "NCT06739122",
+            "NCT07760883",
+            "NCT06468553",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT07835360",
+            "NCT07797335",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[148].country",
+              "excerpt": "Mexico",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT07401992",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Mexico",
+              "url": "https://clinicaltrials.gov/study/NCT07401992"
+            },
+            {
+              "nct_id": "NCT07282600",
+              "field": "protocolSection.contactsLocationsModule.locations[103].country",
+              "excerpt": "Mexico",
+              "url": "https://clinicaltrials.gov/study/NCT07282600"
+            }
+          ]
+        },
+        {
+          "country": "Greece",
+          "iso3": "GRC",
+          "iso_numeric": "300",
+          "trial_count": 16,
+          "share_pct": 1.9,
+          "nct_ids": [
+            "NCT05651724",
+            "NCT07469943",
+            "NCT03878706",
+            "NCT06562842",
+            "NCT07605572",
+            "NCT04442334",
+            "NCT07839546",
+            "NCT07564414",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT07662044",
+            "NCT07716059",
+            "NCT05633810",
+            "NCT07743450",
+            "NCT07797335",
+            "NCT07278115"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05651724",
+              "field": "protocolSection.contactsLocationsModule.locations[6].country",
+              "excerpt": "Greece",
+              "url": "https://clinicaltrials.gov/study/NCT05651724"
+            },
+            {
+              "nct_id": "NCT07469943",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Greece",
+              "url": "https://clinicaltrials.gov/study/NCT07469943"
+            },
+            {
+              "nct_id": "NCT03878706",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Greece",
+              "url": "https://clinicaltrials.gov/study/NCT03878706"
+            }
+          ]
+        },
+        {
+          "country": "Netherlands",
+          "iso3": "NLD",
+          "iso_numeric": "528",
+          "trial_count": 16,
+          "share_pct": 1.9,
+          "nct_ids": [
+            "NCT07237685",
+            "NCT06983054",
+            "NCT05651724",
+            "NCT06384313",
+            "NCT07351045",
+            "NCT04442334",
+            "NCT02817360",
+            "NCT07812623",
+            "NCT07564414",
+            "NCT04190849",
+            "NCT06923644",
+            "NCT06750497",
+            "NCT07463196",
+            "NCT07064473",
+            "NCT06638567",
+            "NCT06451757"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07237685",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Netherlands",
+              "url": "https://clinicaltrials.gov/study/NCT07237685"
+            },
+            {
+              "nct_id": "NCT06983054",
+              "field": "protocolSection.contactsLocationsModule.locations[1].country",
+              "excerpt": "Netherlands",
+              "url": "https://clinicaltrials.gov/study/NCT06983054"
+            },
+            {
+              "nct_id": "NCT05651724",
+              "field": "protocolSection.contactsLocationsModule.locations[8].country",
+              "excerpt": "Netherlands",
+              "url": "https://clinicaltrials.gov/study/NCT05651724"
+            }
+          ]
+        },
+        {
+          "country": "Belgium",
+          "iso3": "BEL",
+          "iso_numeric": "056",
+          "trial_count": 14,
+          "share_pct": 1.7,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT06047262",
+            "NCT07678736",
+            "NCT05651724",
+            "NCT06810635",
+            "NCT07321886",
+            "NCT07351045",
+            "NCT07786194",
+            "NCT04442334",
+            "NCT05569772",
+            "NCT07564414",
+            "NCT07064473",
+            "NCT04993482",
+            "NCT06734546"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[69].country",
+              "excerpt": "Belgium",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT06047262",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Belgium",
+              "url": "https://clinicaltrials.gov/study/NCT06047262"
+            },
+            {
+              "nct_id": "NCT07678736",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Belgium",
+              "url": "https://clinicaltrials.gov/study/NCT07678736"
+            }
+          ]
+        },
+        {
+          "country": "Hungary",
+          "iso3": "HUN",
+          "iso_numeric": "348",
+          "trial_count": 13,
+          "share_pct": 1.6,
+          "nct_ids": [
+            "NCT07086989",
+            "NCT07606066",
+            "NCT07533175",
+            "NCT07662213",
+            "NCT07351045",
+            "NCT07415954",
+            "NCT07564414",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT07668388",
+            "NCT07662044",
+            "NCT07743021",
+            "NCT07784270"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07086989",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Hungary",
+              "url": "https://clinicaltrials.gov/study/NCT07086989"
+            },
+            {
+              "nct_id": "NCT07606066",
+              "field": "protocolSection.contactsLocationsModule.locations[25].country",
+              "excerpt": "Hungary",
+              "url": "https://clinicaltrials.gov/study/NCT07606066"
+            },
+            {
+              "nct_id": "NCT07533175",
+              "field": "protocolSection.contactsLocationsModule.locations[31].country",
+              "excerpt": "Hungary",
+              "url": "https://clinicaltrials.gov/study/NCT07533175"
+            }
+          ]
+        },
+        {
+          "country": "Malaysia",
+          "iso3": "MYS",
+          "iso_numeric": "458",
+          "trial_count": 13,
+          "share_pct": 1.6,
+          "nct_ids": [
+            "NCT07775404",
+            "NCT07606066",
+            "NCT07664553",
+            "NCT07532863",
+            "NCT06717698",
+            "NCT06862180",
+            "NCT07282613",
+            "NCT03549754",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT07270068",
+            "NCT06319560",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07775404",
+              "field": "protocolSection.contactsLocationsModule.locations[33].country",
+              "excerpt": "Malaysia",
+              "url": "https://clinicaltrials.gov/study/NCT07775404"
+            },
+            {
+              "nct_id": "NCT07606066",
+              "field": "protocolSection.contactsLocationsModule.locations[54].country",
+              "excerpt": "Malaysia",
+              "url": "https://clinicaltrials.gov/study/NCT07606066"
+            },
+            {
+              "nct_id": "NCT07664553",
+              "field": "protocolSection.contactsLocationsModule.locations[104].country",
+              "excerpt": "Malaysia",
+              "url": "https://clinicaltrials.gov/study/NCT07664553"
+            }
+          ]
+        },
+        {
+          "country": "Pakistan",
+          "iso3": "PAK",
+          "iso_numeric": "586",
+          "trial_count": 13,
+          "share_pct": 1.6,
+          "nct_ids": [
+            "NCT07078565",
+            "NCT05164263",
+            "NCT07827625",
+            "NCT06570057",
+            "NCT05156736",
+            "NCT06561126",
+            "NCT05883072",
+            "NCT07290231",
+            "NCT06842108",
+            "NCT05610865",
+            "NCT06706791",
+            "NCT05644717",
+            "NCT07513168"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07078565",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Pakistan",
+              "url": "https://clinicaltrials.gov/study/NCT07078565"
+            },
+            {
+              "nct_id": "NCT05164263",
+              "field": "protocolSection.contactsLocationsModule.locations[3].country",
+              "excerpt": "Pakistan",
+              "url": "https://clinicaltrials.gov/study/NCT05164263"
+            },
+            {
+              "nct_id": "NCT07827625",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Pakistan",
+              "url": "https://clinicaltrials.gov/study/NCT07827625"
+            }
+          ]
+        },
+        {
+          "country": "Hong Kong",
+          "iso3": "HKG",
+          "iso_numeric": "344",
+          "trial_count": 12,
+          "share_pct": 1.5,
+          "nct_ids": [
+            "NCT07660445",
+            "NCT07437157",
+            "NCT07775404",
+            "NCT06727409",
+            "NCT03875625",
+            "NCT07376486",
+            "NCT06273761",
+            "NCT03549754",
+            "NCT06310148",
+            "NCT07390422",
+            "NCT07064473",
+            "NCT05268237"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07660445",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Hong Kong",
+              "url": "https://clinicaltrials.gov/study/NCT07660445"
+            },
+            {
+              "nct_id": "NCT07437157",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Hong Kong",
+              "url": "https://clinicaltrials.gov/study/NCT07437157"
+            },
+            {
+              "nct_id": "NCT07775404",
+              "field": "protocolSection.contactsLocationsModule.locations[31].country",
+              "excerpt": "Hong Kong",
+              "url": "https://clinicaltrials.gov/study/NCT07775404"
+            }
+          ]
+        },
+        {
+          "country": "Puerto Rico",
+          "iso3": "PRI",
+          "iso_numeric": "630",
+          "trial_count": 12,
+          "share_pct": 1.5,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT06897475",
+            "NCT07282600",
+            "NCT05962372",
+            "NCT07321886",
+            "NCT07351058",
+            "NCT07684144",
+            "NCT07754461",
+            "NCT07064473",
+            "NCT07783802",
+            "NCT07662109",
+            "NCT06251323"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[154].country",
+              "excerpt": "Puerto Rico",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT06897475",
+              "field": "protocolSection.contactsLocationsModule.locations[48].country",
+              "excerpt": "Puerto Rico",
+              "url": "https://clinicaltrials.gov/study/NCT06897475"
+            },
+            {
+              "nct_id": "NCT07282600",
+              "field": "protocolSection.contactsLocationsModule.locations[116].country",
+              "excerpt": "Puerto Rico",
+              "url": "https://clinicaltrials.gov/study/NCT07282600"
+            }
+          ]
+        },
+        {
+          "country": "Thailand",
+          "iso3": "THA",
+          "iso_numeric": "764",
+          "trial_count": 12,
+          "share_pct": 1.5,
+          "nct_ids": [
+            "NCT07775404",
+            "NCT06647745",
+            "NCT07664553",
+            "NCT07748949",
+            "NCT07195045",
+            "NCT07415954",
+            "NCT07282613",
+            "NCT07533604",
+            "NCT07351058",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07775404",
+              "field": "protocolSection.contactsLocationsModule.locations[44].country",
+              "excerpt": "Thailand",
+              "url": "https://clinicaltrials.gov/study/NCT07775404"
+            },
+            {
+              "nct_id": "NCT06647745",
+              "field": "protocolSection.contactsLocationsModule.locations[1].country",
+              "excerpt": "Thailand",
+              "url": "https://clinicaltrials.gov/study/NCT06647745"
+            },
+            {
+              "nct_id": "NCT07664553",
+              "field": "protocolSection.contactsLocationsModule.locations[126].country",
+              "excerpt": "Thailand",
+              "url": "https://clinicaltrials.gov/study/NCT07664553"
+            }
+          ]
+        },
+        {
+          "country": "Singapore",
+          "iso3": "SGP",
+          "iso_numeric": "702",
+          "trial_count": 9,
+          "share_pct": 1.1,
+          "nct_ids": [
+            "NCT06214520",
+            "NCT07241221",
+            "NCT07532863",
+            "NCT06752772",
+            "NCT06444074",
+            "NCT06890169",
+            "NCT06688903",
+            "NCT07837934",
+            "NCT07064473"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06214520",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Singapore",
+              "url": "https://clinicaltrials.gov/study/NCT06214520"
+            },
+            {
+              "nct_id": "NCT07241221",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Singapore",
+              "url": "https://clinicaltrials.gov/study/NCT07241221"
+            },
+            {
+              "nct_id": "NCT07532863",
+              "field": "protocolSection.contactsLocationsModule.locations[5].country",
+              "excerpt": "Singapore",
+              "url": "https://clinicaltrials.gov/study/NCT07532863"
+            }
+          ]
+        },
+        {
+          "country": "Slovakia",
+          "iso3": "SVK",
+          "iso_numeric": "703",
+          "trial_count": 9,
+          "share_pct": 1.1,
+          "nct_ids": [
+            "NCT07282600",
+            "NCT07533175",
+            "NCT06068114",
+            "NCT07415954",
+            "NCT07564414",
+            "NCT07064473",
+            "NCT07668388",
+            "NCT07662044",
+            "NCT07784270"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07282600",
+              "field": "protocolSection.contactsLocationsModule.locations[118].country",
+              "excerpt": "Slovakia",
+              "url": "https://clinicaltrials.gov/study/NCT07282600"
+            },
+            {
+              "nct_id": "NCT07533175",
+              "field": "protocolSection.contactsLocationsModule.locations[60].country",
+              "excerpt": "Slovakia",
+              "url": "https://clinicaltrials.gov/study/NCT07533175"
+            },
+            {
+              "nct_id": "NCT06068114",
+              "field": "protocolSection.contactsLocationsModule.locations[4].country",
+              "excerpt": "Slovakia",
+              "url": "https://clinicaltrials.gov/study/NCT06068114"
+            }
+          ]
+        },
+        {
+          "country": "Switzerland",
+          "iso3": "CHE",
+          "iso_numeric": "756",
+          "trial_count": 9,
+          "share_pct": 1.1,
+          "nct_ids": [
+            "NCT06047262",
+            "NCT03827382",
+            "NCT06682481",
+            "NCT07506356",
+            "NCT04442334",
+            "NCT07064473",
+            "NCT06925217",
+            "NCT06579404",
+            "NCT01179815"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06047262",
+              "field": "protocolSection.contactsLocationsModule.locations[4].country",
+              "excerpt": "Switzerland",
+              "url": "https://clinicaltrials.gov/study/NCT06047262"
+            },
+            {
+              "nct_id": "NCT03827382",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Switzerland",
+              "url": "https://clinicaltrials.gov/study/NCT03827382"
+            },
+            {
+              "nct_id": "NCT06682481",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Switzerland",
+              "url": "https://clinicaltrials.gov/study/NCT06682481"
+            }
+          ]
+        },
+        {
+          "country": "Bulgaria",
+          "iso3": "BGR",
+          "iso_numeric": "100",
+          "trial_count": 8,
+          "share_pct": 1.0,
+          "nct_ids": [
+            "NCT07784725",
+            "NCT07664553",
+            "NCT07662213",
+            "NCT06717698",
+            "NCT07564414",
+            "NCT07064473",
+            "NCT07797335",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07784725",
+              "field": "protocolSection.contactsLocationsModule.locations[58].country",
+              "excerpt": "Bulgaria",
+              "url": "https://clinicaltrials.gov/study/NCT07784725"
+            },
+            {
+              "nct_id": "NCT07664553",
+              "field": "protocolSection.contactsLocationsModule.locations[22].country",
+              "excerpt": "Bulgaria",
+              "url": "https://clinicaltrials.gov/study/NCT07664553"
+            },
+            {
+              "nct_id": "NCT07662213",
+              "field": "protocolSection.contactsLocationsModule.locations[87].country",
+              "excerpt": "Bulgaria",
+              "url": "https://clinicaltrials.gov/study/NCT07662213"
+            }
+          ]
+        },
+        {
+          "country": "Egypt",
+          "iso3": "EGY",
+          "iso_numeric": "818",
+          "trial_count": 8,
+          "share_pct": 1.0,
+          "nct_ids": [
+            "NCT06958302",
+            "NCT03925714",
+            "NCT07351786",
+            "NCT06880783",
+            "NCT03549754",
+            "NCT06483620",
+            "NCT07036796",
+            "NCT06067399"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06958302",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Egypt",
+              "url": "https://clinicaltrials.gov/study/NCT06958302"
+            },
+            {
+              "nct_id": "NCT03925714",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Egypt",
+              "url": "https://clinicaltrials.gov/study/NCT03925714"
+            },
+            {
+              "nct_id": "NCT07351786",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Egypt",
+              "url": "https://clinicaltrials.gov/study/NCT07351786"
+            }
+          ]
+        },
+        {
+          "country": "Finland",
+          "iso3": "FIN",
+          "iso_numeric": "246",
+          "trial_count": 8,
+          "share_pct": 1.0,
+          "nct_ids": [
+            "NCT06486012",
+            "NCT07322757",
+            "NCT04442334",
+            "NCT05663515",
+            "NCT07064473",
+            "NCT07820800",
+            "NCT03156478",
+            "NCT05633810"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06486012",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Finland",
+              "url": "https://clinicaltrials.gov/study/NCT06486012"
+            },
+            {
+              "nct_id": "NCT07322757",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Finland",
+              "url": "https://clinicaltrials.gov/study/NCT07322757"
+            },
+            {
+              "nct_id": "NCT04442334",
+              "field": "protocolSection.contactsLocationsModule.locations[1].country",
+              "excerpt": "Finland",
+              "url": "https://clinicaltrials.gov/study/NCT04442334"
+            }
+          ]
+        },
+        {
+          "country": "Israel",
+          "iso3": "ISR",
+          "iso_numeric": "376",
+          "trial_count": 8,
+          "share_pct": 1.0,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT07776509",
+            "NCT06497595",
+            "NCT07282613",
+            "NCT07563699",
+            "NCT07064473",
+            "NCT06966427",
+            "NCT06575465"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[120].country",
+              "excerpt": "Israel",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT07776509",
+              "field": "protocolSection.contactsLocationsModule.locations[63].country",
+              "excerpt": "Israel",
+              "url": "https://clinicaltrials.gov/study/NCT07776509"
+            },
+            {
+              "nct_id": "NCT06497595",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Israel",
+              "url": "https://clinicaltrials.gov/study/NCT06497595"
+            }
+          ]
+        },
+        {
+          "country": "Portugal",
+          "iso3": "PRT",
+          "iso_numeric": "620",
+          "trial_count": 8,
+          "share_pct": 1.0,
+          "nct_ids": [
+            "NCT05651724",
+            "NCT07458516",
+            "NCT07079722",
+            "NCT04442334",
+            "NCT07415954",
+            "NCT07564414",
+            "NCT07064473",
+            "NCT05633810"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05651724",
+              "field": "protocolSection.contactsLocationsModule.locations[10].country",
+              "excerpt": "Portugal",
+              "url": "https://clinicaltrials.gov/study/NCT05651724"
+            },
+            {
+              "nct_id": "NCT07458516",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Portugal",
+              "url": "https://clinicaltrials.gov/study/NCT07458516"
+            },
+            {
+              "nct_id": "NCT07079722",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Portugal",
+              "url": "https://clinicaltrials.gov/study/NCT07079722"
+            }
+          ]
+        },
+        {
+          "country": "Austria",
+          "iso3": "AUT",
+          "iso_numeric": "040",
+          "trial_count": 7,
+          "share_pct": 0.8,
+          "nct_ids": [
+            "NCT05324488",
+            "NCT02817360",
+            "NCT07564414",
+            "NCT06323538",
+            "NCT07064473",
+            "NCT07570992",
+            "NCT06579404"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05324488",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Austria",
+              "url": "https://clinicaltrials.gov/study/NCT05324488"
+            },
+            {
+              "nct_id": "NCT02817360",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Austria",
+              "url": "https://clinicaltrials.gov/study/NCT02817360"
+            },
+            {
+              "nct_id": "NCT07564414",
+              "field": "protocolSection.contactsLocationsModule.locations[121].country",
+              "excerpt": "Austria",
+              "url": "https://clinicaltrials.gov/study/NCT07564414"
+            }
+          ]
+        },
+        {
+          "country": "Chile",
+          "iso3": "CHL",
+          "iso_numeric": "152",
+          "trial_count": 7,
+          "share_pct": 0.8,
+          "nct_ids": [
+            "NCT07667803",
+            "NCT03549754",
+            "NCT05887635",
+            "NCT07064473",
+            "NCT06688461",
+            "NCT07447362",
+            "NCT07784270"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07667803",
+              "field": "protocolSection.contactsLocationsModule.locations[105].country",
+              "excerpt": "Chile",
+              "url": "https://clinicaltrials.gov/study/NCT07667803"
+            },
+            {
+              "nct_id": "NCT03549754",
+              "field": "protocolSection.contactsLocationsModule.locations[15].country",
+              "excerpt": "Chile",
+              "url": "https://clinicaltrials.gov/study/NCT03549754"
+            },
+            {
+              "nct_id": "NCT05887635",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Chile",
+              "url": "https://clinicaltrials.gov/study/NCT05887635"
+            }
+          ]
+        },
+        {
+          "country": "South Africa",
+          "iso3": "ZAF",
+          "iso_numeric": "710",
+          "trial_count": 7,
+          "share_pct": 0.8,
+          "nct_ids": [
+            "NCT07667803",
+            "NCT03549754",
+            "NCT07564414",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT07662044",
+            "NCT07613307"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07667803",
+              "field": "protocolSection.contactsLocationsModule.locations[251].country",
+              "excerpt": "South Africa",
+              "url": "https://clinicaltrials.gov/study/NCT07667803"
+            },
+            {
+              "nct_id": "NCT03549754",
+              "field": "protocolSection.contactsLocationsModule.locations[53].country",
+              "excerpt": "South Africa",
+              "url": "https://clinicaltrials.gov/study/NCT03549754"
+            },
+            {
+              "nct_id": "NCT07564414",
+              "field": "protocolSection.contactsLocationsModule.locations[275].country",
+              "excerpt": "South Africa",
+              "url": "https://clinicaltrials.gov/study/NCT07564414"
+            }
+          ]
+        },
+        {
+          "country": "Kazakhstan",
+          "iso3": "KAZ",
+          "iso_numeric": "398",
+          "trial_count": 6,
+          "share_pct": 0.7,
+          "nct_ids": [
+            "NCT07512934",
+            "NCT06953180",
+            "NCT06410352",
+            "NCT07728669",
+            "NCT03549754",
+            "NCT07495020"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07512934",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Kazakhstan",
+              "url": "https://clinicaltrials.gov/study/NCT07512934"
+            },
+            {
+              "nct_id": "NCT06953180",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Kazakhstan",
+              "url": "https://clinicaltrials.gov/study/NCT06953180"
+            },
+            {
+              "nct_id": "NCT06410352",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Kazakhstan",
+              "url": "https://clinicaltrials.gov/study/NCT06410352"
+            }
+          ]
+        },
+        {
+          "country": "Romania",
+          "iso3": "ROU",
+          "iso_numeric": "642",
+          "trial_count": 6,
+          "share_pct": 0.7,
+          "nct_ids": [
+            "NCT07392190",
+            "NCT05651724",
+            "NCT07533175",
+            "NCT07564414",
+            "NCT07064473",
+            "NCT07668388"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07392190",
+              "field": "protocolSection.contactsLocationsModule.locations[156].country",
+              "excerpt": "Romania",
+              "url": "https://clinicaltrials.gov/study/NCT07392190"
+            },
+            {
+              "nct_id": "NCT05651724",
+              "field": "protocolSection.contactsLocationsModule.locations[11].country",
+              "excerpt": "Romania",
+              "url": "https://clinicaltrials.gov/study/NCT05651724"
+            },
+            {
+              "nct_id": "NCT07533175",
+              "field": "protocolSection.contactsLocationsModule.locations[51].country",
+              "excerpt": "Romania",
+              "url": "https://clinicaltrials.gov/study/NCT07533175"
+            }
+          ]
+        },
+        {
+          "country": "Saudi Arabia",
+          "iso3": "SAU",
+          "iso_numeric": "682",
+          "trial_count": 6,
+          "share_pct": 0.7,
+          "nct_ids": [
+            "NCT05697991",
+            "NCT07667803",
+            "NCT06590324",
+            "NCT05630508",
+            "NCT07064473",
+            "NCT07613307"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05697991",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Saudi Arabia",
+              "url": "https://clinicaltrials.gov/study/NCT05697991"
+            },
+            {
+              "nct_id": "NCT07667803",
+              "field": "protocolSection.contactsLocationsModule.locations[245].country",
+              "excerpt": "Saudi Arabia",
+              "url": "https://clinicaltrials.gov/study/NCT07667803"
+            },
+            {
+              "nct_id": "NCT06590324",
+              "field": "protocolSection.contactsLocationsModule.locations[1].country",
+              "excerpt": "Saudi Arabia",
+              "url": "https://clinicaltrials.gov/study/NCT06590324"
+            }
+          ]
+        },
+        {
+          "country": "Vietnam",
+          "iso3": "VNM",
+          "iso_numeric": "704",
+          "trial_count": 6,
+          "share_pct": 0.7,
+          "nct_ids": [
+            "NCT07574138",
+            "NCT06337357",
+            "NCT07064473",
+            "NCT07662109",
+            "NCT06345118",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07574138",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Vietnam",
+              "url": "https://clinicaltrials.gov/study/NCT07574138"
+            },
+            {
+              "nct_id": "NCT06337357",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Vietnam",
+              "url": "https://clinicaltrials.gov/study/NCT06337357"
+            },
+            {
+              "nct_id": "NCT07064473",
+              "field": "protocolSection.contactsLocationsModule.locations[1138].country",
+              "excerpt": "Vietnam",
+              "url": "https://clinicaltrials.gov/study/NCT07064473"
+            }
+          ]
+        },
+        {
+          "country": "Ireland",
+          "iso3": "IRL",
+          "iso_numeric": "372",
+          "trial_count": 5,
+          "share_pct": 0.6,
+          "nct_ids": [
+            "NCT07420023",
+            "NCT05074732",
+            "NCT07064473",
+            "NCT07636395",
+            "NCT04432025"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07420023",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Ireland",
+              "url": "https://clinicaltrials.gov/study/NCT07420023"
+            },
+            {
+              "nct_id": "NCT05074732",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Ireland",
+              "url": "https://clinicaltrials.gov/study/NCT05074732"
+            },
+            {
+              "nct_id": "NCT07064473",
+              "field": "protocolSection.contactsLocationsModule.locations[652].country",
+              "excerpt": "Ireland",
+              "url": "https://clinicaltrials.gov/study/NCT07064473"
+            }
+          ]
+        },
+        {
+          "country": "New Zealand",
+          "iso3": "NZL",
+          "iso_numeric": "554",
+          "trial_count": 5,
+          "share_pct": 0.6,
+          "nct_ids": [
+            "NCT02817360",
+            "NCT06937203",
+            "NCT06700538",
+            "NCT07754461",
+            "NCT07064473"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT02817360",
+              "field": "protocolSection.contactsLocationsModule.locations[12].country",
+              "excerpt": "New Zealand",
+              "url": "https://clinicaltrials.gov/study/NCT02817360"
+            },
+            {
+              "nct_id": "NCT06937203",
+              "field": "protocolSection.contactsLocationsModule.locations[2].country",
+              "excerpt": "New Zealand",
+              "url": "https://clinicaltrials.gov/study/NCT06937203"
+            },
+            {
+              "nct_id": "NCT06700538",
+              "field": "protocolSection.contactsLocationsModule.locations[11].country",
+              "excerpt": "New Zealand",
+              "url": "https://clinicaltrials.gov/study/NCT06700538"
+            }
+          ]
+        },
+        {
+          "country": "United Arab Emirates",
+          "iso3": "ARE",
+          "iso_numeric": "784",
+          "trial_count": 5,
+          "share_pct": 0.6,
+          "nct_ids": [
+            "NCT07742917",
+            "NCT06590324",
+            "NCT06605508",
+            "NCT03549754",
+            "NCT07613307"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07742917",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "United Arab Emirates",
+              "url": "https://clinicaltrials.gov/study/NCT07742917"
+            },
+            {
+              "nct_id": "NCT06590324",
+              "field": "protocolSection.contactsLocationsModule.locations[2].country",
+              "excerpt": "United Arab Emirates",
+              "url": "https://clinicaltrials.gov/study/NCT06590324"
+            },
+            {
+              "nct_id": "NCT06605508",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "United Arab Emirates",
+              "url": "https://clinicaltrials.gov/study/NCT06605508"
+            }
+          ]
+        },
+        {
+          "country": "Croatia",
+          "iso3": "HRV",
+          "iso_numeric": "191",
+          "trial_count": 4,
+          "share_pct": 0.5,
+          "nct_ids": [
+            "NCT07533175",
+            "NCT07017127",
+            "NCT07415954",
+            "NCT07064473"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07533175",
+              "field": "protocolSection.contactsLocationsModule.locations[23].country",
+              "excerpt": "Croatia",
+              "url": "https://clinicaltrials.gov/study/NCT07533175"
+            },
+            {
+              "nct_id": "NCT07017127",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Croatia",
+              "url": "https://clinicaltrials.gov/study/NCT07017127"
+            },
+            {
+              "nct_id": "NCT07415954",
+              "field": "protocolSection.contactsLocationsModule.locations[23].country",
+              "excerpt": "Croatia",
+              "url": "https://clinicaltrials.gov/study/NCT07415954"
+            }
+          ]
+        },
+        {
+          "country": "Philippines",
+          "iso3": "PHL",
+          "iso_numeric": "608",
+          "trial_count": 4,
+          "share_pct": 0.5,
+          "nct_ids": [
+            "NCT07775404",
+            "NCT07532863",
+            "NCT03549754",
+            "NCT07064473"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07775404",
+              "field": "protocolSection.contactsLocationsModule.locations[41].country",
+              "excerpt": "Philippines",
+              "url": "https://clinicaltrials.gov/study/NCT07775404"
+            },
+            {
+              "nct_id": "NCT07532863",
+              "field": "protocolSection.contactsLocationsModule.locations[4].country",
+              "excerpt": "Philippines",
+              "url": "https://clinicaltrials.gov/study/NCT07532863"
+            },
+            {
+              "nct_id": "NCT03549754",
+              "field": "protocolSection.contactsLocationsModule.locations[43].country",
+              "excerpt": "Philippines",
+              "url": "https://clinicaltrials.gov/study/NCT03549754"
+            }
+          ]
+        },
+        {
+          "country": "Ukraine",
+          "iso3": "UKR",
+          "iso_numeric": "804",
+          "trial_count": 4,
+          "share_pct": 0.5,
+          "nct_ids": [
+            "NCT07690163",
+            "NCT03549754",
+            "NCT07662109",
+            "NCT07662135"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07690163",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Ukraine",
+              "url": "https://clinicaltrials.gov/study/NCT07690163"
+            },
+            {
+              "nct_id": "NCT03549754",
+              "field": "protocolSection.contactsLocationsModule.locations[66].country",
+              "excerpt": "Ukraine",
+              "url": "https://clinicaltrials.gov/study/NCT03549754"
+            },
+            {
+              "nct_id": "NCT07662109",
+              "field": "protocolSection.contactsLocationsModule.locations[244].country",
+              "excerpt": "Ukraine",
+              "url": "https://clinicaltrials.gov/study/NCT07662109"
+            }
+          ]
+        },
+        {
+          "country": "Georgia",
+          "iso3": "GEO",
+          "iso_numeric": "268",
+          "trial_count": 3,
+          "share_pct": 0.4,
+          "nct_ids": [
+            "NCT03549754",
+            "NCT06700538",
+            "NCT05369065"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT03549754",
+              "field": "protocolSection.contactsLocationsModule.locations[21].country",
+              "excerpt": "Georgia",
+              "url": "https://clinicaltrials.gov/study/NCT03549754"
+            },
+            {
+              "nct_id": "NCT06700538",
+              "field": "protocolSection.contactsLocationsModule.locations[7].country",
+              "excerpt": "Georgia",
+              "url": "https://clinicaltrials.gov/study/NCT06700538"
+            },
+            {
+              "nct_id": "NCT05369065",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Georgia",
+              "url": "https://clinicaltrials.gov/study/NCT05369065"
+            }
+          ]
+        },
+        {
+          "country": "Indonesia",
+          "iso3": "IDN",
+          "iso_numeric": "360",
+          "trial_count": 3,
+          "share_pct": 0.4,
+          "nct_ids": [
+            "NCT07064486",
+            "NCT07532863",
+            "NCT06903546"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07064486",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Indonesia",
+              "url": "https://clinicaltrials.gov/study/NCT07064486"
+            },
+            {
+              "nct_id": "NCT07532863",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Indonesia",
+              "url": "https://clinicaltrials.gov/study/NCT07532863"
+            },
+            {
+              "nct_id": "NCT06903546",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Indonesia",
+              "url": "https://clinicaltrials.gov/study/NCT06903546"
+            }
+          ]
+        },
+        {
+          "country": "Norway",
+          "iso3": "NOR",
+          "iso_numeric": "578",
+          "trial_count": 3,
+          "share_pct": 0.4,
+          "nct_ids": [
+            "NCT05663515",
+            "NCT07361640",
+            "NCT07064473"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05663515",
+              "field": "protocolSection.contactsLocationsModule.locations[3].country",
+              "excerpt": "Norway",
+              "url": "https://clinicaltrials.gov/study/NCT05663515"
+            },
+            {
+              "nct_id": "NCT07361640",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Norway",
+              "url": "https://clinicaltrials.gov/study/NCT07361640"
+            },
+            {
+              "nct_id": "NCT07064473",
+              "field": "protocolSection.contactsLocationsModule.locations[853].country",
+              "excerpt": "Norway",
+              "url": "https://clinicaltrials.gov/study/NCT07064473"
+            }
+          ]
+        },
+        {
+          "country": "Slovenia",
+          "iso3": "SVN",
+          "iso_numeric": "705",
+          "trial_count": 3,
+          "share_pct": 0.4,
+          "nct_ids": [
+            "NCT06966427",
+            "NCT06613854",
+            "NCT07771010"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06966427",
+              "field": "protocolSection.contactsLocationsModule.locations[1].country",
+              "excerpt": "Slovenia",
+              "url": "https://clinicaltrials.gov/study/NCT06966427"
+            },
+            {
+              "nct_id": "NCT06613854",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Slovenia",
+              "url": "https://clinicaltrials.gov/study/NCT06613854"
+            },
+            {
+              "nct_id": "NCT07771010",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Slovenia",
+              "url": "https://clinicaltrials.gov/study/NCT07771010"
+            }
+          ]
+        },
+        {
+          "country": "Afghanistan",
+          "iso3": "AFG",
+          "iso_numeric": "004",
+          "trial_count": 2,
+          "share_pct": 0.2,
+          "nct_ids": [
+            "NCT05164263",
+            "NCT07350694"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05164263",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Afghanistan",
+              "url": "https://clinicaltrials.gov/study/NCT05164263"
+            },
+            {
+              "nct_id": "NCT07350694",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Afghanistan",
+              "url": "https://clinicaltrials.gov/study/NCT07350694"
+            }
+          ]
+        },
+        {
+          "country": "Colombia",
+          "iso3": "COL",
+          "iso_numeric": "170",
+          "trial_count": 2,
+          "share_pct": 0.2,
+          "nct_ids": [
+            "NCT07282613",
+            "NCT07064473"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07282613",
+              "field": "protocolSection.contactsLocationsModule.locations[32].country",
+              "excerpt": "Colombia",
+              "url": "https://clinicaltrials.gov/study/NCT07282613"
+            },
+            {
+              "nct_id": "NCT07064473",
+              "field": "protocolSection.contactsLocationsModule.locations[425].country",
+              "excerpt": "Colombia",
+              "url": "https://clinicaltrials.gov/study/NCT07064473"
+            }
+          ]
+        },
+        {
+          "country": "Ghana",
+          "iso3": "GHA",
+          "iso_numeric": "288",
+          "trial_count": 2,
+          "share_pct": 0.2,
+          "nct_ids": [
+            "NCT03549754",
+            "NCT06927271"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT03549754",
+              "field": "protocolSection.contactsLocationsModule.locations[22].country",
+              "excerpt": "Ghana",
+              "url": "https://clinicaltrials.gov/study/NCT03549754"
+            },
+            {
+              "nct_id": "NCT06927271",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Ghana",
+              "url": "https://clinicaltrials.gov/study/NCT06927271"
+            }
+          ]
+        },
+        {
+          "country": "Kenya",
+          "iso3": "KEN",
+          "iso_numeric": "404",
+          "trial_count": 2,
+          "share_pct": 0.2,
+          "nct_ids": [
+            "NCT05164263",
+            "NCT03549754"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05164263",
+              "field": "protocolSection.contactsLocationsModule.locations[1].country",
+              "excerpt": "Kenya",
+              "url": "https://clinicaltrials.gov/study/NCT05164263"
+            },
+            {
+              "nct_id": "NCT03549754",
+              "field": "protocolSection.contactsLocationsModule.locations[33].country",
+              "excerpt": "Kenya",
+              "url": "https://clinicaltrials.gov/study/NCT03549754"
+            }
+          ]
+        },
+        {
+          "country": "Nigeria",
+          "iso3": "NGA",
+          "iso_numeric": "566",
+          "trial_count": 2,
+          "share_pct": 0.2,
+          "nct_ids": [
+            "NCT05164263",
+            "NCT03549754"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05164263",
+              "field": "protocolSection.contactsLocationsModule.locations[2].country",
+              "excerpt": "Nigeria",
+              "url": "https://clinicaltrials.gov/study/NCT05164263"
+            },
+            {
+              "nct_id": "NCT03549754",
+              "field": "protocolSection.contactsLocationsModule.locations[40].country",
+              "excerpt": "Nigeria",
+              "url": "https://clinicaltrials.gov/study/NCT03549754"
+            }
+          ]
+        },
+        {
+          "country": "Paraguay",
+          "iso3": "PRY",
+          "iso_numeric": "600",
+          "trial_count": 2,
+          "share_pct": 0.2,
+          "nct_ids": [
+            "NCT07588438",
+            "NCT05363761"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07588438",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Paraguay",
+              "url": "https://clinicaltrials.gov/study/NCT07588438"
+            },
+            {
+              "nct_id": "NCT05363761",
+              "field": "protocolSection.contactsLocationsModule.locations[2].country",
+              "excerpt": "Paraguay",
+              "url": "https://clinicaltrials.gov/study/NCT05363761"
+            }
+          ]
+        },
+        {
+          "country": "Russia",
+          "iso3": "RUS",
+          "iso_numeric": "643",
+          "trial_count": 2,
+          "share_pct": 0.2,
+          "nct_ids": [
+            "NCT07433192",
+            "NCT07574333"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07433192",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Russia",
+              "url": "https://clinicaltrials.gov/study/NCT07433192"
+            },
+            {
+              "nct_id": "NCT07574333",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Russia",
+              "url": "https://clinicaltrials.gov/study/NCT07574333"
+            }
+          ]
+        },
+        {
+          "country": "Sri Lanka",
+          "iso3": "LKA",
+          "iso_numeric": "144",
+          "trial_count": 2,
+          "share_pct": 0.2,
+          "nct_ids": [
+            "NCT05164263",
+            "NCT05345327"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05164263",
+              "field": "protocolSection.contactsLocationsModule.locations[4].country",
+              "excerpt": "Sri Lanka",
+              "url": "https://clinicaltrials.gov/study/NCT05164263"
+            },
+            {
+              "nct_id": "NCT05345327",
+              "field": "protocolSection.contactsLocationsModule.locations[3].country",
+              "excerpt": "Sri Lanka",
+              "url": "https://clinicaltrials.gov/study/NCT05345327"
+            }
+          ]
+        },
+        {
+          "country": "Algeria",
+          "iso3": "DZA",
+          "iso_numeric": "012",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT07779343"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07779343",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Algeria",
+              "url": "https://clinicaltrials.gov/study/NCT07779343"
+            }
+          ]
+        },
+        {
+          "country": "Bahrain",
+          "iso3": "BHR",
+          "iso_numeric": "048",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT06069258"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06069258",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Bahrain",
+              "url": "https://clinicaltrials.gov/study/NCT06069258"
+            }
+          ]
+        },
+        {
+          "country": "Costa Rica",
+          "iso3": "CRI",
+          "iso_numeric": "188",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT03549754"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT03549754",
+              "field": "protocolSection.contactsLocationsModule.locations[16].country",
+              "excerpt": "Costa Rica",
+              "url": "https://clinicaltrials.gov/study/NCT03549754"
+            }
+          ]
+        },
+        {
+          "country": "C\u00f4te d\u2019Ivoire",
+          "iso3": null,
+          "iso_numeric": null,
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT03549754"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT03549754",
+              "field": "protocolSection.contactsLocationsModule.locations[17].country",
+              "excerpt": "C\u00f4te d\u2019Ivoire",
+              "url": "https://clinicaltrials.gov/study/NCT03549754"
+            }
+          ]
+        },
+        {
+          "country": "Greenland",
+          "iso3": "GRL",
+          "iso_numeric": "304",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT06264427"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06264427",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Greenland",
+              "url": "https://clinicaltrials.gov/study/NCT06264427"
+            }
+          ]
+        },
+        {
+          "country": "Guadeloupe",
+          "iso3": "GLP",
+          "iso_numeric": "312",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT07233434"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07233434",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Guadeloupe",
+              "url": "https://clinicaltrials.gov/study/NCT07233434"
+            }
+          ]
+        },
+        {
+          "country": "Iraq",
+          "iso3": "IRQ",
+          "iso_numeric": "368",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT03549754"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT03549754",
+              "field": "protocolSection.contactsLocationsModule.locations[27].country",
+              "excerpt": "Iraq",
+              "url": "https://clinicaltrials.gov/study/NCT03549754"
+            }
+          ]
+        },
+        {
+          "country": "Jordan",
+          "iso3": "JOR",
+          "iso_numeric": "400",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT06590324"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06590324",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Jordan",
+              "url": "https://clinicaltrials.gov/study/NCT06590324"
+            }
+          ]
+        },
+        {
+          "country": "Kuwait",
+          "iso3": "KWT",
+          "iso_numeric": "414",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT06115876"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06115876",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Kuwait",
+              "url": "https://clinicaltrials.gov/study/NCT06115876"
+            }
+          ]
+        },
+        {
+          "country": "Latvia",
+          "iso3": "LVA",
+          "iso_numeric": "428",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT07064473"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07064473",
+              "field": "protocolSection.contactsLocationsModule.locations[782].country",
+              "excerpt": "Latvia",
+              "url": "https://clinicaltrials.gov/study/NCT07064473"
+            }
+          ]
+        },
+        {
+          "country": "Lithuania",
+          "iso3": "LTU",
+          "iso_numeric": "440",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT07064473"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07064473",
+              "field": "protocolSection.contactsLocationsModule.locations[790].country",
+              "excerpt": "Lithuania",
+              "url": "https://clinicaltrials.gov/study/NCT07064473"
+            }
+          ]
+        },
+        {
+          "country": "Panama",
+          "iso3": "PAN",
+          "iso_numeric": "591",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT05363761"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05363761",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Panama",
+              "url": "https://clinicaltrials.gov/study/NCT05363761"
+            }
+          ]
+        },
+        {
+          "country": "Qatar",
+          "iso3": "QAT",
+          "iso_numeric": "634",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT07556497"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07556497",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Qatar",
+              "url": "https://clinicaltrials.gov/study/NCT07556497"
+            }
+          ]
+        },
+        {
+          "country": "Reunion",
+          "iso3": "REU",
+          "iso_numeric": "638",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT06437782"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06437782",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Reunion",
+              "url": "https://clinicaltrials.gov/study/NCT06437782"
+            }
+          ]
+        },
+        {
+          "country": "Serbia",
+          "iso3": "SRB",
+          "iso_numeric": "688",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT07064473"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07064473",
+              "field": "protocolSection.contactsLocationsModule.locations[956].country",
+              "excerpt": "Serbia",
+              "url": "https://clinicaltrials.gov/study/NCT07064473"
+            }
+          ]
+        },
+        {
+          "country": "Tanzania",
+          "iso3": "TZA",
+          "iso_numeric": "834",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT05881447"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05881447",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Tanzania",
+              "url": "https://clinicaltrials.gov/study/NCT05881447"
+            }
+          ]
+        },
+        {
+          "country": "Tunisia",
+          "iso3": "TUN",
+          "iso_numeric": "788",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT05605704"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05605704",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Tunisia",
+              "url": "https://clinicaltrials.gov/study/NCT05605704"
+            }
+          ]
+        },
+        {
+          "country": "Uruguay",
+          "iso3": "URY",
+          "iso_numeric": "858",
+          "trial_count": 1,
+          "share_pct": 0.1,
+          "nct_ids": [
+            "NCT07446179"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07446179",
+              "field": "protocolSection.contactsLocationsModule.locations[0].country",
+              "excerpt": "Uruguay",
+              "url": "https://clinicaltrials.gov/study/NCT07446179"
+            }
+          ]
+        }
+      ]
+    },
+    "meta": {
+      "source": "clinicaltrials.gov",
+      "api_base": "https://clinicaltrials.gov/api/v2",
+      "generated_at": "2026-10-11T20:39:03+00:00",
+      "interpretation": {
+        "planner": "llm",
+        "action": "visualize",
+        "analysis": "distribution",
+        "dimension": "country",
+        "rationale": "A distribution by country will show which countries have the most recruiting trials for type 2 diabetes."
+      },
+      "filters": {
+        "condition": "type 2 diabetes",
+        "statuses": [
+          "RECRUITING"
+        ]
+      },
+      "cohorts": [
+        {
+          "label": "type 2 diabetes",
+          "api_params": {
+            "query.cond": "\"type 2 diabetes\"",
+            "filter.overallStatus": "RECRUITING"
+          },
+          "total_matching": 827,
+          "records_analyzed": 827,
+          "truncated": false
+        }
+      ],
+      "units": {
+        "trial_count": "trials",
+        "share_pct": "%"
+      },
+      "sort": "count_desc",
+      "statistics": {
+        "trials_analyzed": 827,
+        "countries": 81,
+        "trials_without_location": 0,
+        "basemap": "world-atlas@2 countries-110m"
+      },
+      "assumptions": [
+        "A trial counts once per country it has at least one site in, so counts can sum to more than the number of trials.",
+        "Color scale is sequential (one hue, light to dark = fewer to more trials)."
+      ],
+      "warnings": [
+        "2 location names could not be mapped to ISO codes and are listed but not drawn on the map: Turkey (T\u00fcrkiye), C\u00f4te d\u2019Ivoire."
+      ]
+    }
+  }
+}

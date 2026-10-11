@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+.qodo/
+.sync.tgz
+.update.tgz
+scripts/probe_out.json
+.DS_Store

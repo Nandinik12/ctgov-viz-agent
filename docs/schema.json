@@ -1,0 +1,754 @@
+{
+  "request": {
+    "$defs": {
+      "CompareField": {
+        "enum": [
+          "drug",
+          "condition",
+          "sponsor",
+          "country"
+        ],
+        "title": "CompareField",
+        "type": "string"
+      },
+      "Comparison": {
+        "additionalProperties": false,
+        "properties": {
+          "field": {
+            "$ref": "#/$defs/CompareField",
+            "description": "Which entity type the cohorts differ on."
+          },
+          "values": {
+            "description": "2-5 cohort values, e.g. ['Pembrolizumab', 'Nivolumab'].",
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 5,
+            "minItems": 2,
+            "title": "Values",
+            "type": "array"
+          }
+        },
+        "required": [
+          "field",
+          "values"
+        ],
+        "title": "Comparison",
+        "type": "object"
+      },
+      "Dimension": {
+        "description": "Every field the engine knows how to extract from a study record.\n\nCategorical dimensions can be grouped/counted; numeric ones can be binned or\nplotted; `start_year` is the temporal axis.",
+        "enum": [
+          "phase",
+          "start_year",
+          "overall_status",
+          "sponsor",
+          "sponsor_class",
+          "intervention",
+          "drug",
+          "intervention_type",
+          "condition",
+          "country",
+          "study_type",
+          "enrollment",
+          "duration_months"
+        ],
+        "title": "Dimension",
+        "type": "string"
+      },
+      "OverallStatus": {
+        "enum": [
+          "NOT_YET_RECRUITING",
+          "RECRUITING",
+          "ENROLLING_BY_INVITATION",
+          "ACTIVE_NOT_RECRUITING",
+          "SUSPENDED",
+          "TERMINATED",
+          "COMPLETED",
+          "WITHDRAWN",
+          "UNKNOWN"
+        ],
+        "title": "OverallStatus",
+        "type": "string"
+      },
+      "Phase": {
+        "enum": [
+          "EARLY_PHASE1",
+          "PHASE1",
+          "PHASE2",
+          "PHASE3",
+          "PHASE4",
+          "NA"
+        ],
+        "title": "Phase",
+        "type": "string"
+      },
+      "VizType": {
+        "enum": [
+          "bar_chart",
+          "grouped_bar_chart",
+          "time_series",
+          "histogram",
+          "scatter_plot",
+          "network_graph",
+          "choropleth_map"
+        ],
+        "title": "VizType",
+        "type": "string"
+      }
+    },
+    "additionalProperties": false,
+    "description": "POST /v1/visualize body. Only `query` is required.\n\nStructured fields always win over anything inferred from `query`.",
+    "properties": {
+      "query": {
+        "description": "Natural-language question.",
+        "maxLength": 1000,
+        "minLength": 3,
+        "title": "Query",
+        "type": "string"
+      },
+      "drug_name": {
+        "anyOf": [
+          {
+            "maxLength": 200,
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Intervention name (query.intr).",
+        "title": "Drug Name"
+      },
+      "condition": {
+        "anyOf": [
+          {
+            "maxLength": 200,
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Condition/disease (query.cond).",
+        "title": "Condition"
+      },
+      "sponsor": {
+        "anyOf": [
+          {
+            "maxLength": 200,
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Sponsor/collaborator (query.spons).",
+        "title": "Sponsor"
+      },
+      "country": {
+        "anyOf": [
+          {
+            "maxLength": 100,
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Trial location (query.locn).",
+        "title": "Country"
+      },
+      "trial_phase": {
+        "anyOf": [
+          {
+            "items": {
+              "$ref": "#/$defs/Phase"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Restrict to these phases.",
+        "title": "Trial Phase"
+      },
+      "overall_status": {
+        "anyOf": [
+          {
+            "items": {
+              "$ref": "#/$defs/OverallStatus"
+            },
+            "type": "array"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Restrict to these statuses.",
+        "title": "Overall Status"
+      },
+      "start_year": {
+        "anyOf": [
+          {
+            "maximum": 2100,
+            "minimum": 1900,
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Trials starting in/after this year.",
+        "title": "Start Year"
+      },
+      "end_year": {
+        "anyOf": [
+          {
+            "maximum": 2100,
+            "minimum": 1900,
+            "type": "integer"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Trials starting in/before this year.",
+        "title": "End Year"
+      },
+      "compare": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/Comparison"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Explicit cohort comparison."
+      },
+      "group_by": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/Dimension"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Force the primary dimension."
+      },
+      "chart_type": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/VizType"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "description": "Force a visualization type (validated for compatibility)."
+      },
+      "max_records": {
+        "default": 5000,
+        "description": "Max trials fetched per cohort (pages of 1000).",
+        "maximum": 20000,
+        "minimum": 10,
+        "title": "Max Records",
+        "type": "integer"
+      },
+      "top_n": {
+        "default": 15,
+        "description": "Max categories / network nodes per type.",
+        "maximum": 50,
+        "minimum": 3,
+        "title": "Top N",
+        "type": "integer"
+      },
+      "max_citations_per_datum": {
+        "default": 3,
+        "description": "Detailed citations per datum (all NCT ids are always listed).",
+        "maximum": 20,
+        "minimum": 0,
+        "title": "Max Citations Per Datum",
+        "type": "integer"
+      }
+    },
+    "required": [
+      "query"
+    ],
+    "title": "VizRequest",
+    "type": "object"
+  },
+  "response": {
+    "$defs": {
+      "Channel": {
+        "description": "One visual channel -> one data field (Vega-Lite flavoured).",
+        "properties": {
+          "field": {
+            "title": "Field",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "nominal",
+              "ordinal",
+              "quantitative",
+              "temporal"
+            ],
+            "title": "Type",
+            "type": "string"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "sort": {
+            "anyOf": [
+              {
+                "enum": [
+                  "ascending",
+                  "descending"
+                ],
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "'ascending'/'descending' by value, or an explicit category order.",
+            "title": "Sort"
+          },
+          "unit": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Unit"
+          },
+          "scale": {
+            "anyOf": [
+              {
+                "enum": [
+                  "linear",
+                  "log"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Suggested axis scale.",
+            "title": "Scale"
+          }
+        },
+        "required": [
+          "field",
+          "type",
+          "title"
+        ],
+        "title": "Channel",
+        "type": "object"
+      },
+      "Clarification": {
+        "properties": {
+          "reason": {
+            "enum": [
+              "out_of_scope",
+              "ambiguous_reference",
+              "missing_cohorts",
+              "too_vague",
+              "no_matching_trials"
+            ],
+            "title": "Reason",
+            "type": "string"
+          },
+          "message": {
+            "description": "Human readable explanation to show the user.",
+            "title": "Message",
+            "type": "string"
+          },
+          "suggestions": {
+            "description": "Answerable rephrasings to offer as buttons.",
+            "items": {
+              "type": "string"
+            },
+            "title": "Suggestions",
+            "type": "array"
+          }
+        },
+        "required": [
+          "reason",
+          "message"
+        ],
+        "title": "Clarification",
+        "type": "object"
+      },
+      "CohortQuery": {
+        "properties": {
+          "label": {
+            "title": "Label",
+            "type": "string"
+          },
+          "api_params": {
+            "additionalProperties": true,
+            "title": "Api Params",
+            "type": "object"
+          },
+          "total_matching": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Total Matching"
+          },
+          "records_analyzed": {
+            "title": "Records Analyzed",
+            "type": "integer"
+          },
+          "truncated": {
+            "title": "Truncated",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "label",
+          "api_params",
+          "total_matching",
+          "records_analyzed",
+          "truncated"
+        ],
+        "title": "CohortQuery",
+        "type": "object"
+      },
+      "Interpretation": {
+        "properties": {
+          "planner": {
+            "enum": [
+              "llm",
+              "rules"
+            ],
+            "title": "Planner",
+            "type": "string"
+          },
+          "action": {
+            "default": "visualize",
+            "enum": [
+              "visualize",
+              "clarify",
+              "decline"
+            ],
+            "title": "Action",
+            "type": "string"
+          },
+          "analysis": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Analysis"
+          },
+          "dimension": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Dimension"
+          },
+          "secondary_dimension": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Secondary Dimension"
+          },
+          "series_dimension": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Series Dimension"
+          },
+          "rationale": {
+            "title": "Rationale",
+            "type": "string"
+          }
+        },
+        "required": [
+          "planner",
+          "rationale"
+        ],
+        "title": "Interpretation",
+        "type": "object"
+      },
+      "ResponseMeta": {
+        "properties": {
+          "source": {
+            "default": "clinicaltrials.gov",
+            "title": "Source",
+            "type": "string"
+          },
+          "api_base": {
+            "title": "Api Base",
+            "type": "string"
+          },
+          "generated_at": {
+            "title": "Generated At",
+            "type": "string"
+          },
+          "interpretation": {
+            "$ref": "#/$defs/Interpretation"
+          },
+          "filters": {
+            "additionalProperties": true,
+            "title": "Filters",
+            "type": "object"
+          },
+          "cohorts": {
+            "items": {
+              "$ref": "#/$defs/CohortQuery"
+            },
+            "title": "Cohorts",
+            "type": "array"
+          },
+          "units": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "default": {},
+            "title": "Units",
+            "type": "object"
+          },
+          "sort": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Sort"
+          },
+          "time_granularity": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Time Granularity"
+          },
+          "statistics": {
+            "additionalProperties": true,
+            "description": "Summary numbers (n, median, ...).",
+            "title": "Statistics",
+            "type": "object"
+          },
+          "assumptions": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Assumptions",
+            "type": "array"
+          },
+          "warnings": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Warnings",
+            "type": "array"
+          }
+        },
+        "required": [
+          "api_base",
+          "generated_at",
+          "interpretation",
+          "filters",
+          "cohorts"
+        ],
+        "title": "ResponseMeta",
+        "type": "object"
+      },
+      "VisualizationSpec": {
+        "properties": {
+          "type": {
+            "$ref": "#/$defs/VizType"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "subtitle": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Subtitle"
+          },
+          "encoding": {
+            "additionalProperties": {
+              "$ref": "#/$defs/Channel"
+            },
+            "description": "Channel name -> field mapping. Cartesian charts use x/y/series/color/size/tooltip; network_graph uses node_id/node_label/node_group/node_size/edge_source/edge_target/edge_weight; choropleth_map uses geo (ISO 3166 numeric code, joins to world-atlas topojson ids) and color, and also carries x/y so a renderer without maps can draw the same rows as a bar chart.",
+            "title": "Encoding",
+            "type": "object"
+          },
+          "data": {
+            "anyOf": [
+              {
+                "items": {
+                  "additionalProperties": true,
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              {
+                "additionalProperties": {
+                  "items": {
+                    "additionalProperties": true,
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "type": "object"
+              }
+            ],
+            "description": "Row list for cartesian charts; {nodes:[...], edges:[...]} for network_graph.",
+            "title": "Data"
+          }
+        },
+        "required": [
+          "type",
+          "title",
+          "encoding",
+          "data"
+        ],
+        "title": "VisualizationSpec",
+        "type": "object"
+      },
+      "VizType": {
+        "enum": [
+          "bar_chart",
+          "grouped_bar_chart",
+          "time_series",
+          "histogram",
+          "scatter_plot",
+          "network_graph",
+          "choropleth_map"
+        ],
+        "title": "VizType",
+        "type": "string"
+      }
+    },
+    "description": "`status` tells the client what to render:\nok -> `visualization`; needs_clarification / unsupported -> `clarification` (visualization is null).",
+    "properties": {
+      "request_id": {
+        "title": "Request Id",
+        "type": "string"
+      },
+      "status": {
+        "default": "ok",
+        "enum": [
+          "ok",
+          "needs_clarification",
+          "unsupported"
+        ],
+        "title": "Status",
+        "type": "string"
+      },
+      "visualization": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/VisualizationSpec"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "clarification": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/Clarification"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      },
+      "meta": {
+        "$ref": "#/$defs/ResponseMeta"
+      }
+    },
+    "required": [
+      "request_id",
+      "meta"
+    ],
+    "title": "VizResponse",
+    "type": "object"
+  }
+}

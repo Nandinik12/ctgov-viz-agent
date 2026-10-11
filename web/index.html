@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trials Viz Agent</title>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f6f5f2; --surface: #fcfcfb; --surface-2: #f1f0ec; --line: #e4e2dc;
+    --ink: #0b0b0b; --ink-2: #52514e; --ink-3: #8a8983;
+    --accent: #2a78d6; --accent-ink: #fff; --warn-bg: #fff6e0; --warn-ink: #7a5200;
+    --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #008300; --s7: #6250d6; --s8: #e34948;
+    --grid: #ebe9e4; --radius: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --bg: #121211; --surface: #1a1a19; --surface-2: #232321; --line: #2f2f2c;
+      --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #8f8e86;
+      --accent: #3987e5; --warn-bg: #2d2410; --warn-ink: #f2c46b;
+      --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767;
+      --grid: #2a2a28;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #121211; --surface: #1a1a19; --surface-2: #232321; --line: #2f2f2c;
+    --ink: #f0efec; --ink-2: #c3c2b7; --ink-3: #8f8e86;
+    --accent: #3987e5; --warn-bg: #2d2410; --warn-ink: #f2c46b;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767;
+    --grid: #2a2a28;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; font: 14px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--ink); }
+  a { color: var(--accent); }
+  code, pre, .mono { font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+  .wrap { max-width: 1440px; margin: 0 auto; padding: 0 24px; }
+
+  header { display: flex; align-items: center; gap: 12px; padding: 20px 0 12px; }
+  header h1 { font-size: 17px; margin: 0; letter-spacing: -.01em; }
+  header .tag { font-size: 12px; color: var(--ink-2); }
+  .pill { font-size: 11px; padding: 2px 8px; border-radius: 99px; background: var(--surface-2); color: var(--ink-2); border: 1px solid var(--line); white-space: nowrap; }
+  .grow { flex: 1; }
+  .iconbtn { background: none; border: 1px solid var(--line); color: var(--ink-2); border-radius: 8px; padding: 4px 10px; cursor: pointer; font: inherit; font-size: 12px; }
+
+  .ask { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; }
+  .askrow { display: flex; gap: 8px; }
+  .askrow input { flex: 1; font: inherit; font-size: 15px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); min-width: 0; }
+  .askrow input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .run { font: inherit; font-weight: 600; padding: 0 18px; border: 0; border-radius: 10px; background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+  .run[disabled] { opacity: .6; cursor: progress; }
+  details.fields { margin-top: 10px; }
+  details.fields summary { cursor: pointer; color: var(--ink-2); font-size: 13px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 8px 12px; margin-top: 10px; }
+  .grid label { display: flex; flex-direction: column; gap: 3px; font-size: 11px; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; }
+  .grid input, .grid select { font: inherit; font-size: 13px; text-transform: none; letter-spacing: 0; padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); }
+  .preview { margin-top: 8px; font-size: 12px; color: var(--ink-3); word-break: break-all; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0; }
+  .chip { font: inherit; font-size: 12px; padding: 5px 10px; border-radius: 99px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+  .chip:hover { border-color: var(--accent); }
+  .chip b { color: var(--ink-3); font-weight: 500; margin-right: 4px; }
+
+  main { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 16px; padding: 16px 0 40px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; min-width: 0; }
+  .card h2 { font-size: 16px; margin: 0; letter-spacing: -.01em; }
+  .card h3 { font-size: 12px; margin: 0 0 8px; color: var(--ink-2); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+  .sub { color: var(--ink-2); font-size: 12px; margin-top: 2px; }
+  .kpis { display: flex; flex-wrap: wrap; gap: 24px; margin: 14px 0 6px; }
+  .kpi .v { font-size: 20px; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .kpi .l { font-size: 11px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .04em; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 12px 0 8px; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .seg button { font: inherit; font-size: 12px; padding: 4px 10px; border: 0; background: var(--surface); color: var(--ink-2); cursor: pointer; }
+  .seg button + button { border-left: 1px solid var(--line); }
+  .seg button.on { background: var(--surface-2); color: var(--ink); font-weight: 600; }
+  .warn { background: var(--warn-bg); color: var(--warn-ink); border-radius: 8px; padding: 8px 12px; font-size: 12px; margin-top: 8px; }
+  .warn div + div { margin-top: 2px; }
+  #view { min-height: 440px; position: relative; margin-top: 4px; }
+  #view svg { max-width: 100%; display: block; }
+  .empty { display: grid; place-items: center; height: 420px; color: var(--ink-3); text-align: center; }
+  .spinner { width: 22px; height: 22px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 10px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  table.data { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+  table.data th, table.data td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  table.data th { color: var(--ink-2); font-weight: 600; position: sticky; top: 0; background: var(--surface); }
+  table.data tr { cursor: pointer; } table.data tr:hover td { background: var(--surface-2); }
+  .tablewrap { max-height: 460px; overflow: auto; }
+  pre.json { font-size: 11px; max-height: 460px; overflow: auto; background: var(--surface-2); padding: 12px; border-radius: 8px; margin: 0; }
+  .notes { margin: 12px 0 0; padding-left: 16px; color: var(--ink-3); font-size: 12px; }
+
+  aside { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+  dl.kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 0; font-size: 13px; }
+  dl.kv dt { color: var(--ink-3); } dl.kv dd { margin: 0; }
+  .rationale { font-size: 12px; color: var(--ink-2); margin-top: 8px; font-style: italic; }
+  .cohort { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 8px; font-size: 12px; }
+  .cohort .params { color: var(--ink-3); word-break: break-all; margin-top: 2px; }
+  .sel { font-size: 13px; margin-bottom: 6px; } .sel b { font-weight: 650; }
+  .cite { border-top: 1px solid var(--line); padding: 8px 0; font-size: 12px; }
+  .cite .path { color: var(--ink-3); word-break: break-all; font-size: 11px; }
+  .cite q { color: var(--ink); }
+  .allids { font-size: 11px; color: var(--ink-3); margin-top: 8px; line-height: 1.7; word-break: break-word; }
+  .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+  .netlegend { display: flex; gap: 14px; font-size: 12px; color: var(--ink-2); margin-bottom: 6px; }
+  .err { color: var(--s8); }
+  .clar { max-width: 640px; margin: 40px auto; text-align: center; }
+  .clar p { font-size: 15px; line-height: 1.6; color: var(--ink); }
+  .clar .chips { justify-content: center; }
+  .clar-icon { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; margin: 0 auto 8px;
+               font-size: 22px; font-weight: 700; background: var(--surface-2); color: var(--ink-2); }
+  .clar.no .clar-icon { color: var(--s8); } .clar.ask .clar-icon { color: var(--accent); }
+  @media (max-width: 980px) { main { grid-template-columns: 1fr; } .wrap { padding: 0 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Clinical trials, asked and charted</h1>
+  <span class="tag">ClinicalTrials.gov API v2 · every mark traceable to source records</span>
+  <span class="grow"></span>
+  <span class="pill" id="health">planner: …</span>
+  <button class="iconbtn" id="theme" title="Toggle theme">◐</button>
+</header>
+
+<section class="ask">
+  <form id="f" class="askrow">
+    <input id="q" autocomplete="off" placeholder="Ask about clinical trials, e.g. Which countries have the most recruiting trials for type 2 diabetes?">
+    <button class="run" id="go">Run</button>
+  </form>
+  <details class="fields" id="fieldsbox">
+    <summary>Structured fields (optional, override what the planner infers)</summary>
+    <div class="grid">
+      <label>Drug<input data-k="drug_name" placeholder="Pembrolizumab"></label>
+      <label>Condition<input data-k="condition" placeholder="breast cancer"></label>
+      <label>Sponsor<input data-k="sponsor" placeholder="Pfizer"></label>
+      <label>Country<input data-k="country" placeholder="Germany"></label>
+      <label>Start year ≥<input data-k="start_year" type="number" min="1900" max="2100"></label>
+      <label>Start year ≤<input data-k="end_year" type="number" min="1900" max="2100"></label>
+      <label>Phase<select data-k="trial_phase"><option value="">any</option><option>EARLY_PHASE1</option><option>PHASE1</option><option>PHASE2</option><option>PHASE3</option><option>PHASE4</option></select></label>
+      <label>Status<select data-k="overall_status"><option value="">any</option><option>RECRUITING</option><option>NOT_YET_RECRUITING</option><option>ACTIVE_NOT_RECRUITING</option><option>COMPLETED</option><option>TERMINATED</option></select></label>
+      <label>Chart type<select data-k="chart_type"><option value="">auto</option><option>bar_chart</option><option>time_series</option><option>histogram</option><option>scatter_plot</option><option>network_graph</option></select></label>
+      <label>Compare (drug, comma sep.)<input data-k="compare" placeholder="Pembrolizumab, Nivolumab"></label>
+      <label>Top N<input data-k="top_n" type="number" min="3" max="50" placeholder="15"></label>
+    </div>
+    <div class="preview mono" id="preview"></div>
+  </details>
+  <div class="chips" id="presets"></div>
+</section>
+
+<main>
+  <section class="card">
+    <h2 id="title">Ask a question to get started</h2>
+    <div class="sub" id="subtitle">Pick an example above or type your own.</div>
+    <div class="kpis" id="kpis"></div>
+    <div id="warnings"></div>
+    <div class="toolbar" id="toolbar" hidden>
+      <div class="seg" id="tabs"><button data-t="chart" class="on">Chart</button><button data-t="table">Table</button><button data-t="json">JSON</button></div>
+      <div class="seg" id="measure" hidden><button data-m="trial_count" class="on">Count</button><button data-m="share_pct">% of cohort</button></div>
+      <span class="grow"></span>
+      <button class="iconbtn" id="dl">Download JSON</button>
+    </div>
+    <div id="view"><div class="empty">Results render here as a chart, a table, or the raw spec.</div></div>
+    <ul class="notes" id="notes"></ul>
+  </section>
+  <aside>
+    <section class="card" id="howcard">
+      <h3>How it was answered</h3>
+      <div id="how" class="sub">The planner's interpretation, filters and exact API queries appear here.</div>
+    </section>
+    <section class="card">
+      <h3>Citations</h3>
+      <div id="cites" class="sub">Click any bar, point, row, node or edge.</div>
+    </section>
+  </aside>
+</main>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;"}[c]));
+const fmt = n => typeof n === "number" ? n.toLocaleString() : n;
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const series = () => [1,2,3,4,5,6,7,8].map(i => css(`--s${i}`));
+
+const PRESETS = [
+  ["Trend", "How has the number of trials for Pembrolizumab changed per year since 2015?", {drug_name: "Pembrolizumab"}],
+  ["Distribution", "How are breast cancer trials distributed across phases?", {condition: "breast cancer"}],
+  ["Comparison", "Compare phases for trials involving Pembrolizumab vs Nivolumab", {}],
+  ["Geography", "Which countries have the most recruiting trials for type 2 diabetes?", {}],
+  ["Sponsor ↔ drug", "Show a network of sponsors and drugs for melanoma trials", {condition: "melanoma", top_n: 12}],
+  ["Drug ↔ drug", "Which drugs frequently co-occur in combination studies?", {condition: "non-small cell lung cancer", start_year: 2018}],
+  ["Histogram", "What is the distribution of enrollment sizes?", {condition: "Alzheimer disease", trial_phase: "PHASE3"}],
+  ["Scatter", "Is enrollment related to trial duration for glioblastoma trials?", {chart_type: "scatter_plot"}],
+  ["Trend by phase", "Number of obesity trials per year broken down by phase since 2012", {}],
+  ["Map", "Where are recruiting Alzheimer disease trials located?", {}],
+  ["Exact counts", "How are breast cancer trials distributed across phases?", {condition: "breast cancer", top_n: 15}],
+  ["Typo", "How are pembrolizumav trials distributed across phases?", {}],
+  ["Out of scope", "What is the best drug for breast cancer?", {}],
+  ["Ambiguous", "Compare them by phase", {}],
+];
+PRESETS.forEach(([tag, q, extra]) => {
+  const b = document.createElement("button"); b.className = "chip"; b.type = "button";
+  b.innerHTML = `<b>${esc(tag)}</b>${esc(q.length > 60 ? q.slice(0, 58) + "…" : q)}`;
+  b.onclick = () => { $("q").value = q; setFields(extra); run(); };
+  $("presets").appendChild(b);
+});
+
+// structured fields <-> request body
+const inputs = [...document.querySelectorAll("[data-k]")];
+function setFields(extra) {
+  inputs.forEach(el => { const v = extra[el.dataset.k]; el.value = v == null ? "" : Array.isArray(v) ? v.join(", ") : v; });
+  $("fieldsbox").open = Object.keys(extra).length > 0;
+  updatePreview();
+}
+function body() {
+  const b = {query: $("q").value.trim()};
+  inputs.forEach(el => {
+    const k = el.dataset.k, v = el.value.trim(); if (!v) return;
+    if (k === "trial_phase" || k === "overall_status") b[k] = [v];
+    else if (k === "compare") b.compare = {field: "drug", values: v.split(",").map(s => s.trim()).filter(Boolean)};
+    else if (el.type === "number") b[k] = Number(v);
+    else b[k] = v;
+  });
+  return b;
+}
+function updatePreview() { $("preview").textContent = "POST /v1/visualize " + JSON.stringify(body()); }
+inputs.forEach(el => el.addEventListener("input", updatePreview)); $("q").addEventListener("input", updatePreview);
+
+fetch("/health").then(r => r.json()).then(h => $("health").textContent = `planner: ${h.planner}`).catch(() => {});
+$("theme").onclick = () => {
+  const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.dataset.theme = cur === "dark" ? "light" : "dark";
+  if (state.resp) render();
+};
+
+const state = {resp: null, tab: "chart", measure: "trial_count"};
+$("f").onsubmit = e => { e.preventDefault(); run(); };
+$("tabs").onclick = e => { const t = e.target.dataset.t; if (!t) return; state.tab = t; seg("tabs", "t", t); draw(); };
+$("measure").onclick = e => { const m = e.target.dataset.m; if (!m) return; state.measure = m; seg("measure", "m", m); draw(); };
+$("dl").onclick = () => {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(state.resp, null, 2)], {type: "application/json"}));
+  a.download = "visualization.json"; a.click();
+};
+function seg(id, key, val) { [...$(id).children].forEach(b => b.classList.toggle("on", b.dataset[key] === val)); }
+
+async function run() {
+  const req = body(); if (req.query.length < 3) { $("q").focus(); return; }
+  $("go").disabled = true; const t0 = performance.now();
+  $("title").textContent = "Working…"; $("subtitle").textContent = "Planning, querying ClinicalTrials.gov, aggregating";
+  $("kpis").innerHTML = ""; $("warnings").innerHTML = ""; $("notes").innerHTML = ""; $("toolbar").hidden = true;
+  $("view").innerHTML = `<div class="empty"><div><div class="spinner"></div><span id="tick">0.0s</span></div></div>`;
+  const tick = setInterval(() => { const el = $("tick"); if (el) el.textContent = ((performance.now() - t0) / 1000).toFixed(1) + "s"; }, 100);
+  try {
+    const res = await fetch("/v1/visualize", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(req)});
+    const data = await res.json();
+    if (!res.ok) throw new Error(`${res.status}: ${typeof data.detail === "string" ? data.detail : JSON.stringify(data.detail)}`);
+    data._elapsed = (performance.now() - t0) / 1000;
+    state.resp = data; state.tab = "chart"; seg("tabs", "t", "chart"); state.measure = "trial_count"; seg("measure", "m", "trial_count");
+    render();
+  } catch (err) {
+    $("title").innerHTML = `<span class="err">Request failed</span>`; $("subtitle").textContent = err.message;
+    $("view").innerHTML = `<div class="empty">Nothing to show.</div>`;
+  } finally { clearInterval(tick); $("go").disabled = false; }
+}
+
+function renderClarification() {
+  const {status, clarification: c, meta} = state.resp;
+  const unsupported = status === "unsupported";
+  $("title").textContent = unsupported ? "Not answerable from registry data" : "Needs a bit more detail";
+  $("subtitle").textContent = `status: ${status} · reason: ${c.reason}`;
+  $("kpis").innerHTML = ""; $("toolbar").hidden = true;
+  $("warnings").innerHTML = meta.warnings.length ? `<div class="warn">${meta.warnings.map(w => `<div>⚠ ${esc(w)}</div>`).join("")}</div>` : "";
+  $("notes").innerHTML = "";
+  $("view").innerHTML = `<div class="clar ${unsupported ? "no" : "ask"}"><div class="clar-icon">${unsupported ? "⊘" : "?"}</div>
+      <p>${esc(c.message)}</p>${c.suggestions.length ? `<div class="sub" style="margin:10px 0 6px">Try one of these:</div>
+      <div class="chips" id="sugg">${c.suggestions.map(q => `<button class="chip" type="button">${esc(q)}</button>`).join("")}</div>` : ""}</div>`;
+  document.querySelectorAll("#sugg .chip").forEach(b => b.onclick = () => { $("q").value = b.textContent; setFields({}); run(); });
+  renderHow(meta, null);
+  $("cites").innerHTML = "No chart, so nothing to cite. No data was fabricated to fill the gap.";
+}
+
+function render() {
+  if (state.resp.status && state.resp.status !== "ok") return renderClarification();
+  const {visualization: v, meta} = state.resp;
+  $("title").textContent = v.title; $("subtitle").textContent = v.subtitle || "";
+  const analyzed = meta.cohorts.reduce((a, c) => a + c.records_analyzed, 0);
+  const matching = meta.cohorts.reduce((a, c) => a + (c.total_matching ?? 0), 0);
+  const marks = v.type === "network_graph" ? `${v.data.nodes.length} / ${v.data.edges.length}` : v.data.length;
+  const kp = [["Trials analyzed", fmt(analyzed)], ["Matching on CT.gov", fmt(matching)],
+              [v.type === "network_graph" ? "Nodes / edges" : "Data points", marks],
+              ["Coverage", matching ? Math.round(100 * analyzed / matching) + "%" : "n/a"], ["Time", state.resp._elapsed.toFixed(1) + "s"]];
+  const st = meta.statistics || {};
+  const rows = Array.isArray(v.data) ? v.data : [];
+  if (rows.some(r => r.count_method === "exact")) kp.splice(3, 1, ["Bar heights", "exact (API)"]);
+  if (st.entity_merges) kp.push(["Name variants merged", Object.keys(st.entity_merges).length]);
+  if (st.median != null) kp.push(["Median", fmt(st.median)]);
+  if (st.spearman_rho != null) kp.push(["Spearman ρ", st.spearman_rho]);
+  $("kpis").innerHTML = kp.map(([l, v]) => `<div class="kpi"><div class="v">${esc(v)}</div><div class="l">${esc(l)}</div></div>`).join("");
+  $("warnings").innerHTML = meta.warnings.length ? `<div class="warn">${meta.warnings.map(w => `<div>⚠ ${esc(w)}</div>`).join("")}</div>` : "";
+  $("notes").innerHTML = meta.assumptions.map(a => `<li>${esc(a)}</li>`).join("");
+  $("toolbar").hidden = false;
+  $("measure").hidden = v.type === "choropleth_map" || !(v.data.length && v.data[0] && "share_pct" in v.data[0]);
+  renderHow(meta, v);
+  draw();
+  autoSelect(v);
+}
+
+function renderHow(meta, v) {
+  const i = meta.interpretation;
+  const dims = [i.dimension, i.secondary_dimension, i.series_dimension].filter(Boolean).join(" · ");
+  const filt = Object.entries(meta.filters).filter(([k]) => k !== "compare")
+    .map(([k, val]) => `<span class="pill">${esc(k)}: ${esc(Array.isArray(val) ? val.join(", ") : val)}</span>`).join(" ");
+  const cohorts = meta.cohorts.map(c => `<div class="cohort"><b>${esc(c.label)}</b>: ${fmt(c.records_analyzed)} of ${fmt(c.total_matching)}
+      ${c.truncated ? '<span class="pill">sampled</span>' : ""} · <a href="${ctgovLink(c.api_params)}" target="_blank" rel="noopener">open on CT.gov</a>
+      <div class="params mono">${esc(Object.entries(c.api_params).map(([k, v]) => `${k}=${v}`).join("  "))}</div></div>`).join("");
+  $("how").innerHTML = `<dl class="kv"><dt>Planner</dt><dd>${esc(i.planner)}</dd><dt>Action</dt><dd>${esc(i.action || "visualize")}</dd>
+      <dt>Analysis</dt><dd>${esc(i.analysis || "n/a")}</dd>
+      <dt>Dimensions</dt><dd>${esc(dims || "n/a")}</dd><dt>Output</dt><dd class="mono">${esc(v ? v.type : "clarification")}</dd></dl>
+      ${filt ? `<div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:4px">${filt}</div>` : ""}
+      ${i.rationale ? `<div class="rationale">${esc(i.rationale)}</div>` : ""}${cohorts}`;
+}
+function ctgovLink(p) {
+  const map = {"query.cond": "cond", "query.intr": "intr", "query.spons": "spons", "query.locn": "locStr", "query.term": "term"};
+  const u = new URLSearchParams();
+  Object.entries(map).forEach(([k, q]) => p[k] && u.set(q, p[k].replace(/"/g, "")));
+  return "https://clinicaltrials.gov/search?" + u.toString();
+}
+
+function draw() {
+  const v = state.resp.visualization, view = $("view");
+  view.innerHTML = ""; const el = document.createElement("div"); view.appendChild(el);
+  if (state.tab === "json") { el.innerHTML = `<pre class="json">${esc(JSON.stringify(state.resp, null, 2))}</pre>`; return; }
+  if (state.tab === "table") return drawTable(el, v);
+  if (!(v.type === "network_graph" ? v.data.nodes.length : v.data.length)) { el.innerHTML = `<div class="empty">No data for this query.</div>`; return; }
+  if (v.type === "network_graph") return drawNetwork(el, v);
+  if (v.type === "choropleth_map") return drawMap(el, v);
+  vegaEmbed(el, toVegaLite(v, el), {actions: false, renderer: "svg"})
+    .then(({view}) => view.addEventListener("click", (_, item) => item && item.datum && item.datum.citations && showCites(item.datum, v)));
+}
+
+function drawTable(el, v) {
+  const rows = v.type === "network_graph" ? v.data.edges.map(e => ({...e, source: nodeLabel(v, e.source), target: nodeLabel(v, e.target)})) : v.data;
+  if (!rows.length) { el.innerHTML = `<div class="empty">No rows.</div>`; return; }
+  const cols = Object.keys(rows[0]).filter(k => !["citations", "nct_ids"].includes(k));
+  el.innerHTML = `<div class="tablewrap"><table class="data"><thead><tr>${cols.map(c => `<th>${esc(c)}</th>`).join("")}<th>records</th></tr></thead>
+    <tbody>${rows.map((r, i) => `<tr data-i="${i}">${cols.map(c => `<td>${esc(fmt(r[c]))}</td>`).join("")}<td>${(r.nct_ids || [r.nct_id]).length}</td></tr>`).join("")}</tbody></table></div>`;
+  el.querySelector("tbody").onclick = e => { const tr = e.target.closest("tr"); if (tr) showCites(v.type === "network_graph" ? v.data.edges[tr.dataset.i] : rows[tr.dataset.i], v); };
+}
+
+// ---- spec -> Vega-Lite. Everything is read from `encoding`; no per-query special cases.
+function toVegaLite(v, el) {
+  const e = v.encoding, ink = css("--ink"), ink2 = css("--ink-2"), grid = css("--grid"), pal = series();
+  const W = Math.max(320, Math.round(el.getBoundingClientRect().width) - (e.series || e.color ? 170 : 70));
+  const ttl = c => c.title + (c.unit && c.unit !== "trials" && !c.title.includes("(") ? ` (${c.unit})` : "");
+  const y = state.measure === "share_pct" && v.data[0] && "share_pct" in v.data[0]
+    ? {field: "share_pct", type: "quantitative", title: e.series ? "% of cohort's trials" : "% of analyzed trials"}
+    : {field: e.y.field, type: "quantitative", title: ttl(e.y)};
+  const tip = [e.x, e.series, e.y, e.tooltip, e.label, e.id].filter(Boolean)
+    .map(c => ({field: c.field, title: c.title, ...(c.type === "quantitative" ? {format: ","} : {})}));
+  const base = {
+    $schema: "https://vega.github.io/schema/vega-lite/v5.json", width: W, height: 380, background: null,
+    data: {values: v.data},
+    config: {view: {stroke: null}, font: "ui-sans-serif, system-ui, sans-serif",
+      axis: {labelColor: ink2, titleColor: ink2, gridColor: grid, domainColor: grid, tickColor: grid, labelFontSize: 11, titleFontSize: 11, titleFontWeight: 500},
+      legend: {labelColor: ink2, titleColor: ink2, labelFontSize: 11, titleFontSize: 11, symbolType: "square"},
+      range: {category: pal}},
+  };
+  const sortOf = c => Array.isArray(c.sort) ? c.sort : c.sort === "descending" ? "-y" : undefined;
+  const catColor = (c) => ({field: c.field, type: "nominal", title: c.title, sort: c.sort, scale: {range: pal}});
+  switch (v.type) {
+    case "bar_chart": return {...base, mark: {type: "bar", color: pal[0], cornerRadiusEnd: 4, cursor: "pointer"},
+      encoding: {x: {field: e.x.field, type: "nominal", title: ttl(e.x), sort: sortOf(e.x), axis: {labelAngle: -35, labelLimit: 160, grid: false}},
+                 y: {...y, axis: {grid: true, tickCount: 6}}, tooltip: tip}};
+    case "grouped_bar_chart": return {...base, mark: {type: "bar", cornerRadiusEnd: 4, cursor: "pointer"},
+      encoding: {x: {field: e.x.field, type: "nominal", title: ttl(e.x), sort: e.x.sort, axis: {labelAngle: -35, labelLimit: 160, grid: false}, scale: {paddingInner: .25}},
+                 xOffset: {field: e.series.field, sort: e.series.sort, scale: {paddingInner: .08}},
+                 y: {...y, axis: {grid: true, tickCount: 6}}, color: catColor(e.series), tooltip: tip}};
+    case "time_series": return {...base,
+      layer: [{mark: {type: "line", strokeWidth: 2, interpolate: "monotone"}},
+              {mark: {type: "point", filled: true, size: 64, cursor: "pointer", stroke: css("--surface"), strokeWidth: 2}}],
+      encoding: {x: {field: e.x.field, type: "quantitative", title: ttl(e.x), axis: {format: "d", grid: false, tickMinStep: 1}, scale: {zero: false, nice: false}},
+                 y: {...y, axis: {grid: true, tickCount: 6}},
+                 ...(e.series ? {color: catColor(e.series)} : {color: {value: pal[0]}}), tooltip: tip}};
+    case "histogram": {
+      const w = v.meta_bin || (v.data.length > 1 ? v.data[1].bin_start - v.data[0].bin_start : 1);
+      base.data.values = v.data.map(d => ({...d, _end: d.bin_end ?? d.bin_start + w}));
+      return {...base, mark: {type: "rect", color: pal[0], cornerRadiusTopLeft: 4, cornerRadiusTopRight: 4, cursor: "pointer",
+                              stroke: css("--surface"), strokeWidth: 2},
+        encoding: {x: {field: "bin_start", type: "quantitative", title: ttl(e.x), axis: {grid: false}}, x2: {field: "_end"},
+                   y2: {datum: 0},
+                   y: {...y, axis: {grid: true}}, tooltip: tip}};
+    }
+    case "scatter_plot": return {...base, mark: {type: "point", filled: true, size: 64, opacity: .75, cursor: "pointer", stroke: css("--surface"), strokeWidth: 1},
+      encoding: {x: {field: e.x.field, type: "quantitative", title: ttl(e.x), scale: {type: e.x.scale || "linear"}, axis: {grid: true}},
+                 y: {field: e.y.field, type: "quantitative", title: ttl(e.y), scale: {type: e.y.scale || "linear"}, axis: {grid: true}},
+                 color: {field: e.color.field, type: "nominal", title: e.color.title, sort: e.color.sort, scale: {range: pal}}, tooltip: tip}};
+  }
+}
+
+const WORLD = "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json";
+const SEQ = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"];  // one hue, light to dark
+
+function drawMap(el, v) {
+  const e = v.encoding, ink2 = css("--ink-2"), W = Math.max(320, Math.round(el.getBoundingClientRect().width) - 20);
+  const byId = Object.fromEntries(v.data.filter(r => r.iso_numeric).map(r => [String(r.iso_numeric).padStart(3, "0"), r]));
+  const mapDiv = document.createElement("div"), barDiv = document.createElement("div");
+  el.append(mapDiv, barDiv);
+  const spec = {
+    $schema: "https://vega.github.io/schema/vega-lite/v5.json", width: W, height: Math.round(W * .45), background: null,
+    projection: {type: "equalEarth"}, config: {view: {stroke: null}, legend: {labelColor: ink2, titleColor: ink2}},
+    layer: [
+      {data: {url: WORLD, format: {type: "topojson", feature: "countries"}}, transform: [{filter: "datum.id != '010'"}], mark: {type: "geoshape", fill: css("--surface-2"), stroke: css("--line"), strokeWidth: .5}},
+      {data: {url: WORLD, format: {type: "topojson", feature: "countries"}},
+       transform: [{lookup: "id", from: {data: {values: Object.entries(byId).map(([id, r]) => ({id, country: r.country, trial_count: r.trial_count, share_pct: r.share_pct}))},
+                    key: "id", fields: ["country", "trial_count", "share_pct"]}}, {filter: "datum.trial_count != null"}],
+       mark: {type: "geoshape", stroke: css("--surface"), strokeWidth: .5, cursor: "pointer"},
+       encoding: {color: {field: "trial_count", type: "quantitative", title: e.color.title, scale: {type: "log", range: SEQ}},
+                  tooltip: [{field: "country", title: "Country"}, {field: "trial_count", title: "Trials", format: ","}, {field: "share_pct", title: "% of trials"}]}},
+    ],
+  };
+  vegaEmbed(mapDiv, spec, {actions: false, renderer: "svg"}).then(({view}) =>
+    view.addEventListener("click", (_, item) => { const r = item && item.datum && byId[String(item.datum.id).padStart(3, "0")]; if (r) showCites(r, v); }));
+  // same rows as a ranked bar chart (the documented fallback channels x/y)
+  const top = v.data.slice(0, 15);
+  const bars = {$schema: "https://vega.github.io/schema/vega-lite/v5.json", width: W - 160, height: top.length * 20, background: null,
+    data: {values: top}, config: {view: {stroke: null}, axis: {labelColor: ink2, titleColor: ink2, gridColor: css("--grid"), domainColor: css("--grid")}},
+    mark: {type: "bar", color: css("--s1"), cornerRadiusEnd: 4, cursor: "pointer"},
+    encoding: {y: {field: e.x.field, type: "nominal", sort: "-x", title: null}, x: {field: e.y.field, type: "quantitative", title: "Top countries by trials"},
+               tooltip: [{field: "country"}, {field: "trial_count", format: ","}]}};
+  vegaEmbed(barDiv, bars, {actions: false, renderer: "svg"}).then(({view}) =>
+    view.addEventListener("click", (_, item) => item && item.datum && item.datum.citations && showCites(item.datum, v)));
+}
+
+function nodeLabel(v, id) { const n = v.data.nodes.find(n => n.id === (id.id ?? id)); return n ? n.label : id; }
+
+function drawNetwork(el, v) {
+  const e = v.encoding, W = Math.round(el.getBoundingClientRect().width) || 760, H = 540, pal = series();
+  const nodes = v.data.nodes.map(d => ({...d})), links = v.data.edges.map(d => ({...d}));
+  const groups = e.node_group.sort || [...new Set(nodes.map(n => n.group))];
+  const color = d3.scaleOrdinal(groups, pal);
+  el.innerHTML = `<div class="netlegend">${groups.map(g => `<span><span class="swatch" style="background:${color(g)}"></span>${esc(g)}</span>`).join("")}
+                  <span style="color:var(--ink-3)">node size = trials · edge width = shared trials · drag to rearrange</span></div>`;
+  const r = d3.scaleSqrt([0, d3.max(nodes, n => n.trial_count) || 1], [5, 24]);
+  const maxW = d3.max(links, l => l.weight) || 1, w = d3.scaleLinear([1, maxW], [1, 9]);
+  const svg = d3.select(el).append("svg").attr("viewBox", [0, 0, W, H]).attr("width", "100%");
+  const sim = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.id).distance(140).strength(l => .15 + .6 * l.weight / maxW))
+    .force("charge", d3.forceManyBody().strength(-480)).force("center", d3.forceCenter(W / 2, H / 2))
+    .force("collide", d3.forceCollide(d => r(d.trial_count) + 6));
+  const bip = groups.length === 2;  // bipartite: two columns, labels on the outer side of each
+  if (bip) sim.force("x", d3.forceX(d => d.group === groups[0] ? W * .3 : W * .7).strength(.7))
+              .force("y", d3.forceY(H / 2).strength(.06));
+  const link = svg.append("g").selectAll("line").data(links).join("line")
+    .attr("stroke", css("--ink-3")).attr("stroke-opacity", .35).attr("stroke-width", d => w(d.weight)).style("cursor", "pointer")
+    .on("click", (_, d) => showCites(d, v, true))
+    .on("mouseenter", function () { d3.select(this).attr("stroke", css("--accent")).attr("stroke-opacity", .9); })
+    .on("mouseleave", function () { d3.select(this).attr("stroke", css("--ink-3")).attr("stroke-opacity", .35); });
+  link.append("title").text(d => `${d.source.label ?? d.source} ↔ ${d.target.label ?? d.target}: ${d.weight} shared trials`);
+  const node = svg.append("g").selectAll("g").data(nodes).join("g").style("cursor", "pointer")
+    .on("click", (_, d) => showCites(d, v))
+    .on("mouseenter", (_, d) => { link.attr("stroke-opacity", l => l.source.id === d.id || l.target.id === d.id ? .9 : .08); })
+    .on("mouseleave", () => link.attr("stroke-opacity", .35))
+    .call(d3.drag()
+      .on("start", (ev, d) => { if (!ev.active) sim.alphaTarget(.3).restart(); d.fx = d.x; d.fy = d.y; })
+      .on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
+      .on("end", (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = d.fy = null; }));
+  node.append("circle").attr("r", d => r(d.trial_count)).attr("fill", d => color(d.group)).attr("stroke", css("--surface")).attr("stroke-width", 2);
+  node.append("title").text(d => `${d.label}: ${d.trial_count} trials`);
+  node.append("text").text(d => d.label.length > 30 ? d.label.slice(0, 29) + "…" : d.label)
+    .attr("x", d => bip && d.group === groups[0] ? -(r(d.trial_count) + 5) : r(d.trial_count) + 5)
+    .attr("text-anchor", d => bip && d.group === groups[0] ? "end" : "start")
+    .attr("y", 4).attr("font-size", 11).attr("fill", css("--ink-2"))
+    .attr("paint-order", "stroke").attr("stroke", css("--surface")).attr("stroke-width", 3);
+  sim.on("tick", () => {
+    nodes.forEach(n => { n.x = Math.max(bip ? 160 : 24, Math.min(W - 160, n.x)); n.y = Math.max(24, Math.min(H - 24, n.y)); });
+    link.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
+  });
+}
+
+function autoSelect(v) {
+  const rows = v.type === "network_graph" ? v.data.nodes : v.data;
+  if (!rows.length) { $("cites").innerHTML = "No data points."; return; }
+  const best = rows.reduce((a, b) => ((b.trial_count ?? 0) > (a.trial_count ?? 0) ? b : a), rows[0]);
+  showCites(best, v);
+}
+
+function showCites(d, v, isEdge) {
+  const e = v.encoding;
+  let label;
+  if (isEdge || (d.source && d.target)) label = `${nodeLabel(v, d.source)} ↔ ${nodeLabel(v, d.target)}`;
+  else if (d.label) label = d.label;
+  else if (e.label) label = d[e.label.field];
+  else if (e.id) label = d[e.id.field];
+  else label = [e.x, e.series].filter(Boolean).map(c => d[c.field]).join(" · ");
+  const ids = d.nct_ids || (d.nct_id ? [d.nct_id] : []);
+  const n = d.trial_count ?? d.weight ?? ids.length;
+  const cites = d.citations || [];
+  $("cites").innerHTML = `<div class="sel"><b>${esc(label)}</b>: ${fmt(n)} trial${n === 1 ? "" : "s"}</div>
+    <div class="sub">${cites.length} field-level citation${cites.length === 1 ? "" : "s"} shown; every contributing record listed below.</div>` +
+    cites.map(c => `<div class="cite"><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.nct_id)}</a>
+      <div class="path mono">${esc(c.field)}</div><q>${esc(c.excerpt)}</q></div>`).join("") +
+    (ids.length ? `<div class="allids">${ids.slice(0, 300).map(id => `<a href="https://clinicaltrials.gov/study/${id}" target="_blank" rel="noopener">${id}</a>`).join(" ")}${ids.length > 300 ? ` … +${ids.length - 300} more` : ""}</div>` : "");
+}
+
+updatePreview();
+</script>
+</body>
+</html>

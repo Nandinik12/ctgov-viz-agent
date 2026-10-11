@@ -1,0 +1,54 @@
+{
+ "none": {
+  "status": 200,
+  "total": 16720
+ },
+ "phase_missing_only": {
+  "status": 200,
+  "total": 3673
+ },
+ "phase2_any": {
+  "status": 200,
+  "total": 4556
+ },
+ "phase2_only": {
+  "status": 200,
+  "total": 3544
+ },
+ "phase1_and_2": {
+  "status": 200,
+  "total": 866
+ },
+ "phase_missing": {
+  "status": 200,
+  "total": 3673
+ },
+ "phase_na": {
+  "status": 200,
+  "total": 4898
+ },
+ "status_recruiting_adv": {
+  "status": 200,
+  "total": 2425
+ },
+ "status_recruiting_filter": {
+  "status": 200,
+  "total": 2425
+ },
+ "studytype_interventional": {
+  "status": 200,
+  "total": 13049
+ },
+ "sponsorclass_industry": {
+  "status": 200,
+  "total": 3388
+ },
+ "start_2015": {
+  "status": 200,
+  "total": 677
+ },
+ "start_missing": {
+  "status": 200,
+  "total": 85
+ }
+}

@@ -1,0 +1,30 @@
+{"id": "trend-drug-since", "query": "How has the number of trials for Pembrolizumab changed per year since 2015?", "expect": {"analysis": "time_trend", "filters": {"drug": "pembrolizumab", "start_year": 2015}}}
+{"id": "trend-structured", "query": "How has the number of trials for this drug changed over time?", "structured": {"drug_name": "Pembrolizumab"}, "expect": {"analysis": "time_trend", "filters": {"drug": "pembrolizumab"}}}
+{"id": "trend-condition", "query": "How many trials started each year for breast cancer?", "expect": {"analysis": "time_trend", "entity_any": ["breast cancer"]}}
+{"id": "trend-split-phase", "query": "Show the number of Alzheimer's trials per year broken down by phase", "expect": {"analysis": "time_trend", "series_dimension": "phase"}}
+{"id": "trend-range", "query": "Trend of obesity trials between 2010 and 2020", "expect": {"analysis": "time_trend", "filters": {"start_year": 2010, "end_year": 2020}, "entity_any": ["obesity"]}}
+{"id": "dist-phase", "query": "How are breast cancer trials distributed across phases?", "expect": {"analysis": "distribution", "dimension": "phase", "entity_any": ["breast cancer"]}}
+{"id": "dist-intervention-type", "query": "What are the most common intervention types for melanoma trials?", "expect": {"analysis": "distribution", "dimension": "intervention_type", "entity_any": ["melanoma"]}}
+{"id": "dist-status", "query": "What is the status breakdown of COVID-19 vaccine trials?", "expect": {"analysis": "distribution", "dimension": "overall_status"}}
+{"id": "dist-sponsor", "query": "Which sponsors run the most glioblastoma trials?", "expect": {"analysis": "distribution", "dimension": "sponsor", "entity_any": ["glioblastoma"]}}
+{"id": "dist-sponsor-class", "query": "What share of asthma trials are industry funded vs academic? Show sponsor class.", "expect": {"analysis": "distribution", "dimension": "sponsor_class"}}
+{"id": "dist-drugs", "query": "What drugs are most often tested in multiple myeloma trials?", "expect": {"analysis": "distribution", "dimension": "drug", "entity_any": ["multiple myeloma"]}}
+{"id": "dist-conditions", "query": "Which conditions is Semaglutide being studied for?", "expect": {"analysis": "distribution", "dimension": "condition", "filters": {"drug": "semaglutide"}}}
+{"id": "geo-recruiting", "query": "Which countries have the most recruiting trials for type 2 diabetes?", "expect": {"analysis": "distribution", "dimension": "country", "filters": {"statuses": ["RECRUITING"]}, "entity_any": ["type 2 diabetes"]}}
+{"id": "geo-phase3", "query": "Where are phase 3 trials for nivolumab being run?", "expect": {"analysis": "distribution", "dimension": "country", "filters": {"drug": "nivolumab", "phases": ["PHASE3"]}}}
+{"id": "cmp-drugs-phase", "query": "Compare phases for trials involving Pembrolizumab vs Nivolumab", "expect": {"analysis": "comparison", "dimension": "phase", "compare": ["pembrolizumab", "nivolumab"]}}
+{"id": "cmp-structured", "query": "Compare sponsor categories across two conditions.", "structured": {"compare": {"field": "condition", "values": ["lung cancer", "breast cancer"]}}, "expect": {"analysis": "comparison", "dimension": "sponsor_class", "compare": ["lung cancer", "breast cancer"]}}
+{"id": "cmp-status", "query": "How do statuses differ between Ozempic and Mounjaro trials?", "expect": {"analysis": "comparison", "dimension": "overall_status", "compare": ["ozempic", "mounjaro"]}}
+{"id": "cmp-trend", "query": "Compare the number of trials per year for Adalimumab versus Infliximab since 2010", "expect": {"analysis": "comparison", "dimension": "start_year", "compare": ["adalimumab", "infliximab"], "filters": {"start_year": 2010}}}
+{"id": "hist-enrollment", "query": "What is the distribution of enrollment sizes for Alzheimer disease phase 3 trials?", "expect": {"analysis": "histogram", "dimension": "enrollment", "filters": {"phases": ["PHASE3"]}}}
+{"id": "hist-duration", "query": "How long do Crohn's disease trials typically last?", "expect": {"analysis": "histogram", "dimension": "duration_months"}}
+{"id": "scatter", "query": "Is there a correlation between enrollment and duration for psoriasis trials?", "expect": {"analysis": "scatter"}}
+{"id": "net-sponsor-drug", "query": "Show a network of sponsors and drugs for melanoma trials", "expect": {"analysis": "network", "dimension": "sponsor", "secondary_dimension": "drug", "entity_any": ["melanoma"]}}
+{"id": "net-drug-drug", "query": "Which drugs frequently co-occur in combination studies (drug to drug network)?", "expect": {"analysis": "network", "dimension": "drug", "secondary_dimension": null}}
+{"id": "net-condition-drug", "query": "Map the relationships between conditions and drugs in Pfizer trials", "expect": {"analysis": "network", "filters": {"sponsor": "pfizer"}}}
+{"id": "net-sponsor-country", "query": "Network of sponsors and countries for recruiting sickle cell disease trials", "expect": {"analysis": "network", "dimension": "sponsor", "secondary_dimension": "country", "filters": {"statuses": ["RECRUITING"]}}}
+{"id": "ground-no-brand", "query": "How are pembrolizumab trials distributed across phases?", "expect": {"analysis": "distribution", "dimension": "phase", "forbid_entities": ["keytruda", "mk-3475"]}}
+{"id": "ground-no-invent", "query": "What phases are trials in?", "expect": {"analysis": "distribution", "dimension": "phase", "forbid_any_entity": true}}
+{"id": "struct-wins", "query": "How are lung cancer trials distributed by phase?", "structured": {"condition": "small cell lung cancer"}, "expect": {"filters": {"condition": "small cell lung cancer"}}}
+{"id": "status-completed", "query": "Which sponsors have the most completed trials for hepatitis C?", "expect": {"analysis": "distribution", "dimension": "sponsor", "filters": {"statuses": ["COMPLETED"]}}}
+{"id": "study-type", "query": "Interventional vs observational study types for long COVID", "expect": {"analysis": "distribution", "dimension": "study_type"}}

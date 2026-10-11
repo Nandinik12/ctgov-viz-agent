@@ -1,0 +1,15 @@
+{"id": "h-trend-1", "query": "Yearly count of CAR-T trials since 2016", "expect": {"analysis": "time_trend", "filters": {"start_year": 2016}}}
+{"id": "h-trend-2", "query": "Has research on migraine grown over time?", "expect": {"analysis": "time_trend", "entity_any": ["migraine"]}}
+{"id": "h-dist-1", "query": "Breakdown of rheumatoid arthritis trials by phase", "expect": {"analysis": "distribution", "dimension": "phase", "entity_any": ["rheumatoid arthritis"]}}
+{"id": "h-dist-2", "query": "Top sponsors of Parkinson disease trials", "expect": {"analysis": "distribution", "dimension": "sponsor", "entity_any": ["parkinson"]}}
+{"id": "h-dist-3", "query": "What kinds of interventions are used in depression trials? Show intervention types", "expect": {"analysis": "distribution", "dimension": "intervention_type"}}
+{"id": "h-geo-1", "query": "Which countries host the most trials for tirzepatide?", "expect": {"analysis": "distribution", "dimension": "country", "filters": {"drug": "tirzepatide"}}}
+{"id": "h-geo-2", "query": "Geographic spread of recruiting HIV trials", "expect": {"analysis": "distribution", "dimension": "country", "filters": {"statuses": ["RECRUITING"]}}}
+{"id": "h-cmp-1", "query": "Compare sponsor class for Dupilumab vs Omalizumab trials", "expect": {"analysis": "comparison", "dimension": "sponsor_class", "compare": ["dupilumab", "omalizumab"]}}
+{"id": "h-cmp-2", "query": "Phase distribution: Atezolizumab versus Durvalumab", "expect": {"analysis": "comparison", "dimension": "phase", "compare": ["atezolizumab", "durvalumab"]}}
+{"id": "h-hist-1", "query": "Histogram of enrollment for pediatric leukemia trials", "expect": {"analysis": "histogram", "dimension": "enrollment"}}
+{"id": "h-net-1", "query": "Which drugs are combined with pembrolizumab? Show the co-occurrence network", "expect": {"analysis": "network", "dimension": "drug", "filters": {"drug": "pembrolizumab"}}}
+{"id": "h-net-2", "query": "Network linking conditions and drugs for Novartis trials", "expect": {"analysis": "network", "dimension": "condition", "secondary_dimension": "drug"}}
+{"id": "h-status-1", "query": "How many terminated trials per sponsor for ALS?", "expect": {"analysis": "distribution", "dimension": "sponsor", "filters": {"statuses": ["TERMINATED"]}}}
+{"id": "h-ground-1", "query": "Distribution of trial phases for adalimumab", "expect": {"analysis": "distribution", "dimension": "phase", "forbid_entities": ["humira"]}}
+{"id": "h-scatter-1", "query": "Scatter plot of enrollment versus duration for COPD trials", "expect": {"analysis": "scatter"}}

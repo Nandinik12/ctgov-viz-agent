@@ -1,0 +1,748 @@
+{
+  "request": {
+    "query": "What is the distribution of enrollment sizes for Alzheimer disease phase 3 trials?",
+    "condition": "Alzheimer disease",
+    "trial_phase": [
+      "PHASE3"
+    ]
+  },
+  "response": {
+    "request_id": "102b1bd6-007a-42ff-b385-e38d51830541",
+    "status": "ok",
+    "visualization": {
+      "type": "histogram",
+      "title": "Distribution of enrollment for Alzheimer disease",
+      "subtitle": "385 trials analyzed; phases PHASE3. Source: ClinicalTrials.gov",
+      "encoding": {
+        "x": {
+          "field": "bin_start",
+          "type": "quantitative",
+          "title": "Enrollment (participants)",
+          "unit": "participants"
+        },
+        "x2": {
+          "field": "bin_end",
+          "type": "quantitative",
+          "title": "Bin end",
+          "unit": "participants"
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative",
+          "title": "Number of trials",
+          "unit": "trials"
+        },
+        "label": {
+          "field": "bin_label",
+          "type": "ordinal",
+          "title": "Bin"
+        }
+      },
+      "data": [
+        {
+          "bin_start": 0,
+          "bin_end": 200,
+          "bin_label": "0-200",
+          "trial_count": 113,
+          "nct_ids": [
+            "NCT03542656",
+            "NCT01876823",
+            "NCT00287742",
+            "NCT01447719",
+            "NCT02719327",
+            "NCT00065767",
+            "NCT04882735",
+            "NCT00743743",
+            "NCT06120049",
+            "NCT01035138",
+            "NCT00065689",
+            "NCT01565382",
+            "NCT03116126",
+            "NCT00715858",
+            "NCT00097916",
+            "NCT04516057",
+            "NCT00898807",
+            "NCT00255866",
+            "NCT01053312",
+            "NCT01142258",
+            "NCT01867775",
+            "NCT02772185",
+            "NCT00066157",
+            "NCT00082602",
+            "NCT06797817",
+            "NCT05124561",
+            "NCT00624026",
+            "NCT07323914",
+            "NCT03491150",
+            "NCT05169008",
+            "NCT01688128",
+            "NCT01094340",
+            "NCT05858515",
+            "NCT01409694",
+            "NCT03075241",
+            "NCT00954590",
+            "NCT04418024",
+            "NCT04187547",
+            "NCT02350127",
+            "NCT01066546",
+            "NCT07234695",
+            "NCT02284906",
+            "NCT05108922",
+            "NCT00086138",
+            "NCT06304883",
+            "NCT05456503",
+            "NCT07060391",
+            "NCT05269394",
+            "NCT00539305",
+            "NCT03291093",
+            "NCT00190021",
+            "NCT00160147",
+            "NCT01172145",
+            "NCT00996918",
+            "NCT02327182",
+            "NCT02035982",
+            "NCT05015803",
+            "NCT01047254",
+            "NCT01092546",
+            "NCT00432081",
+            "NCT02351882",
+            "NCT02248116",
+            "NCT00416078",
+            "NCT06736509",
+            "NCT01883648",
+            "NCT00439166",
+            "NCT00791492",
+            "NCT02760602",
+            "NCT05256134",
+            "NCT07422311",
+            "NCT00134953",
+            "NCT00448318",
+            "NCT00309725",
+            "NCT00095719",
+            "NCT02550665",
+            "NCT03724942",
+            "NCT00255086",
+            "NCT00912288",
+            "NCT07571161",
+            "NCT02541929",
+            "NCT04408755",
+            "NCT00678431",
+            "NCT06530732",
+            "NCT00951834",
+            "NCT00908492",
+            "NCT03721705",
+            "NCT02353949",
+            "NCT07752784",
+            "NCT00000177",
+            "NCT00191009",
+            "NCT02817906",
+            "NCT00409175",
+            "NCT02317250",
+            "NCT01662882",
+            "NCT06860373",
+            "NCT02516046",
+            "NCT04604600",
+            "NCT01183806",
+            "NCT06384573",
+            "NCT01211782",
+            "NCT03108846",
+            "NCT04390646",
+            "NCT04623242",
+            "NCT05894954",
+            "NCT00488670",
+            "NCT02248636",
+            "NCT03486938",
+            "NCT05891496",
+            "NCT02168920",
+            "NCT04339413",
+            "NCT04797715",
+            "NCT01577394",
+            "NCT06424236"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT03542656",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "160",
+              "url": "https://clinicaltrials.gov/study/NCT03542656"
+            },
+            {
+              "nct_id": "NCT01876823",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "60",
+              "url": "https://clinicaltrials.gov/study/NCT01876823"
+            },
+            {
+              "nct_id": "NCT00287742",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "33",
+              "url": "https://clinicaltrials.gov/study/NCT00287742"
+            }
+          ]
+        },
+        {
+          "bin_start": 200,
+          "bin_end": 400,
+          "bin_label": "200-400",
+          "trial_count": 91,
+          "nct_ids": [
+            "NCT06964230",
+            "NCT01767909",
+            "NCT00216502",
+            "NCT05983575",
+            "NCT07191028",
+            "NCT00249145",
+            "NCT01681602",
+            "NCT04570085",
+            "NCT01249196",
+            "NCT06254469",
+            "NCT04098666",
+            "NCT04770220",
+            "NCT07115238",
+            "NCT00249158",
+            "NCT00428389",
+            "NCT00277810",
+            "NCT03325556",
+            "NCT01438060",
+            "NCT04842552",
+            "NCT03901092",
+            "NCT01922258",
+            "NCT07422857",
+            "NCT02346201",
+            "NCT04661280",
+            "NCT01672827",
+            "NCT00096473",
+            "NCT05542953",
+            "NCT00056329",
+            "NCT05552157",
+            "NCT01245530",
+            "NCT02051608",
+            "NCT01028053",
+            "NCT01020838",
+            "NCT00857649",
+            "NCT00630851",
+            "NCT05686044",
+            "NCT06702124",
+            "NCT03226522",
+            "NCT03548584",
+            "NCT00071721",
+            "NCT03090516",
+            "NCT00259454",
+            "NCT06516965",
+            "NCT04314934",
+            "NCT00301574",
+            "NCT02442765",
+            "NCT03031184",
+            "NCT00645190",
+            "NCT00259480",
+            "NCT01594346",
+            "NCT06947941",
+            "NCT01940952",
+            "NCT06647498",
+            "NCT00621647",
+            "NCT01561053",
+            "NCT00818662",
+            "NCT03860857",
+            "NCT02004392",
+            "NCT01404169",
+            "NCT01539031",
+            "NCT02319005",
+            "NCT01886820",
+            "NCT07116473",
+            "NCT02016560",
+            "NCT06125951",
+            "NCT01614886",
+            "NCT07284472",
+            "NCT00857233",
+            "NCT00857415",
+            "NCT07262645",
+            "NCT03901105",
+            "NCT05811000",
+            "NCT03594123",
+            "NCT01165554",
+            "NCT00056225",
+            "NCT05267535",
+            "NCT05397639",
+            "NCT02750306",
+            "NCT03969732",
+            "NCT04464564",
+            "NCT01282619",
+            "NCT05641688",
+            "NCT00253227",
+            "NCT01265394",
+            "NCT00550420",
+            "NCT03451591",
+            "NCT02916056",
+            "NCT03197740",
+            "NCT06996730",
+            "NCT00304629",
+            "NCT00056628"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT06964230",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "376",
+              "url": "https://clinicaltrials.gov/study/NCT06964230"
+            },
+            {
+              "nct_id": "NCT01767909",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "240",
+              "url": "https://clinicaltrials.gov/study/NCT01767909"
+            },
+            {
+              "nct_id": "NCT00216502",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "254",
+              "url": "https://clinicaltrials.gov/study/NCT00216502"
+            }
+          ]
+        },
+        {
+          "bin_start": 400,
+          "bin_end": 600,
+          "bin_label": "400-600",
+          "trial_count": 49,
+          "nct_ids": [
+            "NCT01399125",
+            "NCT04488419",
+            "NCT01760005",
+            "NCT01994889",
+            "NCT01524887",
+            "NCT07251023",
+            "NCT00261573",
+            "NCT01969136",
+            "NCT03446001",
+            "NCT03682185",
+            "NCT00998764",
+            "NCT07011732",
+            "NCT07011745",
+            "NCT02164643",
+            "NCT02017340",
+            "NCT05557409",
+            "NCT00814801",
+            "NCT06563895",
+            "NCT02565511",
+            "NCT06976203",
+            "NCT04886063",
+            "NCT00804271",
+            "NCT07602582",
+            "NCT06585787",
+            "NCT05511363",
+            "NCT02913664",
+            "NCT03790709",
+            "NCT00338117",
+            "NCT06534723",
+            "NCT02442778",
+            "NCT06976216",
+            "NCT06126224",
+            "NCT07757204",
+            "NCT01862640",
+            "NCT00053599",
+            "NCT00216593",
+            "NCT00090116",
+            "NCT04669028",
+            "NCT02569398",
+            "NCT00034762",
+            "NCT01969123",
+            "NCT00675623",
+            "NCT02972658",
+            "NCT00440050",
+            "NCT00231946",
+            "NCT03620981",
+            "NCT01741194",
+            "NCT04947553",
+            "NCT05809908"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT01399125",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "501",
+              "url": "https://clinicaltrials.gov/study/NCT01399125"
+            },
+            {
+              "nct_id": "NCT04488419",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "554",
+              "url": "https://clinicaltrials.gov/study/NCT04488419"
+            },
+            {
+              "nct_id": "NCT01760005",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "490",
+              "url": "https://clinicaltrials.gov/study/NCT01760005"
+            }
+          ]
+        },
+        {
+          "bin_start": 600,
+          "bin_end": 800,
+          "bin_label": "600-800",
+          "trial_count": 29,
+          "nct_ids": [
+            "NCT04229927",
+            "NCT03283059",
+            "NCT02006654",
+            "NCT00253201",
+            "NCT03393520",
+            "NCT01224106",
+            "NCT03823404",
+            "NCT00322153",
+            "NCT00151502",
+            "NCT00646269",
+            "NCT02547818",
+            "NCT01152216",
+            "NCT00235716",
+            "NCT01872598",
+            "NCT06194799",
+            "NCT00314912",
+            "NCT00838110",
+            "NCT00253123",
+            "NCT05303701",
+            "NCT06709014",
+            "NCT03860935",
+            "NCT00056524",
+            "NCT05564169",
+            "NCT00939783",
+            "NCT03691519",
+            "NCT00253188",
+            "NCT06937229",
+            "NCT07066826",
+            "NCT00240695"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT04229927",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "712",
+              "url": "https://clinicaltrials.gov/study/NCT04229927"
+            },
+            {
+              "nct_id": "NCT03283059",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "600",
+              "url": "https://clinicaltrials.gov/study/NCT03283059"
+            },
+            {
+              "nct_id": "NCT02006654",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "734",
+              "url": "https://clinicaltrials.gov/study/NCT02006654"
+            }
+          ]
+        },
+        {
+          "bin_start": 800,
+          "bin_end": 1000,
+          "bin_label": "800-1000",
+          "trial_count": 23,
+          "nct_ids": [
+            "NCT01689233",
+            "NCT02670083",
+            "NCT04994483",
+            "NCT00322036",
+            "NCT02245568",
+            "NCT00667810",
+            "NCT02293915",
+            "NCT00428090",
+            "NCT02006641",
+            "NCT00937352",
+            "NCT00088673",
+            "NCT03114657",
+            "NCT01955161",
+            "NCT00236574",
+            "NCT00253214",
+            "NCT00219232",
+            "NCT00566501",
+            "NCT01689246",
+            "NCT07062198",
+            "NCT00423085",
+            "NCT03443973",
+            "NCT02080364",
+            "NCT00217763"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT01689233",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "800",
+              "url": "https://clinicaltrials.gov/study/NCT01689233"
+            },
+            {
+              "nct_id": "NCT02670083",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "813",
+              "url": "https://clinicaltrials.gov/study/NCT02670083"
+            },
+            {
+              "nct_id": "NCT04994483",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "804",
+              "url": "https://clinicaltrials.gov/study/NCT04994483"
+            }
+          ]
+        },
+        {
+          "bin_start": 1000,
+          "bin_end": 1200,
+          "bin_label": "1000-1200",
+          "trial_count": 22,
+          "nct_ids": [
+            "NCT07169578",
+            "NCT03131453",
+            "NCT07170150",
+            "NCT05980949",
+            "NCT00905372",
+            "NCT05575076",
+            "NCT00904683",
+            "NCT00762411",
+            "NCT00575055",
+            "NCT00380276",
+            "NCT00676143",
+            "NCT05738486",
+            "NCT02008357",
+            "NCT00236431",
+            "NCT02586909",
+            "NCT05026177",
+            "NCT02446132",
+            "NCT03444870",
+            "NCT00099242",
+            "NCT06159673",
+            "NCT05310071",
+            "NCT00829374"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT07169578",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1101",
+              "url": "https://clinicaltrials.gov/study/NCT07169578"
+            },
+            {
+              "nct_id": "NCT03131453",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1145",
+              "url": "https://clinicaltrials.gov/study/NCT03131453"
+            },
+            {
+              "nct_id": "NCT07170150",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1060",
+              "url": "https://clinicaltrials.gov/study/NCT07170150"
+            }
+          ]
+        },
+        {
+          "bin_start": 1200,
+          "bin_end": 1400,
+          "bin_label": "1200-1400",
+          "trial_count": 6,
+          "nct_ids": [
+            "NCT05143528",
+            "NCT00103649",
+            "NCT02585934",
+            "NCT04374253",
+            "NCT07724132",
+            "NCT00574132"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT05143528",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1275",
+              "url": "https://clinicaltrials.gov/study/NCT05143528"
+            },
+            {
+              "nct_id": "NCT00103649",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1306",
+              "url": "https://clinicaltrials.gov/study/NCT00103649"
+            },
+            {
+              "nct_id": "NCT02585934",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1315",
+              "url": "https://clinicaltrials.gov/study/NCT02585934"
+            }
+          ]
+        },
+        {
+          "bin_start": 1400,
+          "bin_end": 1600,
+          "bin_label": "1400-1600",
+          "trial_count": 13,
+          "nct_ids": [
+            "NCT04468659",
+            "NCT00490568",
+            "NCT00348140",
+            "NCT01953601",
+            "NCT06653153",
+            "NCT00104013",
+            "NCT00506415",
+            "NCT01127633",
+            "NCT05531526",
+            "NCT02079246",
+            "NCT00594568",
+            "NCT00478205",
+            "NCT05508789"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT04468659",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1400",
+              "url": "https://clinicaltrials.gov/study/NCT04468659"
+            },
+            {
+              "nct_id": "NCT00490568",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1461",
+              "url": "https://clinicaltrials.gov/study/NCT00490568"
+            },
+            {
+              "nct_id": "NCT00348140",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1468",
+              "url": "https://clinicaltrials.gov/study/NCT00348140"
+            }
+          ]
+        },
+        {
+          "bin_start": 1600,
+          "bin_end": 1800,
+          "bin_label": "1600-1800",
+          "trial_count": 9,
+          "nct_ids": [
+            "NCT02477800",
+            "NCT00105547",
+            "NCT04241068",
+            "NCT07717411",
+            "NCT02791230",
+            "NCT04437511",
+            "NCT02783573",
+            "NCT05463731",
+            "NCT02484547"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT02477800",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1653",
+              "url": "https://clinicaltrials.gov/study/NCT02477800"
+            },
+            {
+              "nct_id": "NCT00105547",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1600",
+              "url": "https://clinicaltrials.gov/study/NCT00105547"
+            },
+            {
+              "nct_id": "NCT04241068",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1696",
+              "url": "https://clinicaltrials.gov/study/NCT04241068"
+            }
+          ]
+        },
+        {
+          "bin_start": 1800,
+          "bin_end": null,
+          "bin_label": ">= 1800",
+          "trial_count": 18,
+          "nct_ids": [
+            "NCT03887455",
+            "NCT01900665",
+            "NCT05026866",
+            "NCT01739348",
+            "NCT01931566",
+            "NCT02245737",
+            "NCT04777409",
+            "NCT02956486",
+            "NCT07142954",
+            "NCT04642339",
+            "NCT03848312",
+            "NCT04520412",
+            "NCT00007189",
+            "NCT07177352",
+            "NCT04526990",
+            "NCT04777396",
+            "NCT00679627",
+            "NCT00010803"
+          ],
+          "citations": [
+            {
+              "nct_id": "NCT03887455",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "1906",
+              "url": "https://clinicaltrials.gov/study/NCT03887455"
+            },
+            {
+              "nct_id": "NCT01900665",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "2129",
+              "url": "https://clinicaltrials.gov/study/NCT01900665"
+            },
+            {
+              "nct_id": "NCT05026866",
+              "field": "protocolSection.designModule.enrollmentInfo.count",
+              "excerpt": "2996",
+              "url": "https://clinicaltrials.gov/study/NCT05026866"
+            }
+          ]
+        }
+      ]
+    },
+    "meta": {
+      "source": "clinicaltrials.gov",
+      "api_base": "https://clinicaltrials.gov/api/v2",
+      "generated_at": "2026-10-11T20:39:21+00:00",
+      "interpretation": {
+        "planner": "llm",
+        "action": "visualize",
+        "analysis": "histogram",
+        "dimension": "enrollment",
+        "rationale": "A histogram of enrollment sizes shows the distribution of how many participants are enrolled in Alzheimer disease phase 3 trials."
+      },
+      "filters": {
+        "condition": "Alzheimer disease",
+        "phases": [
+          "PHASE3"
+        ]
+      },
+      "cohorts": [
+        {
+          "label": "Alzheimer disease",
+          "api_params": {
+            "query.cond": "\"Alzheimer disease\"",
+            "filter.advanced": "AREA[Phase](PHASE3)"
+          },
+          "total_matching": 385,
+          "records_analyzed": 385,
+          "truncated": false
+        }
+      ],
+      "units": {
+        "bin_start": "participants",
+        "bin_end": "participants",
+        "trial_count": "trials"
+      },
+      "sort": "bin_order",
+      "statistics": {
+        "n": 373,
+        "missing": 12,
+        "min": 0.0,
+        "max": 80000.0,
+        "median": 351.0,
+        "mean": 893.5,
+        "bin_width": 200,
+        "overflow_threshold": 1800
+      },
+      "assumptions": [
+        "Bins are [bin_start, bin_end). Values >= 1800 (about the 95th percentile) are grouped into one overflow bin (bin_end = null) to keep the long tail readable."
+      ],
+      "warnings": []
+    }
+  }
+}

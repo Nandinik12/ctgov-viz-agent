@@ -1,0 +1,5379 @@
+{
+ "source": "live ClinicalTrials.gov API v2 via scripts/probe_api.py (query.intr=pembrolizumab, query.cond=melanoma; 15 each)",
+ "studies": [
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT03772899"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Fecal Microbial Transplantation",
+       "description": "All patients in this trial will receive FMT at least one week prior to treatment with approved immunotherapy (either pembrolizumab or nivolumab). Samples for FMT are sourced at and by the microbiology group under the supervision of Dr. Silverman at St Joseph's Hospital. Donor screening procedures are described in appendix 4. Transplant will be from one single donor for all participants unless Dr. Silverman's lab considers the need for more than one donor based on availability of donors. There will be no \"mixture\" of donor samples.\n\nDonor samples are manufactured into capsules according to Kao et al, 2017.",
+       "armGroupLabels": [
+        "Study Intervention"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05508867"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Hodgkin Lymphoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "favezelimab/pembrolizumab",
+       "description": "Coformulated favezelimab/pembrolizumab (800 mg/200 mg), IV infusion",
+       "armGroupLabels": [
+        "Favezelimab/Pembrolizumab"
+       ],
+       "otherNames": [
+        "MK-4820A"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "bendamustine",
+       "description": "IV infusion",
+       "armGroupLabels": [
+        "Chemotherapy (Bendamustine or Gemcitabine)"
+       ],
+       "otherNames": [
+        "BENDEKA\u00ae"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "gemcitabine",
+       "description": "IV infusion",
+       "armGroupLabels": [
+        "Chemotherapy (Bendamustine or Gemcitabine)"
+       ],
+       "otherNames": [
+        "GEMZAR\u00ae"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D006689",
+       "term": "Hodgkin Disease"
+      },
+      {
+       "id": "C565324",
+       "term": "Parkinson Disease 4, Autosomal Dominant Lewy Body"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D008223",
+       "term": "Lymphoma"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D008232",
+       "term": "Lymphoproliferative Disorders"
+      },
+      {
+       "id": "D008206",
+       "term": "Lymphatic Diseases"
+      },
+      {
+       "id": "D006425",
+       "term": "Hemic and Lymphatic Diseases"
+      },
+      {
+       "id": "D007160",
+       "term": "Immunoproliferative Disorders"
+      },
+      {
+       "id": "D007154",
+       "term": "Immune System Diseases"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      },
+      {
+       "id": "D000069461",
+       "term": "Bendamustine Hydrochloride"
+      },
+      {
+       "id": "D000093542",
+       "term": "Gemcitabine"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D002087",
+       "term": "Butyrates"
+      },
+      {
+       "id": "D000144",
+       "term": "Acids, Acyclic"
+      },
+      {
+       "id": "D002264",
+       "term": "Carboxylic Acids"
+      },
+      {
+       "id": "D009930",
+       "term": "Organic Chemicals"
+      },
+      {
+       "id": "D009588",
+       "term": "Nitrogen Mustard Compounds"
+      },
+      {
+       "id": "D009150",
+       "term": "Mustard Compounds"
+      },
+      {
+       "id": "D006846",
+       "term": "Hydrocarbons, Halogenated"
+      },
+      {
+       "id": "D006838",
+       "term": "Hydrocarbons"
+      },
+      {
+       "id": "D001562",
+       "term": "Benzimidazoles"
+      },
+      {
+       "id": "D006574",
+       "term": "Heterocyclic Compounds, 2-Ring"
+      },
+      {
+       "id": "D000072471",
+       "term": "Heterocyclic Compounds, Fused-Ring"
+      },
+      {
+       "id": "D006571",
+       "term": "Heterocyclic Compounds"
+      },
+      {
+       "id": "D003841",
+       "term": "Deoxycytidine"
+      },
+      {
+       "id": "D003562",
+       "term": "Cytidine"
+      },
+      {
+       "id": "D011741",
+       "term": "Pyrimidine Nucleosides"
+      },
+      {
+       "id": "D011743",
+       "term": "Pyrimidines"
+      },
+      {
+       "id": "D006573",
+       "term": "Heterocyclic Compounds, 1-Ring"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06558799"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Non-Small Cell Lung Cancer (NSCLC)"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DEVICE",
+       "name": "NovoTTF-200T",
+       "description": "The NovoTTF-200T is a portable, battery operated system intended for continuous home use, which delivers TTFields at a frequency of 150kHz to the subject by means of insulated transducer arrays. TTFields exert electric forces intended to disrupt cancer cell division and induce immunogenic cell death.",
+       "armGroupLabels": [
+        "NovoTTF-200T + Pembrolizumab"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Pembrolizumab",
+       "description": "Pembrolizumab is an immune checkpoint inhibitor that helps the immune system recognize and attack cancer cells.",
+       "armGroupLabels": [
+        "NovoTTF-200T + Pembrolizumab"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D002289",
+       "term": "Carcinoma, Non-Small-Cell Lung"
+      },
+      {
+       "id": "D009362",
+       "term": "Neoplasm Metastasis"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D002283",
+       "term": "Carcinoma, Bronchogenic"
+      },
+      {
+       "id": "D001984",
+       "term": "Bronchial Neoplasms"
+      },
+      {
+       "id": "D008175",
+       "term": "Lung Neoplasms"
+      },
+      {
+       "id": "D012142",
+       "term": "Respiratory Tract Neoplasms"
+      },
+      {
+       "id": "D013899",
+       "term": "Thoracic Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D008171",
+       "term": "Lung Diseases"
+      },
+      {
+       "id": "D012140",
+       "term": "Respiratory Tract Diseases"
+      },
+      {
+       "id": "D009385",
+       "term": "Neoplastic Processes"
+      },
+      {
+       "id": "D010335",
+       "term": "Pathologic Processes"
+      },
+      {
+       "id": "D013568",
+       "term": "Pathological Conditions, Signs and Symptoms"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04344795"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Solid Tumor",
+      "Colorectal Cancer",
+      "Non Small Cell Lung Cancer",
+      "Squamous Cell Carcinoma of Head and Neck",
+      "Urothelial Carcinoma",
+      "Endometrial Cancer",
+      "Gastroesophageal Junction Adenocarcinoma",
+      "Gastric Adenocarcinoma",
+      "Solid Tumors With PIK3Ca Mutation"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "TPST-1495 twice daily",
+       "description": "TPST-1495 administered orally twice daily",
+       "armGroupLabels": [
+        "TPST-1495 monotherapy dose escalation"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "TPST-1495 once daily or on intermittent schedule",
+       "description": "TPST-1495 administered orally once daily or on intermittent schedule",
+       "armGroupLabels": [
+        "TPST-1495 in combination with pembrolizumab dose and schedule optimization",
+        "TPST-1495 in combination with pembrolizumab dose expansion",
+        "TPST-1495 monotherapy dose and schedule optimization",
+        "TPST-1495 monotherapy dose expansion"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Pembrolizumab",
+       "description": "Pembrolizumab dosed per label recommendations",
+       "armGroupLabels": [
+        "TPST-1495 in combination with pembrolizumab dose and schedule optimization",
+        "TPST-1495 in combination with pembrolizumab dose expansion"
+       ],
+       "otherNames": [
+        "Keytruda"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D015179",
+       "term": "Colorectal Neoplasms"
+      },
+      {
+       "id": "D002289",
+       "term": "Carcinoma, Non-Small-Cell Lung"
+      },
+      {
+       "id": "D000077195",
+       "term": "Squamous Cell Carcinoma of Head and Neck"
+      },
+      {
+       "id": "D002295",
+       "term": "Carcinoma, Transitional Cell"
+      },
+      {
+       "id": "D016889",
+       "term": "Endometrial Neoplasms"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D007414",
+       "term": "Intestinal Neoplasms"
+      },
+      {
+       "id": "D005770",
+       "term": "Gastrointestinal Neoplasms"
+      },
+      {
+       "id": "D004067",
+       "term": "Digestive System Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D004066",
+       "term": "Digestive System Diseases"
+      },
+      {
+       "id": "D005767",
+       "term": "Gastrointestinal Diseases"
+      },
+      {
+       "id": "D003108",
+       "term": "Colonic Diseases"
+      },
+      {
+       "id": "D007410",
+       "term": "Intestinal Diseases"
+      },
+      {
+       "id": "D012002",
+       "term": "Rectal Diseases"
+      },
+      {
+       "id": "D002283",
+       "term": "Carcinoma, Bronchogenic"
+      },
+      {
+       "id": "D001984",
+       "term": "Bronchial Neoplasms"
+      },
+      {
+       "id": "D008175",
+       "term": "Lung Neoplasms"
+      },
+      {
+       "id": "D012142",
+       "term": "Respiratory Tract Neoplasms"
+      },
+      {
+       "id": "D013899",
+       "term": "Thoracic Neoplasms"
+      },
+      {
+       "id": "D008171",
+       "term": "Lung Diseases"
+      },
+      {
+       "id": "D012140",
+       "term": "Respiratory Tract Diseases"
+      },
+      {
+       "id": "D002294",
+       "term": "Carcinoma, Squamous Cell"
+      },
+      {
+       "id": "D002277",
+       "term": "Carcinoma"
+      },
+      {
+       "id": "D009375",
+       "term": "Neoplasms, Glandular and Epithelial"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D006258",
+       "term": "Head and Neck Neoplasms"
+      },
+      {
+       "id": "D014594",
+       "term": "Uterine Neoplasms"
+      },
+      {
+       "id": "D005833",
+       "term": "Genital Neoplasms, Female"
+      },
+      {
+       "id": "D014565",
+       "term": "Urogenital Neoplasms"
+      },
+      {
+       "id": "D014591",
+       "term": "Uterine Diseases"
+      },
+      {
+       "id": "D005831",
+       "term": "Genital Diseases, Female"
+      },
+      {
+       "id": "D052776",
+       "term": "Female Urogenital Diseases"
+      },
+      {
+       "id": "D005261",
+       "term": "Female Urogenital Diseases and Pregnancy Complications"
+      },
+      {
+       "id": "D000091642",
+       "term": "Urogenital Diseases"
+      },
+      {
+       "id": "D000091662",
+       "term": "Genital Diseases"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT03044730"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Estrogen Receptor Negative",
+      "HER2/Neu Negative",
+      "Progesterone Receptor Negative",
+      "Recurrent Breast Carcinoma",
+      "Stage III Breast Cancer",
+      "Stage IIIA Breast Cancer",
+      "Stage IIIB Breast Cancer",
+      "Stage IIIC Breast Cancer",
+      "Stage IV Breast Cancer",
+      "Triple-Negative Breast Carcinoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Capecitabine",
+       "description": "Given PO",
+       "armGroupLabels": [
+        "Treatment (pembrolizumab, capecitabine)"
+       ],
+       "otherNames": [
+        "Ro 09-1978/000",
+        "Xeloda"
+       ]
+      },
+      {
+       "type": "OTHER",
+       "name": "Laboratory Biomarker Analysis",
+       "description": "Correlative studies",
+       "armGroupLabels": [
+        "Treatment (pembrolizumab, capecitabine)"
+       ]
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab",
+       "description": "Given IV",
+       "armGroupLabels": [
+        "Treatment (pembrolizumab, capecitabine)"
+       ],
+       "otherNames": [
+        "Keytruda",
+        "Lambrolizumab",
+        "MK-3475",
+        "SCH 900475"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D001943",
+       "term": "Breast Neoplasms"
+      },
+      {
+       "id": "D064726",
+       "term": "Triple Negative Breast Neoplasms"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D001941",
+       "term": "Breast Diseases"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D000069287",
+       "term": "Capecitabine"
+      },
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D003841",
+       "term": "Deoxycytidine"
+      },
+      {
+       "id": "D003562",
+       "term": "Cytidine"
+      },
+      {
+       "id": "D011741",
+       "term": "Pyrimidine Nucleosides"
+      },
+      {
+       "id": "D011743",
+       "term": "Pyrimidines"
+      },
+      {
+       "id": "D006573",
+       "term": "Heterocyclic Compounds, 1-Ring"
+      },
+      {
+       "id": "D006571",
+       "term": "Heterocyclic Compounds"
+      },
+      {
+       "id": "D005472",
+       "term": "Fluorouracil"
+      },
+      {
+       "id": "D014498",
+       "term": "Uracil"
+      },
+      {
+       "id": "D011744",
+       "term": "Pyrimidinones"
+      },
+      {
+       "id": "D003853",
+       "term": "Deoxyribonucleosides"
+      },
+      {
+       "id": "D009705",
+       "term": "Nucleosides"
+      },
+      {
+       "id": "D009706",
+       "term": "Nucleic Acids, Nucleotides, and Nucleosides"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05761132"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Vulva Cancer",
+      "Vulva Neoplasm",
+      "Squamous Cell Cancer"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Pembrolizumab",
+       "description": "neoadjuvant immunotherapy",
+       "armGroupLabels": [
+        "Neoadjuvant pembrolizumab"
+       ],
+       "otherNames": [
+        "checkpoint inhibitor"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D014846",
+       "term": "Vulvar Neoplasms"
+      },
+      {
+       "id": "D018307",
+       "term": "Neoplasms, Squamous Cell"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D005833",
+       "term": "Genital Neoplasms, Female"
+      },
+      {
+       "id": "D014565",
+       "term": "Urogenital Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D014845",
+       "term": "Vulvar Diseases"
+      },
+      {
+       "id": "D005831",
+       "term": "Genital Diseases, Female"
+      },
+      {
+       "id": "D052776",
+       "term": "Female Urogenital Diseases"
+      },
+      {
+       "id": "D005261",
+       "term": "Female Urogenital Diseases and Pregnancy Complications"
+      },
+      {
+       "id": "D000091642",
+       "term": "Urogenital Diseases"
+      },
+      {
+       "id": "D000091662",
+       "term": "Genital Diseases"
+      },
+      {
+       "id": "D009375",
+       "term": "Neoplasms, Glandular and Epithelial"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04427293"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Triple Negative Breast Cancer"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Lenvatinib",
+       "description": "Lenvatinib 12mg daily for 7 days prior to surgery",
+       "armGroupLabels": [
+        "Open Label"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Pembrolizumab",
+       "description": "Pembrolizumab 200 mg IV on day 1",
+       "armGroupLabels": [
+        "Open Label"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D064726",
+       "term": "Triple Negative Breast Neoplasms"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D001943",
+       "term": "Breast Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D001941",
+       "term": "Breast Diseases"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C531958",
+       "term": "lenvatinib"
+      },
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06599619"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Single agent, adjuvant anti-PD1 therapy",
+       "description": "One of the following Single-agent, adjuvant anti-PD1 therapies:\n\nNivolumab is a type of targeted therapy drug called an immune checkpoint inhibitor (a type of immunotherapy). It is a monoclonal antibody that binds to the protein PD-1 on the surface of immune cells called T cells. It works by keeping cancer cells from suppressing the immune system.\n\nDose = 240 mg IV every 2 weeks/480 mg every 4 weeks or, Pembrolizumab is a monoclonal antibody and a type of immune checkpoint inhibitor that's used in cancer immunotherapy. It works by attaching to the PD-1 protein on the surface of T cells, which are immune cells. This prevents cancer cells from suppressing the immune system, allowing the immune system to attack and kill the cancer cells.\n\nDose = 200 mg IV every 3 weeks/ 400 mg every 6 weeks",
+       "armGroupLabels": [
+        "Patients Treated with single agent, adjuvant anti-PD1 therapy"
+       ],
+       "otherNames": [
+        "OPDIVO\u00ae",
+        "Keytruda",
+        "Pembrolizumab",
+        "Nivolumab"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      },
+      {
+       "id": "D004416",
+       "term": "Dysplastic Nevus Syndrome"
+      },
+      {
+       "id": "D009477",
+       "term": "Hereditary Sensory and Autonomic Neuropathies"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      },
+      {
+       "id": "D009506",
+       "term": "Nevus"
+      },
+      {
+       "id": "D009386",
+       "term": "Neoplastic Syndromes, Hereditary"
+      },
+      {
+       "id": "D030342",
+       "term": "Genetic Diseases, Inborn"
+      },
+      {
+       "id": "D009358",
+       "term": "Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
+      },
+      {
+       "id": "D009421",
+       "term": "Nervous System Malformations"
+      },
+      {
+       "id": "D009422",
+       "term": "Nervous System Diseases"
+      },
+      {
+       "id": "D020271",
+       "term": "Heredodegenerative Disorders, Nervous System"
+      },
+      {
+       "id": "D019636",
+       "term": "Neurodegenerative Diseases"
+      },
+      {
+       "id": "D011115",
+       "term": "Polyneuropathies"
+      },
+      {
+       "id": "D010523",
+       "term": "Peripheral Nervous System Diseases"
+      },
+      {
+       "id": "D009468",
+       "term": "Neuromuscular Diseases"
+      },
+      {
+       "id": "D000013",
+       "term": "Congenital Abnormalities"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D004364",
+       "term": "Pharmaceutical Preparations"
+      },
+      {
+       "id": "D000077594",
+       "term": "Nivolumab"
+      },
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D061067",
+       "term": "Antibodies, Monoclonal, Humanized"
+      },
+      {
+       "id": "D000911",
+       "term": "Antibodies, Monoclonal"
+      },
+      {
+       "id": "D000906",
+       "term": "Antibodies"
+      },
+      {
+       "id": "D007136",
+       "term": "Immunoglobulins"
+      },
+      {
+       "id": "D007162",
+       "term": "Immunoproteins"
+      },
+      {
+       "id": "D001798",
+       "term": "Blood Proteins"
+      },
+      {
+       "id": "D011506",
+       "term": "Proteins"
+      },
+      {
+       "id": "D000602",
+       "term": "Amino Acids, Peptides, and Proteins"
+      },
+      {
+       "id": "D012712",
+       "term": "Serum Globulins"
+      },
+      {
+       "id": "D005916",
+       "term": "Globulins"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06966700"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Breast Neoplasms",
+      "Triple Negative Breast Neoplasms",
+      "HR Low-Positive/HER2-Negative Breast Neoplasms"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Sacituzumab tirumotecan",
+       "description": "IV infusion",
+       "armGroupLabels": [
+        "sac-TMT"
+       ],
+       "otherNames": [
+        "Sac-TMT",
+        "MK-2870"
+       ]
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab",
+       "description": "IV infusion",
+       "armGroupLabels": [
+        "Chemotherapy",
+        "sac-TMT"
+       ],
+       "otherNames": [
+        "MK-3475",
+        "Keytruda\u00ae"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Rescue Medication",
+       "description": "Participants receive rescue medication at the investigators discretion, per approved product label. Recommended rescue medications are histamine -1 (H1) receptor agonist, histamine-2 (H2) receptor antagonist, acetaminophen or equivalent, dexamethasone or equivalent infusion, or steroid mouthwash (dexamethasone or equivalent).",
+       "armGroupLabels": [
+        "Chemotherapy",
+        "sac-TMT"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Carboplatin",
+       "description": "IV infusion",
+       "armGroupLabels": [
+        "Chemotherapy",
+        "sac-TMT"
+       ],
+       "otherNames": [
+        "Paraplatin"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Paclitaxel",
+       "description": "IV infusion",
+       "armGroupLabels": [
+        "Chemotherapy",
+        "sac-TMT"
+       ],
+       "otherNames": [
+        "Taxol",
+        "Onxol"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Doxorubicin",
+       "description": "IV infusion",
+       "armGroupLabels": [
+        "Chemotherapy",
+        "sac-TMT"
+       ],
+       "otherNames": [
+        "ADRIAMYCIN\u00ae"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Epirubicin",
+       "description": "IV infusion",
+       "armGroupLabels": [
+        "Chemotherapy",
+        "sac-TMT"
+       ],
+       "otherNames": [
+        "Ellence\u00ae"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Cyclophosphamide",
+       "description": "IV infusion",
+       "armGroupLabels": [
+        "Chemotherapy",
+        "sac-TMT"
+       ],
+       "otherNames": [
+        "Cytophosphane"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Capecitabine",
+       "description": "Oral tablet",
+       "armGroupLabels": [
+        "Chemotherapy",
+        "sac-TMT"
+       ],
+       "otherNames": [
+        "Xeloda\u00ae"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Olaparib",
+       "description": "Oral tablet",
+       "armGroupLabels": [
+        "Chemotherapy",
+        "sac-TMT"
+       ],
+       "otherNames": [
+        "LYNPARZA\u00ae"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D001943",
+       "term": "Breast Neoplasms"
+      },
+      {
+       "id": "D064726",
+       "term": "Triple Negative Breast Neoplasms"
+      },
+      {
+       "id": "C565324",
+       "term": "Parkinson Disease 4, Autosomal Dominant Lewy Body"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D001941",
+       "term": "Breast Diseases"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      },
+      {
+       "id": "D016190",
+       "term": "Carboplatin"
+      },
+      {
+       "id": "D017239",
+       "term": "Paclitaxel"
+      },
+      {
+       "id": "D004317",
+       "term": "Doxorubicin"
+      },
+      {
+       "id": "D015251",
+       "term": "Epirubicin"
+      },
+      {
+       "id": "D003520",
+       "term": "Cyclophosphamide"
+      },
+      {
+       "id": "D000069287",
+       "term": "Capecitabine"
+      },
+      {
+       "id": "C531550",
+       "term": "olaparib"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D056831",
+       "term": "Coordination Complexes"
+      },
+      {
+       "id": "D009930",
+       "term": "Organic Chemicals"
+      },
+      {
+       "id": "D043823",
+       "term": "Taxoids"
+      },
+      {
+       "id": "D043822",
+       "term": "Cyclodecanes"
+      },
+      {
+       "id": "D003516",
+       "term": "Cycloparaffins"
+      },
+      {
+       "id": "D006840",
+       "term": "Hydrocarbons, Alicyclic"
+      },
+      {
+       "id": "D006844",
+       "term": "Hydrocarbons, Cyclic"
+      },
+      {
+       "id": "D006838",
+       "term": "Hydrocarbons"
+      },
+      {
+       "id": "D004224",
+       "term": "Diterpenes"
+      },
+      {
+       "id": "D013729",
+       "term": "Terpenes"
+      },
+      {
+       "id": "D003630",
+       "term": "Daunorubicin"
+      },
+      {
+       "id": "D018943",
+       "term": "Anthracyclines"
+      },
+      {
+       "id": "D009279",
+       "term": "Naphthacenes"
+      },
+      {
+       "id": "D011084",
+       "term": "Polycyclic Aromatic Hydrocarbons"
+      },
+      {
+       "id": "D006841",
+       "term": "Hydrocarbons, Aromatic"
+      },
+      {
+       "id": "D011083",
+       "term": "Polycyclic Compounds"
+      },
+      {
+       "id": "D000617",
+       "term": "Aminoglycosides"
+      },
+      {
+       "id": "D006027",
+       "term": "Glycosides"
+      },
+      {
+       "id": "D002241",
+       "term": "Carbohydrates"
+      },
+      {
+       "id": "D010752",
+       "term": "Phosphoramide Mustards"
+      },
+      {
+       "id": "D009588",
+       "term": "Nitrogen Mustard Compounds"
+      },
+      {
+       "id": "D009150",
+       "term": "Mustard Compounds"
+      },
+      {
+       "id": "D006846",
+       "term": "Hydrocarbons, Halogenated"
+      },
+      {
+       "id": "D063088",
+       "term": "Phosphoramides"
+      },
+      {
+       "id": "D009943",
+       "term": "Organophosphorus Compounds"
+      },
+      {
+       "id": "D003841",
+       "term": "Deoxycytidine"
+      },
+      {
+       "id": "D003562",
+       "term": "Cytidine"
+      },
+      {
+       "id": "D011741",
+       "term": "Pyrimidine Nucleosides"
+      },
+      {
+       "id": "D011743",
+       "term": "Pyrimidines"
+      },
+      {
+       "id": "D006573",
+       "term": "Heterocyclic Compounds, 1-Ring"
+      },
+      {
+       "id": "D006571",
+       "term": "Heterocyclic Compounds"
+      },
+      {
+       "id": "D005472",
+       "term": "Fluorouracil"
+      },
+      {
+       "id": "D014498",
+       "term": "Uracil"
+      },
+      {
+       "id": "D011744",
+       "term": "Pyrimidinones"
+      },
+      {
+       "id": "D003853",
+       "term": "Deoxyribonucleosides"
+      },
+      {
+       "id": "D009705",
+       "term": "Nucleosides"
+      },
+      {
+       "id": "D009706",
+       "term": "Nucleic Acids, Nucleotides, and Nucleosides"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04003636"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Biliary Tract Carcinoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab",
+       "description": "Pembrolizumab by intravenous (IV) infusion",
+       "armGroupLabels": [
+        "Arm A (Pembrolizumab+Chemotherapy)"
+       ],
+       "otherNames": [
+        "MK-3475"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Gemcitabine",
+       "description": "Gemcitabine by IV infusion",
+       "armGroupLabels": [
+        "Arm A (Pembrolizumab+Chemotherapy)",
+        "Arm B (Placebo+Chemotherapy)"
+       ],
+       "otherNames": [
+        "Gemzar"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Cisplatin",
+       "description": "Cisplatin by IV infusion",
+       "armGroupLabels": [
+        "Arm A (Pembrolizumab+Chemotherapy)",
+        "Arm B (Placebo+Chemotherapy)"
+       ],
+       "otherNames": [
+        "Platinol\u00ae",
+        "Platinol\u00ae-AQ"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Placebo",
+       "description": "Placebo to pembrolizumab",
+       "armGroupLabels": [
+        "Arm B (Placebo+Chemotherapy)"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C565324",
+       "term": "Parkinson Disease 4, Autosomal Dominant Lewy Body"
+      },
+      {
+       "id": "D018281",
+       "term": "Cholangiocarcinoma"
+      },
+      {
+       "id": "D005706",
+       "term": "Gallbladder Neoplasms"
+      },
+      {
+       "id": "D001650",
+       "term": "Bile Duct Neoplasms"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D000230",
+       "term": "Adenocarcinoma"
+      },
+      {
+       "id": "D002277",
+       "term": "Carcinoma"
+      },
+      {
+       "id": "D009375",
+       "term": "Neoplasms, Glandular and Epithelial"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D001661",
+       "term": "Biliary Tract Neoplasms"
+      },
+      {
+       "id": "D004067",
+       "term": "Digestive System Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D001660",
+       "term": "Biliary Tract Diseases"
+      },
+      {
+       "id": "D004066",
+       "term": "Digestive System Diseases"
+      },
+      {
+       "id": "D005705",
+       "term": "Gallbladder Diseases"
+      },
+      {
+       "id": "D001649",
+       "term": "Bile Duct Diseases"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      },
+      {
+       "id": "D000093542",
+       "term": "Gemcitabine"
+      },
+      {
+       "id": "D002945",
+       "term": "Cisplatin"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D006571",
+       "term": "Heterocyclic Compounds"
+      },
+      {
+       "id": "D003841",
+       "term": "Deoxycytidine"
+      },
+      {
+       "id": "D003562",
+       "term": "Cytidine"
+      },
+      {
+       "id": "D011741",
+       "term": "Pyrimidine Nucleosides"
+      },
+      {
+       "id": "D011743",
+       "term": "Pyrimidines"
+      },
+      {
+       "id": "D006573",
+       "term": "Heterocyclic Compounds, 1-Ring"
+      },
+      {
+       "id": "D017606",
+       "term": "Chlorine Compounds"
+      },
+      {
+       "id": "D007287",
+       "term": "Inorganic Chemicals"
+      },
+      {
+       "id": "D017672",
+       "term": "Nitrogen Compounds"
+      },
+      {
+       "id": "D017671",
+       "term": "Platinum Compounds"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06045767"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Non-small Cell Lung Cancer Metastatic"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Pembrolizumab 50 MG Injection [Keytruda]",
+       "description": "Chemo-immunotherapy combination",
+       "armGroupLabels": [
+        "Pembrolizumab + Carboplatin+ Pemetrexed"
+       ],
+       "otherNames": [
+        "Carboplatin",
+        "Pemetrexed"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      },
+      {
+       "id": "D007267",
+       "term": "Injections"
+      },
+      {
+       "id": "D016190",
+       "term": "Carboplatin"
+      },
+      {
+       "id": "D000068437",
+       "term": "Pemetrexed"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D004333",
+       "term": "Drug Administration Routes"
+      },
+      {
+       "id": "D004358",
+       "term": "Drug Therapy"
+      },
+      {
+       "id": "D013812",
+       "term": "Therapeutics"
+      },
+      {
+       "id": "D056831",
+       "term": "Coordination Complexes"
+      },
+      {
+       "id": "D009930",
+       "term": "Organic Chemicals"
+      },
+      {
+       "id": "D006147",
+       "term": "Guanine"
+      },
+      {
+       "id": "D007042",
+       "term": "Hypoxanthines"
+      },
+      {
+       "id": "D011688",
+       "term": "Purinones"
+      },
+      {
+       "id": "D011687",
+       "term": "Purines"
+      },
+      {
+       "id": "D006574",
+       "term": "Heterocyclic Compounds, 2-Ring"
+      },
+      {
+       "id": "D000072471",
+       "term": "Heterocyclic Compounds, Fused-Ring"
+      },
+      {
+       "id": "D006571",
+       "term": "Heterocyclic Compounds"
+      },
+      {
+       "id": "D005971",
+       "term": "Glutamates"
+      },
+      {
+       "id": "D024342",
+       "term": "Amino Acids, Acidic"
+      },
+      {
+       "id": "D000596",
+       "term": "Amino Acids"
+      },
+      {
+       "id": "D000602",
+       "term": "Amino Acids, Peptides, and Proteins"
+      },
+      {
+       "id": "D000600",
+       "term": "Amino Acids, Dicarboxylic"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06624644"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma (Skin Cancer)",
+      "Melanoma Stage IIIB-IV",
+      "Cutaneous Melanoma",
+      "Unresectable Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "LNS8801",
+       "description": "G protein-coupled estrogen receptor (GPER) agonist",
+       "armGroupLabels": [
+        "LNS8801 + Pembrolizumab",
+        "LNS8801 Monotherapy"
+       ]
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab",
+       "description": "Recombinant monoclonal antibody (anti-PD1)",
+       "armGroupLabels": [
+        "LNS8801 + Pembrolizumab"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Chemotherapy (dacarbazine or temozolomide)",
+       "description": "chemotherapy (dacarbazine, temozolomide)",
+       "armGroupLabels": [
+        "Physician's Choice"
+       ]
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Immunotherapy (Pembrolizumab)",
+       "description": "pembrolizumab",
+       "armGroupLabels": [
+        "Physician's Choice"
+       ]
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Immunotherapy (nivolumab and relatlimab)",
+       "description": "nivolumab and relatlimab",
+       "armGroupLabels": [
+        "Physician's Choice"
+       ]
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Immunotherapy (ipilimumab and nivolumab)",
+       "description": "ipilimumab and nivolumab",
+       "armGroupLabels": [
+        "Physician's Choice"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      },
+      {
+       "id": "D004358",
+       "term": "Drug Therapy"
+      },
+      {
+       "id": "D003606",
+       "term": "Dacarbazine"
+      },
+      {
+       "id": "D000077204",
+       "term": "Temozolomide"
+      },
+      {
+       "id": "D007167",
+       "term": "Immunotherapy"
+      },
+      {
+       "id": "D000077594",
+       "term": "Nivolumab"
+      },
+      {
+       "id": "C000721227",
+       "term": "relatlimab"
+      },
+      {
+       "id": "D000074324",
+       "term": "Ipilimumab"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D013812",
+       "term": "Therapeutics"
+      },
+      {
+       "id": "D014226",
+       "term": "Triazenes"
+      },
+      {
+       "id": "D009930",
+       "term": "Organic Chemicals"
+      },
+      {
+       "id": "D007093",
+       "term": "Imidazoles"
+      },
+      {
+       "id": "D001393",
+       "term": "Azoles"
+      },
+      {
+       "id": "D006573",
+       "term": "Heterocyclic Compounds, 1-Ring"
+      },
+      {
+       "id": "D006571",
+       "term": "Heterocyclic Compounds"
+      },
+      {
+       "id": "D056747",
+       "term": "Immunomodulation"
+      },
+      {
+       "id": "D001691",
+       "term": "Biological Therapy"
+      },
+      {
+       "id": "D061067",
+       "term": "Antibodies, Monoclonal, Humanized"
+      },
+      {
+       "id": "D000911",
+       "term": "Antibodies, Monoclonal"
+      },
+      {
+       "id": "D000906",
+       "term": "Antibodies"
+      },
+      {
+       "id": "D007136",
+       "term": "Immunoglobulins"
+      },
+      {
+       "id": "D007162",
+       "term": "Immunoproteins"
+      },
+      {
+       "id": "D001798",
+       "term": "Blood Proteins"
+      },
+      {
+       "id": "D011506",
+       "term": "Proteins"
+      },
+      {
+       "id": "D000602",
+       "term": "Amino Acids, Peptides, and Proteins"
+      },
+      {
+       "id": "D012712",
+       "term": "Serum Globulins"
+      },
+      {
+       "id": "D005916",
+       "term": "Globulins"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05627960"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Triple Negative Breast Cancer",
+      "Hormone-Resistant Breast Cancer",
+      "Non Small Cell Lung Cancer",
+      "Mesothelioma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "AG-01 Compound",
+       "description": "Phase 1A dose escalation study: enrolled subjects with advanced solid tumors will receive AG-01 compound at various doses.\n\nPhase 1B patients will be treated with AG-01 at the RP2D.",
+       "armGroupLabels": [
+        "AG-01 1B Hormone-resistant breast cancer",
+        "AG-01 1B NSCLC",
+        "AG-01 1B triple negative breast cancer treated group",
+        "AG-01 treated group phase 1A",
+        "AG-01-1B mesothelioma"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D064726",
+       "term": "Triple Negative Breast Neoplasms"
+      },
+      {
+       "id": "D002289",
+       "term": "Carcinoma, Non-Small-Cell Lung"
+      },
+      {
+       "id": "D008654",
+       "term": "Mesothelioma"
+      },
+      {
+       "id": "D001943",
+       "term": "Breast Neoplasms"
+      },
+      {
+       "id": "D008175",
+       "term": "Lung Neoplasms"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D001941",
+       "term": "Breast Diseases"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      },
+      {
+       "id": "D002283",
+       "term": "Carcinoma, Bronchogenic"
+      },
+      {
+       "id": "D001984",
+       "term": "Bronchial Neoplasms"
+      },
+      {
+       "id": "D012142",
+       "term": "Respiratory Tract Neoplasms"
+      },
+      {
+       "id": "D013899",
+       "term": "Thoracic Neoplasms"
+      },
+      {
+       "id": "D008171",
+       "term": "Lung Diseases"
+      },
+      {
+       "id": "D012140",
+       "term": "Respiratory Tract Diseases"
+      },
+      {
+       "id": "D000236",
+       "term": "Adenoma"
+      },
+      {
+       "id": "D009375",
+       "term": "Neoplasms, Glandular and Epithelial"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D018301",
+       "term": "Neoplasms, Mesothelial"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C521122",
+       "term": "AG-01 compound"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06540391"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "MB097",
+       "description": "Live bacterial therapeutic for oral administration",
+       "armGroupLabels": [
+        "MB097 and pembrolizumab",
+        "MB097 and pembrolizumab with vancomycin preconditioning"
+       ]
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab",
+       "description": "IV infusion",
+       "armGroupLabels": [
+        "Extended treatment",
+        "MB097 and pembrolizumab",
+        "MB097 and pembrolizumab with vancomycin preconditioning"
+       ],
+       "otherNames": [
+        "KEYTRUDA\u00ae"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Vancomycin",
+       "description": "Antibiotic",
+       "armGroupLabels": [
+        "MB097 and pembrolizumab with vancomycin preconditioning"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      },
+      {
+       "id": "D014640",
+       "term": "Vancomycin"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D006020",
+       "term": "Glycopeptides"
+      },
+      {
+       "id": "D006001",
+       "term": "Glycoconjugates"
+      },
+      {
+       "id": "D002241",
+       "term": "Carbohydrates"
+      },
+      {
+       "id": "D010455",
+       "term": "Peptides"
+      },
+      {
+       "id": "D000602",
+       "term": "Amino Acids, Peptides, and Proteins"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT03364049"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Solid Neoplasms"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "MK-7162",
+       "description": "oral tablets",
+       "armGroupLabels": [
+        "MK-7162 100 mg + Pembro",
+        "MK-7162 200 mg + Pembro",
+        "MK-7162 25 mg +Pembrolizumab (Pembro)",
+        "MK-7162 50 mg + Pembro"
+       ]
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab",
+       "description": "IV infusion",
+       "armGroupLabels": [
+        "MK-7162 100 mg + Pembro",
+        "MK-7162 200 mg + Pembro",
+        "MK-7162 25 mg +Pembrolizumab (Pembro)",
+        "MK-7162 50 mg + Pembro"
+       ],
+       "otherNames": [
+        "MK-3475",
+        "Keytruda"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04106167"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Advanced Solid Tumor",
+      "Lymphoma",
+      "Gastric Cancer",
+      "Colorectal Cancer",
+      "Head and Neck Cancer",
+      "Squamous Cell Carcinoma",
+      "EGFR Positive Solid Tumor",
+      "HER2-positive Breast Cancer",
+      "Hepatocellular Carcinoma",
+      "Small-cell Lung Cancer",
+      "Renal Cell Carcinoma",
+      "Pancreas Cancer",
+      "Melanoma",
+      "NSCLC",
+      "Urothelial Carcinoma",
+      "Cervical Cancer",
+      "Microsatellite Instability",
+      "Merkel Cell Carcinoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "GENETIC",
+       "name": "Allogeneic natural killer (NK) cell",
+       "description": "No study drug is administered in this study. Subjects who received an allogeneic, iPSC-derived NK cell in a previous trial will be evaluated in this trial for long-term safety and efficacy",
+       "armGroupLabels": [
+        "Treatment with Fate Therapeutics' FT500 Cellular Immunotherapy"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008223",
+       "term": "Lymphoma"
+      },
+      {
+       "id": "D013274",
+       "term": "Stomach Neoplasms"
+      },
+      {
+       "id": "D015179",
+       "term": "Colorectal Neoplasms"
+      },
+      {
+       "id": "D006258",
+       "term": "Head and Neck Neoplasms"
+      },
+      {
+       "id": "D002294",
+       "term": "Carcinoma, Squamous Cell"
+      },
+      {
+       "id": "D006528",
+       "term": "Carcinoma, Hepatocellular"
+      },
+      {
+       "id": "D055752",
+       "term": "Small Cell Lung Carcinoma"
+      },
+      {
+       "id": "D002292",
+       "term": "Carcinoma, Renal Cell"
+      },
+      {
+       "id": "D010190",
+       "term": "Pancreatic Neoplasms"
+      },
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      },
+      {
+       "id": "D002295",
+       "term": "Carcinoma, Transitional Cell"
+      },
+      {
+       "id": "D002583",
+       "term": "Uterine Cervical Neoplasms"
+      },
+      {
+       "id": "D053842",
+       "term": "Microsatellite Instability"
+      },
+      {
+       "id": "D015266",
+       "term": "Carcinoma, Merkel Cell"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D008232",
+       "term": "Lymphoproliferative Disorders"
+      },
+      {
+       "id": "D008206",
+       "term": "Lymphatic Diseases"
+      },
+      {
+       "id": "D006425",
+       "term": "Hemic and Lymphatic Diseases"
+      },
+      {
+       "id": "D007160",
+       "term": "Immunoproliferative Disorders"
+      },
+      {
+       "id": "D007154",
+       "term": "Immune System Diseases"
+      },
+      {
+       "id": "D005770",
+       "term": "Gastrointestinal Neoplasms"
+      },
+      {
+       "id": "D004067",
+       "term": "Digestive System Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D004066",
+       "term": "Digestive System Diseases"
+      },
+      {
+       "id": "D005767",
+       "term": "Gastrointestinal Diseases"
+      },
+      {
+       "id": "D013272",
+       "term": "Stomach Diseases"
+      },
+      {
+       "id": "D007414",
+       "term": "Intestinal Neoplasms"
+      },
+      {
+       "id": "D003108",
+       "term": "Colonic Diseases"
+      },
+      {
+       "id": "D007410",
+       "term": "Intestinal Diseases"
+      },
+      {
+       "id": "D012002",
+       "term": "Rectal Diseases"
+      },
+      {
+       "id": "D002277",
+       "term": "Carcinoma"
+      },
+      {
+       "id": "D009375",
+       "term": "Neoplasms, Glandular and Epithelial"
+      },
+      {
+       "id": "D018307",
+       "term": "Neoplasms, Squamous Cell"
+      },
+      {
+       "id": "D000230",
+       "term": "Adenocarcinoma"
+      },
+      {
+       "id": "D008113",
+       "term": "Liver Neoplasms"
+      },
+      {
+       "id": "D008107",
+       "term": "Liver Diseases"
+      },
+      {
+       "id": "D002283",
+       "term": "Carcinoma, Bronchogenic"
+      },
+      {
+       "id": "D001984",
+       "term": "Bronchial Neoplasms"
+      },
+      {
+       "id": "D008175",
+       "term": "Lung Neoplasms"
+      },
+      {
+       "id": "D012142",
+       "term": "Respiratory Tract Neoplasms"
+      },
+      {
+       "id": "D013899",
+       "term": "Thoracic Neoplasms"
+      },
+      {
+       "id": "D008171",
+       "term": "Lung Diseases"
+      },
+      {
+       "id": "D012140",
+       "term": "Respiratory Tract Diseases"
+      },
+      {
+       "id": "D007680",
+       "term": "Kidney Neoplasms"
+      },
+      {
+       "id": "D014571",
+       "term": "Urologic Neoplasms"
+      },
+      {
+       "id": "D014565",
+       "term": "Urogenital Neoplasms"
+      },
+      {
+       "id": "D052776",
+       "term": "Female Urogenital Diseases"
+      },
+      {
+       "id": "D005261",
+       "term": "Female Urogenital Diseases and Pregnancy Complications"
+      },
+      {
+       "id": "D000091642",
+       "term": "Urogenital Diseases"
+      },
+      {
+       "id": "D007674",
+       "term": "Kidney Diseases"
+      },
+      {
+       "id": "D014570",
+       "term": "Urologic Diseases"
+      },
+      {
+       "id": "D052801",
+       "term": "Male Urogenital Diseases"
+      },
+      {
+       "id": "D004701",
+       "term": "Endocrine Gland Neoplasms"
+      },
+      {
+       "id": "D010182",
+       "term": "Pancreatic Diseases"
+      },
+      {
+       "id": "D004700",
+       "term": "Endocrine System Diseases"
+      },
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      },
+      {
+       "id": "D014594",
+       "term": "Uterine Neoplasms"
+      },
+      {
+       "id": "D005833",
+       "term": "Genital Neoplasms, Female"
+      },
+      {
+       "id": "D002577",
+       "term": "Uterine Cervical Diseases"
+      },
+      {
+       "id": "D014591",
+       "term": "Uterine Diseases"
+      },
+      {
+       "id": "D005831",
+       "term": "Genital Diseases, Female"
+      },
+      {
+       "id": "D000091662",
+       "term": "Genital Diseases"
+      },
+      {
+       "id": "D042822",
+       "term": "Genomic Instability"
+      },
+      {
+       "id": "D010335",
+       "term": "Pathologic Processes"
+      },
+      {
+       "id": "D013568",
+       "term": "Pathological Conditions, Signs and Symptoms"
+      },
+      {
+       "id": "D027601",
+       "term": "Polyomavirus Infections"
+      },
+      {
+       "id": "D004266",
+       "term": "DNA Virus Infections"
+      },
+      {
+       "id": "D014777",
+       "term": "Virus Diseases"
+      },
+      {
+       "id": "D007239",
+       "term": "Infections"
+      },
+      {
+       "id": "D014412",
+       "term": "Tumor Virus Infections"
+      },
+      {
+       "id": "D018278",
+       "term": "Carcinoma, Neuroendocrine"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D043182",
+       "term": "Carboxylesterase"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D002265",
+       "term": "Carboxylic Ester Hydrolases"
+      },
+      {
+       "id": "D004950",
+       "term": "Esterases"
+      },
+      {
+       "id": "D006867",
+       "term": "Hydrolases"
+      },
+      {
+       "id": "D004798",
+       "term": "Enzymes"
+      },
+      {
+       "id": "D045762",
+       "term": "Enzymes and Coenzymes"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06970236"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Ocular Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "OTHER",
+       "name": "Exercise",
+       "description": "Daily session during hospitalization. To carry out the training session, elastic bands (TheraBand CLX Consecutive Loops; TheraBand, Akron, OH) with resistance graded from very low to very high (i.e, yellow, red, green, blue, black, silver and gold) will be used. On each day, each exercise will start with 3 sets of two repetitions as a warm-up and to calculate the appropriate intensity. The intensity will be that at which the patient reports a perceived exertion of 5-6 of 10 at the Borg CR10 scale after two repetitions. For each exercise, one set will be completed until task failure is achieved.If in any of the exercises the patient perceives this intensity only with the weight of his own limb or body weight, the exercise will be performed without elastic bands.",
+       "armGroupLabels": [
+        "Exercise Intervention Group"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D000098943",
+       "term": "Uveal Melanoma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      },
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D014604",
+       "term": "Uveal Neoplasms"
+      },
+      {
+       "id": "D005134",
+       "term": "Eye Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D005128",
+       "term": "Eye Diseases"
+      },
+      {
+       "id": "D014603",
+       "term": "Uveal Diseases"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D015444",
+       "term": "Exercise"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D009043",
+       "term": "Motor Activity"
+      },
+      {
+       "id": "D009068",
+       "term": "Movement"
+      },
+      {
+       "id": "D009142",
+       "term": "Musculoskeletal Physiological Phenomena"
+      },
+      {
+       "id": "D055687",
+       "term": "Musculoskeletal and Neural Physiological Phenomena"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT03772899"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Fecal Microbial Transplantation",
+       "description": "All patients in this trial will receive FMT at least one week prior to treatment with approved immunotherapy (either pembrolizumab or nivolumab). Samples for FMT are sourced at and by the microbiology group under the supervision of Dr. Silverman at St Joseph's Hospital. Donor screening procedures are described in appendix 4. Transplant will be from one single donor for all participants unless Dr. Silverman's lab considers the need for more than one donor based on availability of donors. There will be no \"mixture\" of donor samples.\n\nDonor samples are manufactured into capsules according to Kao et al, 2017.",
+       "armGroupLabels": [
+        "Study Intervention"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05355701"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma",
+      "Non-Small-Cell Lung Cancer",
+      "Thyroid Cancer",
+      "Glioma",
+      "Advanced Colorectal Cancer (Part 1)"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "PF-07799933",
+       "description": "Tablet",
+       "armGroupLabels": [
+        "Combination dose escalation (Part 2)",
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 1",
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 2",
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 3",
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 4",
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 5",
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 6",
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 7",
+        "Monotherapy dose escalation (Part 1)"
+       ],
+       "otherNames": [
+        "ARRY-440"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "binimetinib",
+       "description": "Tablet",
+       "armGroupLabels": [
+        "Combination dose escalation (Part 2)",
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 2"
+       ],
+       "otherNames": [
+        "Mektovi, PF-06811462, MEK162"
+       ]
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "cetuximab",
+       "description": "Injection for intravenous use",
+       "armGroupLabels": [
+        "Combination dose escalation (Part 2)",
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 4",
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 5"
+       ],
+       "otherNames": [
+        "Erbitux"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "midazolam",
+       "description": "syrup",
+       "armGroupLabels": [
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 3"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "fluorouracil",
+       "description": "Injection for intravenous use",
+       "armGroupLabels": [
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 5"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "leucovorin",
+       "description": "Injection for intravenous use",
+       "armGroupLabels": [
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 5"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "oxaliplatin",
+       "description": "Injection for intravenous use",
+       "armGroupLabels": [
+        "Dose expansion (Part 3) - Tumor and mutation specific Cohort 5"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      },
+      {
+       "id": "D002289",
+       "term": "Carcinoma, Non-Small-Cell Lung"
+      },
+      {
+       "id": "D013964",
+       "term": "Thyroid Neoplasms"
+      },
+      {
+       "id": "D005910",
+       "term": "Glioma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      },
+      {
+       "id": "D002283",
+       "term": "Carcinoma, Bronchogenic"
+      },
+      {
+       "id": "D001984",
+       "term": "Bronchial Neoplasms"
+      },
+      {
+       "id": "D008175",
+       "term": "Lung Neoplasms"
+      },
+      {
+       "id": "D012142",
+       "term": "Respiratory Tract Neoplasms"
+      },
+      {
+       "id": "D013899",
+       "term": "Thoracic Neoplasms"
+      },
+      {
+       "id": "D008171",
+       "term": "Lung Diseases"
+      },
+      {
+       "id": "D012140",
+       "term": "Respiratory Tract Diseases"
+      },
+      {
+       "id": "D004701",
+       "term": "Endocrine Gland Neoplasms"
+      },
+      {
+       "id": "D006258",
+       "term": "Head and Neck Neoplasms"
+      },
+      {
+       "id": "D004700",
+       "term": "Endocrine System Diseases"
+      },
+      {
+       "id": "D013959",
+       "term": "Thyroid Diseases"
+      },
+      {
+       "id": "D018302",
+       "term": "Neoplasms, Neuroepithelial"
+      },
+      {
+       "id": "D009375",
+       "term": "Neoplasms, Glandular and Epithelial"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C581313",
+       "term": "binimetinib"
+      },
+      {
+       "id": "D000068818",
+       "term": "Cetuximab"
+      },
+      {
+       "id": "D008874",
+       "term": "Midazolam"
+      },
+      {
+       "id": "D005472",
+       "term": "Fluorouracil"
+      },
+      {
+       "id": "D002955",
+       "term": "Leucovorin"
+      },
+      {
+       "id": "D000077150",
+       "term": "Oxaliplatin"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D061067",
+       "term": "Antibodies, Monoclonal, Humanized"
+      },
+      {
+       "id": "D000911",
+       "term": "Antibodies, Monoclonal"
+      },
+      {
+       "id": "D000906",
+       "term": "Antibodies"
+      },
+      {
+       "id": "D007136",
+       "term": "Immunoglobulins"
+      },
+      {
+       "id": "D007162",
+       "term": "Immunoproteins"
+      },
+      {
+       "id": "D001798",
+       "term": "Blood Proteins"
+      },
+      {
+       "id": "D011506",
+       "term": "Proteins"
+      },
+      {
+       "id": "D000602",
+       "term": "Amino Acids, Peptides, and Proteins"
+      },
+      {
+       "id": "D012712",
+       "term": "Serum Globulins"
+      },
+      {
+       "id": "D005916",
+       "term": "Globulins"
+      },
+      {
+       "id": "D001569",
+       "term": "Benzodiazepines"
+      },
+      {
+       "id": "D001552",
+       "term": "Benzazepines"
+      },
+      {
+       "id": "D006574",
+       "term": "Heterocyclic Compounds, 2-Ring"
+      },
+      {
+       "id": "D000072471",
+       "term": "Heterocyclic Compounds, Fused-Ring"
+      },
+      {
+       "id": "D006571",
+       "term": "Heterocyclic Compounds"
+      },
+      {
+       "id": "D014498",
+       "term": "Uracil"
+      },
+      {
+       "id": "D011744",
+       "term": "Pyrimidinones"
+      },
+      {
+       "id": "D011743",
+       "term": "Pyrimidines"
+      },
+      {
+       "id": "D006573",
+       "term": "Heterocyclic Compounds, 1-Ring"
+      },
+      {
+       "id": "D005575",
+       "term": "Formyltetrahydrofolates"
+      },
+      {
+       "id": "D013763",
+       "term": "Tetrahydrofolates"
+      },
+      {
+       "id": "D005492",
+       "term": "Folic Acid"
+      },
+      {
+       "id": "D011622",
+       "term": "Pterins"
+      },
+      {
+       "id": "D011621",
+       "term": "Pteridines"
+      },
+      {
+       "id": "D003067",
+       "term": "Coenzymes"
+      },
+      {
+       "id": "D045762",
+       "term": "Enzymes and Coenzymes"
+      },
+      {
+       "id": "D056831",
+       "term": "Coordination Complexes"
+      },
+      {
+       "id": "D009930",
+       "term": "Organic Chemicals"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT01942993"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Vemurafenib",
+       "description": "Vemurafenib will be administered at the FDA approved dose of 960 mg approximately 12 hours apart with or without a meal. Vemurafenib is provided at 240-mg film-coated tablets packed in bottles for oral administration. Vemurafenib should be swallowed whole with a glass of water and the medication should not be chewed or crushed. Management of symptomatic adverse events may require dose reductions, treatment interruptions, or treatment discontinuation. Dose reductions below 480 mg twice daily are not recommended.",
+       "armGroupLabels": [
+        "Vemurafenib"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      },
+      {
+       "id": "D009477",
+       "term": "Hereditary Sensory and Autonomic Neuropathies"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      },
+      {
+       "id": "D009421",
+       "term": "Nervous System Malformations"
+      },
+      {
+       "id": "D009422",
+       "term": "Nervous System Diseases"
+      },
+      {
+       "id": "D020271",
+       "term": "Heredodegenerative Disorders, Nervous System"
+      },
+      {
+       "id": "D019636",
+       "term": "Neurodegenerative Diseases"
+      },
+      {
+       "id": "D011115",
+       "term": "Polyneuropathies"
+      },
+      {
+       "id": "D010523",
+       "term": "Peripheral Nervous System Diseases"
+      },
+      {
+       "id": "D009468",
+       "term": "Neuromuscular Diseases"
+      },
+      {
+       "id": "D000013",
+       "term": "Congenital Abnormalities"
+      },
+      {
+       "id": "D009358",
+       "term": "Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
+      },
+      {
+       "id": "D030342",
+       "term": "Genetic Diseases, Inborn"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D000077484",
+       "term": "Vemurafenib"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D013449",
+       "term": "Sulfonamides"
+      },
+      {
+       "id": "D000577",
+       "term": "Amides"
+      },
+      {
+       "id": "D009930",
+       "term": "Organic Chemicals"
+      },
+      {
+       "id": "D013450",
+       "term": "Sulfones"
+      },
+      {
+       "id": "D013457",
+       "term": "Sulfur Compounds"
+      },
+      {
+       "id": "D007211",
+       "term": "Indoles"
+      },
+      {
+       "id": "D006574",
+       "term": "Heterocyclic Compounds, 2-Ring"
+      },
+      {
+       "id": "D000072471",
+       "term": "Heterocyclic Compounds, Fused-Ring"
+      },
+      {
+       "id": "D006571",
+       "term": "Heterocyclic Compounds"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT00077532"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma (Skin)"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "gp100 antigen"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "incomplete Freund's adjuvant"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "ipilimumab"
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "C114843",
+       "term": "incomplete Freund's adjuvant"
+      },
+      {
+       "id": "D000074324",
+       "term": "Ipilimumab"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D061067",
+       "term": "Antibodies, Monoclonal, Humanized"
+      },
+      {
+       "id": "D000911",
+       "term": "Antibodies, Monoclonal"
+      },
+      {
+       "id": "D000906",
+       "term": "Antibodies"
+      },
+      {
+       "id": "D007136",
+       "term": "Immunoglobulins"
+      },
+      {
+       "id": "D007162",
+       "term": "Immunoproteins"
+      },
+      {
+       "id": "D001798",
+       "term": "Blood Proteins"
+      },
+      {
+       "id": "D011506",
+       "term": "Proteins"
+      },
+      {
+       "id": "D000602",
+       "term": "Amino Acids, Peptides, and Proteins"
+      },
+      {
+       "id": "D012712",
+       "term": "Serum Globulins"
+      },
+      {
+       "id": "D005916",
+       "term": "Globulins"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05569707"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma (Skin)"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DEVICE",
+       "name": "Magnetic sentinel lymph node biopsy by use of Magtrace\u00ae, in combination with SentiMag\u00ae and DiffMag",
+       "description": "In addition to the standard procedure, SLNs will be detected using two types of magnetometers (SentiMag\u00ae \\& DiffMag) in combination with SPIO particles (Magtrace\u00ae).",
+       "armGroupLabels": [
+        "MelaDiff"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT02717364"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {}
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06910657"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Colorectal Cancer",
+      "Pancreatic Cancer",
+      "Melanoma",
+      "Ovarian Cancer",
+      "Gastric Cancer",
+      "Esophageal Cancer",
+      "Hepatocellular Carcinoma",
+      "Renal Cell Carcinoma",
+      "Breast Cancer",
+      "Sarcoma",
+      "Bladder Cancer",
+      "Lung Cancer",
+      "Prostate Cancer",
+      "Cervical Cancers",
+      "Head and Neck Cancers",
+      "Adrenal Gland Tumors"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "IDOV-Immune (oncolytic vaccinia virus)",
+       "description": "IDOV-Immune is a genetically engineered oncolytic vaccinia virus designed to selectively infect and destroy tumor cells while stimulating the immune system. This study investigates IDOV-Immune as a single intravenous infusion in a first-in-human, Phase 1, dose-escalation trial in participants with advanced solid tumors. The dose will escalate based on safety data, with a goal of identifying the recommended Phase 2 dose (RP2D).",
+       "armGroupLabels": [
+        "IDOV-Immune Dose Escalation Arm"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D015179",
+       "term": "Colorectal Neoplasms"
+      },
+      {
+       "id": "D010190",
+       "term": "Pancreatic Neoplasms"
+      },
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      },
+      {
+       "id": "D010051",
+       "term": "Ovarian Neoplasms"
+      },
+      {
+       "id": "D013274",
+       "term": "Stomach Neoplasms"
+      },
+      {
+       "id": "D004938",
+       "term": "Esophageal Neoplasms"
+      },
+      {
+       "id": "D006528",
+       "term": "Carcinoma, Hepatocellular"
+      },
+      {
+       "id": "D002292",
+       "term": "Carcinoma, Renal Cell"
+      },
+      {
+       "id": "D001943",
+       "term": "Breast Neoplasms"
+      },
+      {
+       "id": "D012509",
+       "term": "Sarcoma"
+      },
+      {
+       "id": "D001749",
+       "term": "Urinary Bladder Neoplasms"
+      },
+      {
+       "id": "D008175",
+       "term": "Lung Neoplasms"
+      },
+      {
+       "id": "D011471",
+       "term": "Prostatic Neoplasms"
+      },
+      {
+       "id": "D002583",
+       "term": "Uterine Cervical Neoplasms"
+      },
+      {
+       "id": "D006258",
+       "term": "Head and Neck Neoplasms"
+      },
+      {
+       "id": "D000310",
+       "term": "Adrenal Gland Neoplasms"
+      },
+      {
+       "id": "D009362",
+       "term": "Neoplasm Metastasis"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D014615",
+       "term": "Vaccinia"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D007414",
+       "term": "Intestinal Neoplasms"
+      },
+      {
+       "id": "D005770",
+       "term": "Gastrointestinal Neoplasms"
+      },
+      {
+       "id": "D004067",
+       "term": "Digestive System Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D004066",
+       "term": "Digestive System Diseases"
+      },
+      {
+       "id": "D005767",
+       "term": "Gastrointestinal Diseases"
+      },
+      {
+       "id": "D003108",
+       "term": "Colonic Diseases"
+      },
+      {
+       "id": "D007410",
+       "term": "Intestinal Diseases"
+      },
+      {
+       "id": "D012002",
+       "term": "Rectal Diseases"
+      },
+      {
+       "id": "D004701",
+       "term": "Endocrine Gland Neoplasms"
+      },
+      {
+       "id": "D010182",
+       "term": "Pancreatic Diseases"
+      },
+      {
+       "id": "D004700",
+       "term": "Endocrine System Diseases"
+      },
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      },
+      {
+       "id": "D010049",
+       "term": "Ovarian Diseases"
+      },
+      {
+       "id": "D000291",
+       "term": "Adnexal Diseases"
+      },
+      {
+       "id": "D005831",
+       "term": "Genital Diseases, Female"
+      },
+      {
+       "id": "D052776",
+       "term": "Female Urogenital Diseases"
+      },
+      {
+       "id": "D005261",
+       "term": "Female Urogenital Diseases and Pregnancy Complications"
+      },
+      {
+       "id": "D000091642",
+       "term": "Urogenital Diseases"
+      },
+      {
+       "id": "D005833",
+       "term": "Genital Neoplasms, Female"
+      },
+      {
+       "id": "D014565",
+       "term": "Urogenital Neoplasms"
+      },
+      {
+       "id": "D000091662",
+       "term": "Genital Diseases"
+      },
+      {
+       "id": "D006058",
+       "term": "Gonadal Disorders"
+      },
+      {
+       "id": "D013272",
+       "term": "Stomach Diseases"
+      },
+      {
+       "id": "D004935",
+       "term": "Esophageal Diseases"
+      },
+      {
+       "id": "D000230",
+       "term": "Adenocarcinoma"
+      },
+      {
+       "id": "D002277",
+       "term": "Carcinoma"
+      },
+      {
+       "id": "D009375",
+       "term": "Neoplasms, Glandular and Epithelial"
+      },
+      {
+       "id": "D008113",
+       "term": "Liver Neoplasms"
+      },
+      {
+       "id": "D008107",
+       "term": "Liver Diseases"
+      },
+      {
+       "id": "D007680",
+       "term": "Kidney Neoplasms"
+      },
+      {
+       "id": "D014571",
+       "term": "Urologic Neoplasms"
+      },
+      {
+       "id": "D007674",
+       "term": "Kidney Diseases"
+      },
+      {
+       "id": "D014570",
+       "term": "Urologic Diseases"
+      },
+      {
+       "id": "D052801",
+       "term": "Male Urogenital Diseases"
+      },
+      {
+       "id": "D001941",
+       "term": "Breast Diseases"
+      },
+      {
+       "id": "D018204",
+       "term": "Neoplasms, Connective and Soft Tissue"
+      },
+      {
+       "id": "D001745",
+       "term": "Urinary Bladder Diseases"
+      },
+      {
+       "id": "D012142",
+       "term": "Respiratory Tract Neoplasms"
+      },
+      {
+       "id": "D013899",
+       "term": "Thoracic Neoplasms"
+      },
+      {
+       "id": "D008171",
+       "term": "Lung Diseases"
+      },
+      {
+       "id": "D012140",
+       "term": "Respiratory Tract Diseases"
+      },
+      {
+       "id": "D005834",
+       "term": "Genital Neoplasms, Male"
+      },
+      {
+       "id": "D005832",
+       "term": "Genital Diseases, Male"
+      },
+      {
+       "id": "D011469",
+       "term": "Prostatic Diseases"
+      },
+      {
+       "id": "D014594",
+       "term": "Uterine Neoplasms"
+      },
+      {
+       "id": "D002577",
+       "term": "Uterine Cervical Diseases"
+      },
+      {
+       "id": "D014591",
+       "term": "Uterine Diseases"
+      },
+      {
+       "id": "D000307",
+       "term": "Adrenal Gland Diseases"
+      },
+      {
+       "id": "D009385",
+       "term": "Neoplastic Processes"
+      },
+      {
+       "id": "D010335",
+       "term": "Pathologic Processes"
+      },
+      {
+       "id": "D013568",
+       "term": "Pathological Conditions, Signs and Symptoms"
+      },
+      {
+       "id": "D011213",
+       "term": "Poxviridae Infections"
+      },
+      {
+       "id": "D004266",
+       "term": "DNA Virus Infections"
+      },
+      {
+       "id": "D014777",
+       "term": "Virus Diseases"
+      },
+      {
+       "id": "D007239",
+       "term": "Infections"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT03212404"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Lung Neoplasms",
+      "Carcinoma, Non-Small-Cell Lung",
+      "Carcinoma, Small Cell",
+      "Malignant Mesothelioma, Advanced",
+      "Head and Neck Cancer",
+      "Melanoma",
+      "Merkel Cell Carcinoma",
+      "Renal Cell Carcinoma",
+      "Urothelial Carcinoma",
+      "Classical Hodgkin Lymphoma",
+      "Cutaneous Squamous Cell Carcinoma",
+      "Non Hodgkin Lymphoma",
+      "Endometrial Cancer"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "CK-301 (cosibelimab)",
+       "description": "CK-301 will be administered in periods of 28-day cycles.",
+       "armGroupLabels": [
+        "CK-301 (cosibelimab)"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008175",
+       "term": "Lung Neoplasms"
+      },
+      {
+       "id": "D002289",
+       "term": "Carcinoma, Non-Small-Cell Lung"
+      },
+      {
+       "id": "D018288",
+       "term": "Carcinoma, Small Cell"
+      },
+      {
+       "id": "D000086002",
+       "term": "Mesothelioma, Malignant"
+      },
+      {
+       "id": "D006258",
+       "term": "Head and Neck Neoplasms"
+      },
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      },
+      {
+       "id": "D015266",
+       "term": "Carcinoma, Merkel Cell"
+      },
+      {
+       "id": "D002292",
+       "term": "Carcinoma, Renal Cell"
+      },
+      {
+       "id": "D002295",
+       "term": "Carcinoma, Transitional Cell"
+      },
+      {
+       "id": "D008228",
+       "term": "Lymphoma, Non-Hodgkin"
+      },
+      {
+       "id": "D016889",
+       "term": "Endometrial Neoplasms"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D012142",
+       "term": "Respiratory Tract Neoplasms"
+      },
+      {
+       "id": "D013899",
+       "term": "Thoracic Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D008171",
+       "term": "Lung Diseases"
+      },
+      {
+       "id": "D012140",
+       "term": "Respiratory Tract Diseases"
+      },
+      {
+       "id": "D002283",
+       "term": "Carcinoma, Bronchogenic"
+      },
+      {
+       "id": "D001984",
+       "term": "Bronchial Neoplasms"
+      },
+      {
+       "id": "D002277",
+       "term": "Carcinoma"
+      },
+      {
+       "id": "D009375",
+       "term": "Neoplasms, Glandular and Epithelial"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D008654",
+       "term": "Mesothelioma"
+      },
+      {
+       "id": "D000236",
+       "term": "Adenoma"
+      },
+      {
+       "id": "D018301",
+       "term": "Neoplasms, Mesothelial"
+      },
+      {
+       "id": "D010997",
+       "term": "Pleural Neoplasms"
+      },
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      },
+      {
+       "id": "D027601",
+       "term": "Polyomavirus Infections"
+      },
+      {
+       "id": "D004266",
+       "term": "DNA Virus Infections"
+      },
+      {
+       "id": "D014777",
+       "term": "Virus Diseases"
+      },
+      {
+       "id": "D007239",
+       "term": "Infections"
+      },
+      {
+       "id": "D014412",
+       "term": "Tumor Virus Infections"
+      },
+      {
+       "id": "D018278",
+       "term": "Carcinoma, Neuroendocrine"
+      },
+      {
+       "id": "D000230",
+       "term": "Adenocarcinoma"
+      },
+      {
+       "id": "D007680",
+       "term": "Kidney Neoplasms"
+      },
+      {
+       "id": "D014571",
+       "term": "Urologic Neoplasms"
+      },
+      {
+       "id": "D014565",
+       "term": "Urogenital Neoplasms"
+      },
+      {
+       "id": "D052776",
+       "term": "Female Urogenital Diseases"
+      },
+      {
+       "id": "D005261",
+       "term": "Female Urogenital Diseases and Pregnancy Complications"
+      },
+      {
+       "id": "D000091642",
+       "term": "Urogenital Diseases"
+      },
+      {
+       "id": "D007674",
+       "term": "Kidney Diseases"
+      },
+      {
+       "id": "D014570",
+       "term": "Urologic Diseases"
+      },
+      {
+       "id": "D052801",
+       "term": "Male Urogenital Diseases"
+      },
+      {
+       "id": "D008223",
+       "term": "Lymphoma"
+      },
+      {
+       "id": "D008232",
+       "term": "Lymphoproliferative Disorders"
+      },
+      {
+       "id": "D008206",
+       "term": "Lymphatic Diseases"
+      },
+      {
+       "id": "D006425",
+       "term": "Hemic and Lymphatic Diseases"
+      },
+      {
+       "id": "D007160",
+       "term": "Immunoproliferative Disorders"
+      },
+      {
+       "id": "D007154",
+       "term": "Immune System Diseases"
+      },
+      {
+       "id": "D014594",
+       "term": "Uterine Neoplasms"
+      },
+      {
+       "id": "D005833",
+       "term": "Genital Neoplasms, Female"
+      },
+      {
+       "id": "D014591",
+       "term": "Uterine Diseases"
+      },
+      {
+       "id": "D005831",
+       "term": "Genital Diseases, Female"
+      },
+      {
+       "id": "D000091662",
+       "term": "Genital Diseases"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06599619"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Single agent, adjuvant anti-PD1 therapy",
+       "description": "One of the following Single-agent, adjuvant anti-PD1 therapies:\n\nNivolumab is a type of targeted therapy drug called an immune checkpoint inhibitor (a type of immunotherapy). It is a monoclonal antibody that binds to the protein PD-1 on the surface of immune cells called T cells. It works by keeping cancer cells from suppressing the immune system.\n\nDose = 240 mg IV every 2 weeks/480 mg every 4 weeks or, Pembrolizumab is a monoclonal antibody and a type of immune checkpoint inhibitor that's used in cancer immunotherapy. It works by attaching to the PD-1 protein on the surface of T cells, which are immune cells. This prevents cancer cells from suppressing the immune system, allowing the immune system to attack and kill the cancer cells.\n\nDose = 200 mg IV every 3 weeks/ 400 mg every 6 weeks",
+       "armGroupLabels": [
+        "Patients Treated with single agent, adjuvant anti-PD1 therapy"
+       ],
+       "otherNames": [
+        "OPDIVO\u00ae",
+        "Keytruda",
+        "Pembrolizumab",
+        "Nivolumab"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      },
+      {
+       "id": "D004416",
+       "term": "Dysplastic Nevus Syndrome"
+      },
+      {
+       "id": "D009477",
+       "term": "Hereditary Sensory and Autonomic Neuropathies"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      },
+      {
+       "id": "D009506",
+       "term": "Nevus"
+      },
+      {
+       "id": "D009386",
+       "term": "Neoplastic Syndromes, Hereditary"
+      },
+      {
+       "id": "D030342",
+       "term": "Genetic Diseases, Inborn"
+      },
+      {
+       "id": "D009358",
+       "term": "Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
+      },
+      {
+       "id": "D009421",
+       "term": "Nervous System Malformations"
+      },
+      {
+       "id": "D009422",
+       "term": "Nervous System Diseases"
+      },
+      {
+       "id": "D020271",
+       "term": "Heredodegenerative Disorders, Nervous System"
+      },
+      {
+       "id": "D019636",
+       "term": "Neurodegenerative Diseases"
+      },
+      {
+       "id": "D011115",
+       "term": "Polyneuropathies"
+      },
+      {
+       "id": "D010523",
+       "term": "Peripheral Nervous System Diseases"
+      },
+      {
+       "id": "D009468",
+       "term": "Neuromuscular Diseases"
+      },
+      {
+       "id": "D000013",
+       "term": "Congenital Abnormalities"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D004364",
+       "term": "Pharmaceutical Preparations"
+      },
+      {
+       "id": "D000077594",
+       "term": "Nivolumab"
+      },
+      {
+       "id": "C582435",
+       "term": "pembrolizumab"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D061067",
+       "term": "Antibodies, Monoclonal, Humanized"
+      },
+      {
+       "id": "D000911",
+       "term": "Antibodies, Monoclonal"
+      },
+      {
+       "id": "D000906",
+       "term": "Antibodies"
+      },
+      {
+       "id": "D007136",
+       "term": "Immunoglobulins"
+      },
+      {
+       "id": "D007162",
+       "term": "Immunoproteins"
+      },
+      {
+       "id": "D001798",
+       "term": "Blood Proteins"
+      },
+      {
+       "id": "D011506",
+       "term": "Proteins"
+      },
+      {
+       "id": "D000602",
+       "term": "Amino Acids, Peptides, and Proteins"
+      },
+      {
+       "id": "D012712",
+       "term": "Serum Globulins"
+      },
+      {
+       "id": "D005916",
+       "term": "Globulins"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07552467"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Pancreatic Cancer",
+      "Breast Cancer",
+      "Lung Cancer",
+      "Sarcoma",
+      "Head and Neck Tumors",
+      "Glioblastoma",
+      "Colorectal Cancer",
+      "Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DIAGNOSTIC_TEST",
+       "name": "Specific PET imaging agents targeting LRRC15",
+       "description": "This project utilizes LRRC15-specific targeted PET radiotracers to perform PET/MR or PET/CT imaging on healthy volunteers and patients with clinically suspected or confirmed malignancies characterized by high LRRC15 expression-including pancreatic cancer, breast cancer, lung cancer, sarcoma, head and neck tumors, glioblastoma, colorectal cancer, and melanoma."
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D010190",
+       "term": "Pancreatic Neoplasms"
+      },
+      {
+       "id": "D001943",
+       "term": "Breast Neoplasms"
+      },
+      {
+       "id": "D008175",
+       "term": "Lung Neoplasms"
+      },
+      {
+       "id": "D012509",
+       "term": "Sarcoma"
+      },
+      {
+       "id": "D006258",
+       "term": "Head and Neck Neoplasms"
+      },
+      {
+       "id": "D005909",
+       "term": "Glioblastoma"
+      },
+      {
+       "id": "D015179",
+       "term": "Colorectal Neoplasms"
+      },
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D004067",
+       "term": "Digestive System Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D004701",
+       "term": "Endocrine Gland Neoplasms"
+      },
+      {
+       "id": "D004066",
+       "term": "Digestive System Diseases"
+      },
+      {
+       "id": "D010182",
+       "term": "Pancreatic Diseases"
+      },
+      {
+       "id": "D004700",
+       "term": "Endocrine System Diseases"
+      },
+      {
+       "id": "D001941",
+       "term": "Breast Diseases"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      },
+      {
+       "id": "D012142",
+       "term": "Respiratory Tract Neoplasms"
+      },
+      {
+       "id": "D013899",
+       "term": "Thoracic Neoplasms"
+      },
+      {
+       "id": "D008171",
+       "term": "Lung Diseases"
+      },
+      {
+       "id": "D012140",
+       "term": "Respiratory Tract Diseases"
+      },
+      {
+       "id": "D018204",
+       "term": "Neoplasms, Connective and Soft Tissue"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D001254",
+       "term": "Astrocytoma"
+      },
+      {
+       "id": "D005910",
+       "term": "Glioma"
+      },
+      {
+       "id": "D018302",
+       "term": "Neoplasms, Neuroepithelial"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009375",
+       "term": "Neoplasms, Glandular and Epithelial"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D007414",
+       "term": "Intestinal Neoplasms"
+      },
+      {
+       "id": "D005770",
+       "term": "Gastrointestinal Neoplasms"
+      },
+      {
+       "id": "D005767",
+       "term": "Gastrointestinal Diseases"
+      },
+      {
+       "id": "D003108",
+       "term": "Colonic Diseases"
+      },
+      {
+       "id": "D007410",
+       "term": "Intestinal Diseases"
+      },
+      {
+       "id": "D012002",
+       "term": "Rectal Diseases"
+      },
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT01829971"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Primary Liver Cancer",
+      "SCLC",
+      "Lymphoma",
+      "Melanoma",
+      "Multiple Myeloma",
+      "Renal Cell Carcinoma",
+      "NSCLC"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "MRX34",
+       "description": "micro RNA therapy",
+       "armGroupLabels": [
+        "MRX34"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D006528",
+       "term": "Carcinoma, Hepatocellular"
+      },
+      {
+       "id": "D008223",
+       "term": "Lymphoma"
+      },
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      },
+      {
+       "id": "D009101",
+       "term": "Multiple Myeloma"
+      },
+      {
+       "id": "D002292",
+       "term": "Carcinoma, Renal Cell"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D000230",
+       "term": "Adenocarcinoma"
+      },
+      {
+       "id": "D002277",
+       "term": "Carcinoma"
+      },
+      {
+       "id": "D009375",
+       "term": "Neoplasms, Glandular and Epithelial"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D008113",
+       "term": "Liver Neoplasms"
+      },
+      {
+       "id": "D004067",
+       "term": "Digestive System Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D004066",
+       "term": "Digestive System Diseases"
+      },
+      {
+       "id": "D008107",
+       "term": "Liver Diseases"
+      },
+      {
+       "id": "D008232",
+       "term": "Lymphoproliferative Disorders"
+      },
+      {
+       "id": "D008206",
+       "term": "Lymphatic Diseases"
+      },
+      {
+       "id": "D006425",
+       "term": "Hemic and Lymphatic Diseases"
+      },
+      {
+       "id": "D007160",
+       "term": "Immunoproliferative Disorders"
+      },
+      {
+       "id": "D007154",
+       "term": "Immune System Diseases"
+      },
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      },
+      {
+       "id": "D054219",
+       "term": "Neoplasms, Plasma Cell"
+      },
+      {
+       "id": "D020141",
+       "term": "Hemostatic Disorders"
+      },
+      {
+       "id": "D014652",
+       "term": "Vascular Diseases"
+      },
+      {
+       "id": "D002318",
+       "term": "Cardiovascular Diseases"
+      },
+      {
+       "id": "D010265",
+       "term": "Paraproteinemias"
+      },
+      {
+       "id": "D001796",
+       "term": "Blood Protein Disorders"
+      },
+      {
+       "id": "D006402",
+       "term": "Hematologic Diseases"
+      },
+      {
+       "id": "D006474",
+       "term": "Hemorrhagic Disorders"
+      },
+      {
+       "id": "D007680",
+       "term": "Kidney Neoplasms"
+      },
+      {
+       "id": "D014571",
+       "term": "Urologic Neoplasms"
+      },
+      {
+       "id": "D014565",
+       "term": "Urogenital Neoplasms"
+      },
+      {
+       "id": "D052776",
+       "term": "Female Urogenital Diseases"
+      },
+      {
+       "id": "D005261",
+       "term": "Female Urogenital Diseases and Pregnancy Complications"
+      },
+      {
+       "id": "D000091642",
+       "term": "Urogenital Diseases"
+      },
+      {
+       "id": "D007674",
+       "term": "Kidney Diseases"
+      },
+      {
+       "id": "D014570",
+       "term": "Urologic Diseases"
+      },
+      {
+       "id": "D052801",
+       "term": "Male Urogenital Diseases"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT02203864"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "BIBW2 component A",
+       "description": "BIBW2 without IL-2 secreting cell line",
+       "armGroupLabels": [
+        "BIBW2 without IL-2 secreting cell line"
+       ]
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "BIBW2 component B",
+       "description": "BIBW2 with IL-2 secreting cell line",
+       "armGroupLabels": [
+        "BIBW2 with IL-2 secreting cell line"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT02278887"
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Metastatic Melanoma"
+     ]
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "PROCEDURE",
+       "name": "Translational research",
+       "description": "Before during and at progression/regression biopsies and blood will be taken for translational research",
+       "armGroupLabels": [
+        "Ipilimumab",
+        "TIL treatment"
+       ],
+       "otherNames": [
+        "tumor tissue",
+        "blood"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Cyclophosphamide",
+       "description": "The patient receives 2 days cyclophosphamide via IV to deplete T-cells.",
+       "armGroupLabels": [
+        "TIL treatment"
+       ],
+       "otherNames": [
+        "chemotherapy"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Fludarabine",
+       "description": "The patient receives 5 days fludarabine via IV to deplete T-cells.",
+       "armGroupLabels": [
+        "TIL treatment"
+       ],
+       "otherNames": [
+        "chemotherapy"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Interleukin-2",
+       "description": "After infusion of the TIL, the patient receives IL-2 to keep the TIL active.",
+       "armGroupLabels": [
+        "TIL treatment"
+       ],
+       "otherNames": [
+        "Proleukin"
+       ]
+      },
+      {
+       "type": "DRUG",
+       "name": "Ipilimumab infusion",
+       "description": "In arm A patients will be treated with 4 infusion of ipilimumab",
+       "armGroupLabels": [
+        "Ipilimumab"
+       ],
+       "otherNames": [
+        "standard treatment"
+       ]
+      }
+     ]
+    }
+   },
+   "derivedSection": {
+    "conditionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D008545",
+       "term": "Melanoma"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D018358",
+       "term": "Neuroendocrine Tumors"
+      },
+      {
+       "id": "D017599",
+       "term": "Neuroectodermal Tumors"
+      },
+      {
+       "id": "D009373",
+       "term": "Neoplasms, Germ Cell and Embryonal"
+      },
+      {
+       "id": "D009370",
+       "term": "Neoplasms by Histologic Type"
+      },
+      {
+       "id": "D009369",
+       "term": "Neoplasms"
+      },
+      {
+       "id": "D009380",
+       "term": "Neoplasms, Nerve Tissue"
+      },
+      {
+       "id": "D018326",
+       "term": "Nevi and Melanomas"
+      },
+      {
+       "id": "D012878",
+       "term": "Skin Neoplasms"
+      },
+      {
+       "id": "D009371",
+       "term": "Neoplasms by Site"
+      },
+      {
+       "id": "D012871",
+       "term": "Skin Diseases"
+      },
+      {
+       "id": "D017437",
+       "term": "Skin and Connective Tissue Diseases"
+      }
+     ]
+    },
+    "interventionBrowseModule": {
+     "meshes": [
+      {
+       "id": "D001800",
+       "term": "Blood Specimen Collection"
+      },
+      {
+       "id": "D003520",
+       "term": "Cyclophosphamide"
+      },
+      {
+       "id": "D004358",
+       "term": "Drug Therapy"
+      },
+      {
+       "id": "C024352",
+       "term": "fludarabine"
+      },
+      {
+       "id": "D007376",
+       "term": "Interleukin-2"
+      },
+      {
+       "id": "C082598",
+       "term": "aldesleukin"
+      }
+     ],
+     "ancestors": [
+      {
+       "id": "D013048",
+       "term": "Specimen Handling"
+      },
+      {
+       "id": "D019411",
+       "term": "Clinical Laboratory Techniques"
+      },
+      {
+       "id": "D019937",
+       "term": "Diagnostic Techniques and Procedures"
+      },
+      {
+       "id": "D003933",
+       "term": "Diagnosis"
+      },
+      {
+       "id": "D011677",
+       "term": "Punctures"
+      },
+      {
+       "id": "D013514",
+       "term": "Surgical Procedures, Operative"
+      },
+      {
+       "id": "D008919",
+       "term": "Investigative Techniques"
+      },
+      {
+       "id": "D010752",
+       "term": "Phosphoramide Mustards"
+      },
+      {
+       "id": "D009588",
+       "term": "Nitrogen Mustard Compounds"
+      },
+      {
+       "id": "D009150",
+       "term": "Mustard Compounds"
+      },
+      {
+       "id": "D006846",
+       "term": "Hydrocarbons, Halogenated"
+      },
+      {
+       "id": "D006838",
+       "term": "Hydrocarbons"
+      },
+      {
+       "id": "D009930",
+       "term": "Organic Chemicals"
+      },
+      {
+       "id": "D063088",
+       "term": "Phosphoramides"
+      },
+      {
+       "id": "D009943",
+       "term": "Organophosphorus Compounds"
+      },
+      {
+       "id": "D013812",
+       "term": "Therapeutics"
+      },
+      {
+       "id": "D007378",
+       "term": "Interleukins"
+      },
+      {
+       "id": "D016207",
+       "term": "Cytokines"
+      },
+      {
+       "id": "D036341",
+       "term": "Intercellular Signaling Peptides and Proteins"
+      },
+      {
+       "id": "D010455",
+       "term": "Peptides"
+      },
+      {
+       "id": "D000602",
+       "term": "Amino Acids, Peptides, and Proteins"
+      },
+      {
+       "id": "D008222",
+       "term": "Lymphokines"
+      },
+      {
+       "id": "D011506",
+       "term": "Proteins"
+      },
+      {
+       "id": "D001685",
+       "term": "Biological Factors"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
