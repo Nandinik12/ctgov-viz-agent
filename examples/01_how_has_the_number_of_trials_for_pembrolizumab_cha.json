@@ -4,7 +4,7 @@
     "drug_name": "Pembrolizumab"
   },
   "response": {
-    "request_id": "49f8ac4e-0b39-4446-a9c5-7bba5bfe9a31",
+    "request_id": "4651563c-e0e9-4b81-8c33-830030197d50",
     "status": "ok",
     "visualization": {
       "type": "time_series",
@@ -3277,13 +3277,13 @@
     "meta": {
       "source": "clinicaltrials.gov",
       "api_base": "https://clinicaltrials.gov/api/v2",
-      "generated_at": "2026-10-11T20:38:39+00:00",
+      "generated_at": "2026-10-12T00:45:40+00:00",
       "interpretation": {
         "planner": "llm",
         "action": "visualize",
         "analysis": "time_trend",
         "dimension": "start_year",
-        "rationale": "A time trend analysis showing trials per start year will reveal how Pembrolizumab trial activity has changed since 2015."
+        "rationale": "A time trend analysis showing trials per start year will reveal how Pembrolizumab trial activity has changed annually since 2015."
       },
       "filters": {
         "drug": "Pembrolizumab",

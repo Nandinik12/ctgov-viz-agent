@@ -6,7 +6,7 @@
     "top_n": 15
   },
   "response": {
-    "request_id": "be9b3aab-6475-480a-a0fd-329f768e3380",
+    "request_id": "bdf04a16-12bb-4c48-8171-d4f484a63ab8",
     "status": "ok",
     "visualization": {
       "type": "network_graph",
@@ -9193,13 +9193,13 @@
     "meta": {
       "source": "clinicaltrials.gov",
       "api_base": "https://clinicaltrials.gov/api/v2",
-      "generated_at": "2026-10-11T20:39:18+00:00",
+      "generated_at": "2026-10-12T00:46:17+00:00",
       "interpretation": {
         "planner": "llm",
         "action": "visualize",
         "analysis": "network",
         "dimension": "drug",
-        "rationale": "A drug co-occurrence network shows which drugs appear together in the same trials, revealing combination therapy patterns in non-small cell lung cancer studies since 2018."
+        "rationale": "A drug co-occurrence network shows which drugs appear together in the same trials, revealing common combination therapy patterns for non-small cell lung cancer since 2018."
       },
       "filters": {
         "condition": "non-small cell lung cancer",

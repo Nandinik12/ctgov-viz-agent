@@ -400,6 +400,9 @@ Regenerate with `python examples/run_examples.py`.
 * The demo UI was driven headlessly through every preset to confirm the spec renders without type specific
   guessing and that clicking a mark surfaces its citations.
 * Example outputs were spot checked against clinicaltrials.gov study pages.
+* Independent cross check: example 02 fetched all 16,720 breast cancer trials and counted phases locally; the counts
+  match the separate `countTotal` probe queries exactly (Phase 2 only 3,544; Phase 1/Phase 2 866; Not Applicable
+  4,898; no phase reported 3,673), which validates both the extraction rules and the exact count clauses.
 * Live runs surfaced a real failure: the installed Anthropic SDK rejected the `temperature` argument, so every LLM
   call failed. The fallback kept the service answering (every example still rendered via the keyword planner, with
   a warning in `meta.warnings`), which is the degradation path working as designed. The argument was removed and the

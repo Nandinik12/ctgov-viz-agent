@@ -3,7 +3,7 @@
     "query": "Which countries have the most recruiting trials for type 2 diabetes?"
   },
   "response": {
-    "request_id": "4611cc36-b180-486c-91c7-8ee155bfab89",
+    "request_id": "df48175f-05ff-4e03-a268-f46c0e4a6e18",
     "status": "ok",
     "visualization": {
       "type": "choropleth_map",
@@ -1029,8 +1029,8 @@
         },
         {
           "country": "Turkey (T\u00fcrkiye)",
-          "iso3": null,
-          "iso_numeric": null,
+          "iso3": "TUR",
+          "iso_numeric": "792",
           "trial_count": 31,
           "share_pct": 3.7,
           "nct_ids": [
@@ -3174,8 +3174,8 @@
         },
         {
           "country": "C\u00f4te d\u2019Ivoire",
-          "iso3": null,
-          "iso_numeric": null,
+          "iso3": "CIV",
+          "iso_numeric": "384",
           "trial_count": 1,
           "share_pct": 0.1,
           "nct_ids": [
@@ -3447,13 +3447,13 @@
     "meta": {
       "source": "clinicaltrials.gov",
       "api_base": "https://clinicaltrials.gov/api/v2",
-      "generated_at": "2026-10-11T20:39:03+00:00",
+      "generated_at": "2026-10-12T00:46:03+00:00",
       "interpretation": {
         "planner": "llm",
         "action": "visualize",
         "analysis": "distribution",
         "dimension": "country",
-        "rationale": "A distribution by country will show which countries have the most recruiting trials for type 2 diabetes."
+        "rationale": "A distribution by country shows which countries have the most recruiting trials for type 2 diabetes."
       },
       "filters": {
         "condition": "type 2 diabetes",
@@ -3488,9 +3488,7 @@
         "A trial counts once per country it has at least one site in, so counts can sum to more than the number of trials.",
         "Color scale is sequential (one hue, light to dark = fewer to more trials)."
       ],
-      "warnings": [
-        "2 location names could not be mapped to ISO codes and are listed but not drawn on the map: Turkey (T\u00fcrkiye), C\u00f4te d\u2019Ivoire."
-      ]
+      "warnings": []
     }
   }
 }

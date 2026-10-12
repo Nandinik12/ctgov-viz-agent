@@ -468,7 +468,13 @@ def country_codes(name: str) -> Optional[dict[str, Any]]:
         import json
         from pathlib import Path
         _COUNTRIES = json.loads((Path(__file__).resolve().parent.parent / "data" / "countries.json").read_text())
-    return _COUNTRIES.get(name.strip().casefold())
+    # live records spell some countries "Turkey (Türkiye)" or with a typographic apostrophe ("Côte d’Ivoire")
+    name = name.replace("\u2019", "'").replace("\u2018", "'").strip()
+    hit = _COUNTRIES.get(name.casefold())
+    if hit is None and "(" in name:
+        outer, inner = name.split("(", 1)
+        hit = _COUNTRIES.get(outer.strip().casefold()) or _COUNTRIES.get(inner.rstrip(") ").casefold())
+    return hit
 
 
 def geo_distribution(cohort: Cohort, k: int) -> Built:

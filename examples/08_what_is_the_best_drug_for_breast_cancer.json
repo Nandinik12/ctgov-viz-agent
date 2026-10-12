@@ -3,25 +3,25 @@
     "query": "What is the best drug for breast cancer?"
   },
   "response": {
-    "request_id": "b2ab45a5-4d63-4cb3-b604-f2df948fbdf5",
+    "request_id": "9bf95a42-7de9-4408-9788-b1ba33dd7438",
     "status": "unsupported",
     "clarification": {
       "reason": "out_of_scope",
-      "message": "I can't determine which drug is \"best\" because that requires comparing treatment efficacy, safety, and outcomes\u2014clinical results data that aren't part of the registry metadata I have access to. I can only show you information about trial characteristics like phases, sponsors, and timelines.",
+      "message": "I cannot determine which drug is \"best\" for breast cancer, as that requires comparing treatment efficacy, safety, and outcomes data which are not available in the ClinicalTrials.gov registry. The registry contains trial metadata (phases, sponsors, locations, etc.) but not clinical results or effectiveness comparisons.",
       "suggestions": [
         "How many breast cancer trials are there by phase?",
-        "What are the most common drugs being studied for breast cancer?",
-        "Compare breast cancer trial activity for Pembrolizumab vs Trastuzumab"
+        "Compare the number of breast cancer trials for Pembrolizumab vs Trastuzumab",
+        "What is the trend in breast cancer clinical trials over time?"
       ]
     },
     "meta": {
       "source": "clinicaltrials.gov",
       "api_base": "https://clinicaltrials.gov/api/v2",
-      "generated_at": "2026-10-11T20:39:26+00:00",
+      "generated_at": "2026-10-12T00:46:25+00:00",
       "interpretation": {
         "planner": "llm",
         "action": "decline",
-        "rationale": "I can't determine which drug is \"best\" because that requires comparing treatment efficacy, safety, and outcomes\u2014clinical results data that aren't part of the registry metadata I have access to. I can only show you information about trial characteristics like phases, sponsors, and timelines."
+        "rationale": "I cannot determine which drug is \"best\" for breast cancer, as that requires comparing treatment efficacy, safety, and outcomes data which are not available in the ClinicalTrials.gov registry. The registry contains trial metadata (phases, sponsors, locations, etc.) but not clinical results or effectiveness comparisons."
       },
       "filters": {},
       "cohorts": [],

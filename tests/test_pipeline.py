@@ -529,3 +529,6 @@ def test_ctgov_country_spellings_map():
     assert country_codes("Korea, Republic of")["iso3"] == "KOR"
     assert country_codes("Iran, Islamic Republic of")["iso3"] == "IRN"
     assert country_codes("Russian Federation")["iso_numeric"] == "643"
+    # spellings seen in live example output
+    assert country_codes("Turkey (Türkiye)")["iso3"] == "TUR"
+    assert country_codes("Côte d\u2019Ivoire")["iso3"] == "CIV"
